@@ -1,0 +1,32 @@
+@media screen and (max-width: 64em) {
+  /* line 3, ../sass/nav/_mobile.scss */
+  .top-nav {
+    background: #372772;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* line 12, ../sass/nav/_mobile.scss */
+  .top-nav__link,
+  .top-nav__link--sublink,
+  .top-nav__header {
+    border-bottom: 1px solid #59507b;
+    color: #fff;
+    font: 400 25px/1 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+    display: block;
+    margin: 0;
+    padding: 25px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  /* line 24, ../sass/nav/_mobile.scss */
+  .top-nav__link--sublink {
+    font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
+    text-indent: 3em;
+    text-transform: none;
+  }
+}
