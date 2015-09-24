@@ -1,3 +1,3 @@
 # CardX
 
-A work in project. Uses BEM Sass and Susy.
+A work in progress. Uses BEM Sass and Susy.
