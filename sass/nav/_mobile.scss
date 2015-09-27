@@ -1,7 +1,7 @@
 // Mobile Navigation
 
 .top-nav {
-  background: $purple;
+  height: 64px;
   left: 0;
   position: fixed;
   right: 0;
@@ -9,13 +9,58 @@
   width: 100%;
 }
 
+.top-nav__banner {
+  background: $purple;
+  border-bottom: 1px solid #59507b;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+.top-nav__banner > svg {
+  height: 32px;
+  left: 23px;
+  position: absolute;
+  top: 17px;
+}
+.top-nav__close-btn svg {
+  height: 18px;
+  position: absolute;
+  right: 26px;
+  top: 24px;
+}
+#mobile-close {
+  right: 30px;
+}
+#mobile-close,
+.top-nav__banner.is-open #mobile-hamburger {
+  display: none;
+}
+.top-nav__banner.is-open #mobile-close {
+  display: block;
+}
+
+.top-nav__links {
+  background: $purple;
+  position: relative;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform .25s ease-in;
+  transition: transform .25s ease-in;
+  z-index: 9;
+}
+.top-nav__banner.is-open + .top-nav__links {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
 .top-nav__link,
 .top-nav__link--sublink,
 .top-nav__header {
   border-bottom: 1px solid #59507b;
   color: #fff;
-  font: 400 25px/1 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+  font: 400 2em/1 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   display: block;
+  letter-spacing: .2em;
   margin: 0;
   padding: 25px 22px;
   text-decoration: none;
@@ -23,6 +68,8 @@
 }
 .top-nav__link--sublink {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
-  text-indent: 3em;
+  font-size: 1.8em;
+  letter-spacing: .1em;
+  margin-left: 2em;
   text-transform: none;
 }

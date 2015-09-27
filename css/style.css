@@ -1,7 +1,284 @@
+/*! sanitize.css v2.0.0 | CC0 1.0 Public Domain | github.com/jonathantneal/sanitize.css */
+/*
+ * Normalization
+ */
+/* line 32, ../sass/vendors/sanitize.scss */
+:root {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 38, ../sass/vendors/sanitize.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 42, ../sass/vendors/sanitize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 46, ../sass/vendors/sanitize.scss */
+details {
+  display: block;
+}
+
+/* line 51, ../sass/vendors/sanitize.scss */
+input[type="number"] {
+  width: auto;
+}
+/* line 55, ../sass/vendors/sanitize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+/* line 58, ../sass/vendors/sanitize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 65, ../sass/vendors/sanitize.scss */
+main {
+  display: block;
+}
+
+/* line 69, ../sass/vendors/sanitize.scss */
+summary {
+  display: block;
+}
+
+/* line 73, ../sass/vendors/sanitize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 77, ../sass/vendors/sanitize.scss */
+progress {
+  display: inline-block;
+}
+
+/* line 81, ../sass/vendors/sanitize.scss */
+small {
+  font-size: 75%;
+}
+
+/* line 85, ../sass/vendors/sanitize.scss */
+template {
+  display: none;
+}
+
+/* line 89, ../sass/vendors/sanitize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 93, ../sass/vendors/sanitize.scss */
+[hidden] {
+  display: none;
+}
+
+/*
+ * Universal inheritance
+ */
+/* line 101, ../sass/vendors/sanitize.scss */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* line 107, ../sass/vendors/sanitize.scss */
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 112, ../sass/vendors/sanitize.scss */
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+/*
+ * Opinionated defaults
+ */
+/* line 126, ../sass/vendors/sanitize.scss */
+*,
+::before,
+::after {
+  border-style: solid;
+  border-width: 0;
+}
+
+/* line 135, ../sass/vendors/sanitize.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 142, ../sass/vendors/sanitize.scss */
+:root {
+  box-sizing: border-box;
+  cursor: default;
+  font: 100%/1.5 sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 151, ../sass/vendors/sanitize.scss */
+html {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 158, ../sass/vendors/sanitize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 164, ../sass/vendors/sanitize.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* line 175, ../sass/vendors/sanitize.scss */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+}
+
+/* line 184, ../sass/vendors/sanitize.scss */
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+/* line 196, ../sass/vendors/sanitize.scss */
+button,
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
+  min-height: 1.5em;
+}
+
+/* line 220, ../sass/vendors/sanitize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+
+/* line 229, ../sass/vendors/sanitize.scss */
+nav ol,
+nav ul {
+  list-style: none;
+}
+
+/* line 236, ../sass/vendors/sanitize.scss */
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+/* line 240, ../sass/vendors/sanitize.scss */
+select::-ms-expand {
+  display: none;
+}
+/* line 244, ../sass/vendors/sanitize.scss */
+select::-ms-value {
+  color: currentColor;
+}
+
+/* line 251, ../sass/vendors/sanitize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 258, ../sass/vendors/sanitize.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 264, ../sass/vendors/sanitize.scss */
+::selection {
+  background-color: #B3D4FC;
+  color: #4c2b03;
+  text-shadow: none;
+}
+
+/* line 272, ../sass/vendors/sanitize.scss */
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* line 278, ../sass/vendors/sanitize.scss */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* line 284, ../sass/vendors/sanitize.scss */
+[aria-disabled] {
+  cursor: default;
+}
+
+/* line 290, ../sass/vendors/sanitize.scss */
+[hidden][aria-hidden="false"] {
+  clip: rect(0 0 0 0);
+  display: inherit;
+  position: absolute;
+}
+/* line 295, ../sass/vendors/sanitize.scss */
+[hidden][aria-hidden="false"]:focus {
+  clip: auto;
+}
+
+/* line 300, ../sass/vendors/sanitize.scss */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 304, ../sass/vendors/sanitize.scss */
+button {
+  outline: none;
+}
+
+/* line 1, ../sass/vendors/temp.scss */
+#mfPreviewBar {
+  display: none;
+}
+
 @media screen and (max-width: 64em) {
   /* line 3, ../sass/nav/_mobile.scss */
   .top-nav {
-    background: #372772;
+    height: 64px;
     left: 0;
     position: fixed;
     right: 0;
@@ -10,23 +287,84 @@
   }
 
   /* line 12, ../sass/nav/_mobile.scss */
+  .top-nav__banner {
+    background: #372772;
+    border-bottom: 1px solid #59507b;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* line 19, ../sass/nav/_mobile.scss */
+  .top-nav__banner > svg {
+    height: 32px;
+    left: 23px;
+    position: absolute;
+    top: 17px;
+  }
+
+  /* line 25, ../sass/nav/_mobile.scss */
+  .top-nav__close-btn svg {
+    height: 18px;
+    position: absolute;
+    right: 26px;
+    top: 24px;
+  }
+
+  /* line 31, ../sass/nav/_mobile.scss */
+  #mobile-close {
+    right: 30px;
+  }
+
+  /* line 34, ../sass/nav/_mobile.scss */
+  #mobile-close,
+  .top-nav__banner.is-open #mobile-hamburger {
+    display: none;
+  }
+
+  /* line 38, ../sass/nav/_mobile.scss */
+  .top-nav__banner.is-open #mobile-close {
+    display: block;
+  }
+
+  /* line 42, ../sass/nav/_mobile.scss */
+  .top-nav__links {
+    background: #372772;
+    position: relative;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform .25s ease-in;
+    transition: transform .25s ease-in;
+    z-index: 9;
+  }
+
+  /* line 51, ../sass/nav/_mobile.scss */
+  .top-nav__banner.is-open + .top-nav__links {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 56, ../sass/nav/_mobile.scss */
   .top-nav__link,
   .top-nav__link--sublink,
   .top-nav__header {
     border-bottom: 1px solid #59507b;
     color: #fff;
-    font: 400 25px/1 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+    font: 400 2em/1 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
     display: block;
+    letter-spacing: .2em;
     margin: 0;
     padding: 25px 22px;
     text-decoration: none;
     text-transform: uppercase;
   }
 
-  /* line 24, ../sass/nav/_mobile.scss */
+  /* line 69, ../sass/nav/_mobile.scss */
   .top-nav__link--sublink {
     font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
-    text-indent: 3em;
+    font-size: 1.8em;
+    letter-spacing: .1em;
+    margin-left: 2em;
     text-transform: none;
   }
 }
