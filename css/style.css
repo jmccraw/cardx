@@ -275,96 +275,126 @@ button {
   display: none;
 }
 
-@media screen and (max-width: 64em) {
-  /* line 3, ../sass/nav/_mobile.scss */
-  .top-nav {
-    height: 64px;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-  }
+/* line 3, ../sass/nav/_mobile.scss */
+.top-nav {
+  height: 64px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  width: 100%;
+  z-index: 10;
+}
 
-  /* line 12, ../sass/nav/_mobile.scss */
-  .top-nav__banner {
-    background: #372772;
-    border-bottom: 1px solid #59507b;
-    height: 100%;
-    position: relative;
-    z-index: 10;
-  }
+/* line 18, ../sass/nav/_mobile.scss */
+.top-nav.is-hidden {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
 
-  /* line 19, ../sass/nav/_mobile.scss */
-  .top-nav__banner > svg {
-    height: 32px;
-    left: 23px;
-    position: absolute;
-    top: 17px;
-  }
+/* line 23, ../sass/nav/_mobile.scss */
+.top-nav__banner {
+  background: #372772;
+  border-bottom: 1px solid #59507b;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
 
-  /* line 25, ../sass/nav/_mobile.scss */
-  .top-nav__close-btn svg {
-    height: 18px;
-    position: absolute;
-    right: 26px;
-    top: 24px;
-  }
+/* line 30, ../sass/nav/_mobile.scss */
+.top-nav__banner > svg {
+  height: 32px;
+  left: 23px;
+  position: absolute;
+  top: 17px;
+}
 
-  /* line 31, ../sass/nav/_mobile.scss */
-  #mobile-close {
-    right: 30px;
-  }
+/* line 36, ../sass/nav/_mobile.scss */
+.top-nav__close-btn svg {
+  height: 18px;
+  position: absolute;
+  right: 26px;
+  top: 24px;
+}
 
-  /* line 34, ../sass/nav/_mobile.scss */
-  #mobile-close,
-  .top-nav__banner.is-open #mobile-hamburger {
-    display: none;
-  }
+/* line 42, ../sass/nav/_mobile.scss */
+#mobile-close {
+  right: 30px;
+}
 
-  /* line 38, ../sass/nav/_mobile.scss */
-  .top-nav__banner.is-open #mobile-close {
-    display: block;
-  }
+/* line 45, ../sass/nav/_mobile.scss */
+#mobile-close,
+.top-nav__banner.is-open #mobile-hamburger {
+  display: none;
+}
 
-  /* line 42, ../sass/nav/_mobile.scss */
-  .top-nav__links {
-    background: #372772;
-    position: relative;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    -webkit-transition: -webkit-transform .25s ease-in;
-    transition: transform .25s ease-in;
-    z-index: 9;
-  }
+/* line 49, ../sass/nav/_mobile.scss */
+.top-nav__banner.is-open #mobile-close {
+  display: block;
+}
 
-  /* line 51, ../sass/nav/_mobile.scss */
-  .top-nav__banner.is-open + .top-nav__links {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+/* line 53, ../sass/nav/_mobile.scss */
+.top-nav__links {
+  background: #372772;
+  position: relative;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform .25s ease-in;
+  transition: transform .25s ease-in;
+  z-index: 9;
+}
 
-  /* line 56, ../sass/nav/_mobile.scss */
-  .top-nav__link,
-  .top-nav__link--sublink,
-  .top-nav__header {
-    border-bottom: 1px solid #59507b;
-    color: #fff;
-    font: 400 2em/1 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
-    display: block;
-    letter-spacing: .2em;
-    margin: 0;
-    padding: 25px 22px;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+/* line 62, ../sass/nav/_mobile.scss */
+.top-nav__banner.is-open + .top-nav__links {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
 
-  /* line 69, ../sass/nav/_mobile.scss */
-  .top-nav__link--sublink {
-    font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
-    font-size: 1.8em;
-    letter-spacing: .1em;
-    margin-left: 2em;
-    text-transform: none;
-  }
+/* line 67, ../sass/nav/_mobile.scss */
+.top-nav__link,
+.top-nav__link--sublink,
+.top-nav__header {
+  border-bottom: 1px solid #59507b;
+  color: #fff;
+  font: 400 1.4em/1 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+  display: block;
+  letter-spacing: .2em;
+  margin: 0;
+  padding: 25px 23px 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 80, ../sass/nav/_mobile.scss */
+.top-nav__link--sublink {
+  font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  margin-left: 2em;
+  text-transform: none;
+}
+
+/* line 87, ../sass/nav/_mobile.scss */
+.top-nav__link:active,
+.top-nav__link--sublink:active {
+  background: #fff;
+  color: #372772;
+}
+
+/* line 3, ../sass/hero/_mobile.scss */
+.hero {
+  background: transparent url(../media/hero-index.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  padding-top: 60px;
+  position: relative;
 }

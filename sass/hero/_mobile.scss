@@ -1,0 +1,12 @@
+// Mobile Hero Section
+
+.hero {
+  background: transparent url(../media/hero-index.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  padding-top: 60px;
+  position: relative;
+}
