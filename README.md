@@ -9,3 +9,5 @@ A work in progress. Uses BEM Sass and Susy.
  * ３時間
 * ９月２７日
  * ４時間
+* ９月２８日
+ *

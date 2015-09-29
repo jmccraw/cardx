@@ -9,4 +9,34 @@
   height: 100vh;
   padding-top: 60px;
   position: relative;
+  text-align: center;
+}
+.hero__header {
+  margin: 35px 40px 17px;
+  position: relative;
+}
+.hero__headline {
+  font: 400 2.1em/1.2 $bold-condensed;
+  letter-spacing: .04em;
+}
+.hero__headline--subhead {
+  display: block;
+  font-family: $condensed;
+}
+.hero__p {
+  font: 400 .95em/1.7 $medium;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: .01em;
+  margin-bottom: 52px;
+}
+.hero__p--sup {
+  vertical-align: baseline;
+}
+.hero__link {
+  background: #fff;
+  font: 400 .7em/1.2 $medium;
+  letter-spacing: .2em;
+  padding: 15px 18px 13px;
+  text-transform: uppercase;
 }

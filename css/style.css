@@ -397,4 +397,55 @@ button {
   height: 100vh;
   padding-top: 60px;
   position: relative;
+  text-align: center;
+}
+
+/* line 14, ../sass/hero/_mobile.scss */
+.hero__header {
+  margin: 35px 40px 17px;
+  position: relative;
+}
+
+/* line 18, ../sass/hero/_mobile.scss */
+.hero__headline {
+  font: 400 2.1em/1.2 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+  letter-spacing: .04em;
+}
+
+/* line 22, ../sass/hero/_mobile.scss */
+.hero__headline--subhead {
+  display: block;
+  font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
+}
+
+/* line 26, ../sass/hero/_mobile.scss */
+.hero__p {
+  font: 400 0.95em/1.7 "Trade Gothic Com", Arial, sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: .01em;
+  margin-bottom: 52px;
+}
+
+/* line 33, ../sass/hero/_mobile.scss */
+.hero__p--sup {
+  vertical-align: baseline;
+}
+
+/* line 36, ../sass/hero/_mobile.scss */
+.hero__link {
+  background: #fff;
+  font: 400 0.7em/1.2 "Trade Gothic Com", Arial, sans-serif;
+  letter-spacing: .2em;
+  padding: 15px 18px 13px;
+  text-transform: uppercase;
+}
+
+/* line 3, ../sass/testimonials/_mobile.scss */
+.testimonials {
+  background: #e4e4e7;
+  color: #372772;
+  -webkit-font-smoothing: antialiased;
+  padding: 40px 20px;
+  text-align: center;
 }

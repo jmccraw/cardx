@@ -69,7 +69,7 @@
 .top-nav__header {
   border-bottom: 1px solid #59507b;
   color: #fff;
-  font: 400 1.4em/1 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+  font: 400 1.4em/1 $bold-condensed;
   display: block;
   letter-spacing: .2em;
   margin: 0;
@@ -78,7 +78,7 @@
   text-transform: uppercase;
 }
 .top-nav__link--sublink {
-  font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
+  font-family: $condensed;
   font-size: 1.2em;
   letter-spacing: .1em;
   margin-left: 2em;

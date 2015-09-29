@@ -5,10 +5,12 @@
 @import "vendors/temp";
 @import "grids";
 @import "colors";
+@import "fonts";
 
 // Mobile Styles
 @import "nav/mobile";
 @import "hero/mobile";
+@import "testimonials/mobile";
 
 // Tablet Styles
 @media screen and (min-width: 64em) and (max-width: 80em) {
