@@ -1,0 +1,31 @@
+// Mobile Solutions Section
+
+.solutions {
+  background: $purple;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  padding: 53px 43px;
+  position: relative;
+  text-align: left;
+}
+.solutions__type {
+  display: block;
+  position: relative;
+}
+.solutions__header {
+
+}
+.solutions__headline {
+  font: 400 2.1em/1.2 $bold-condensed;
+}
+.solutions__headline--sup {
+  font-size: .3em;
+  line-height: 2;
+  vertical-align: top;
+}
+.solutions__headline--subhead {
+  display: block;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}

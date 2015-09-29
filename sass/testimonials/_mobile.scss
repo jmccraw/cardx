@@ -5,5 +5,62 @@
   color: $purple;
   -webkit-font-smoothing: antialiased;
   padding: 40px 20px;
+  position: relative;
   text-align: center;
+}
+.testimonials__testimonial {
+  display: none;
+  position: relative;
+}
+.testimonials__testimonial.is-visible {
+  display: block;
+}
+.testimonials__quote {
+  font: 400 1.2em/1.4 $condensed;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  position: relative;
+}
+.testimonials__quote::after {
+  border-bottom: 1px solid $purple;
+  bottom: 0;
+  content: '';
+  left: 50%;
+  margin-left: -6px;
+  position: absolute;
+  width: 13px;
+}
+.testimonials__footer {
+  font: 400 .8em/1.4 $condensed;
+  letter-spacing: .2em;
+  margin-bottom: 38px;
+  text-transform: uppercase;
+}
+.testimonials__byline {
+  display: block;
+  font-family: $bold-condensed;
+  font-style: normal;
+  letter-spacing: .2em;
+}
+.testimonials__breadcrumb {
+  bottom: 35px;
+  display: block;
+  left: 50%;
+  margin-left: -43px;
+  position: absolute;
+  width: 86px;
+}
+.testimonials__crumb {
+  background: $cool-gray;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  margin-right: 16px;
+  width: 5px;
+}
+.testimonials__crumb:last-child {
+  margin-right: 0;
+}
+.testimonials__crumb.is-active {
+  background: $purple;
 }

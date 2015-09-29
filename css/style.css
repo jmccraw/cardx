@@ -429,10 +429,12 @@ button {
 
 /* line 33, ../sass/hero/_mobile.scss */
 .hero__p--sup {
-  vertical-align: baseline;
+  font-size: .5em;
+  line-height: 2.5;
+  vertical-align: top;
 }
 
-/* line 36, ../sass/hero/_mobile.scss */
+/* line 38, ../sass/hero/_mobile.scss */
 .hero__link {
   background: #fff;
   font: 400 0.7em/1.2 "Trade Gothic Com", Arial, sans-serif;
@@ -447,5 +449,118 @@ button {
   color: #372772;
   -webkit-font-smoothing: antialiased;
   padding: 40px 20px;
+  position: relative;
   text-align: center;
+}
+
+/* line 11, ../sass/testimonials/_mobile.scss */
+.testimonials__testimonial {
+  display: none;
+  position: relative;
+}
+
+/* line 15, ../sass/testimonials/_mobile.scss */
+.testimonials__testimonial.is-visible {
+  display: block;
+}
+
+/* line 18, ../sass/testimonials/_mobile.scss */
+.testimonials__quote {
+  font: 400 1.2em/1.4 "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+/* line 24, ../sass/testimonials/_mobile.scss */
+.testimonials__quote::after {
+  border-bottom: 1px solid #372772;
+  bottom: 0;
+  content: '';
+  left: 50%;
+  margin-left: -6px;
+  position: absolute;
+  width: 13px;
+}
+
+/* line 33, ../sass/testimonials/_mobile.scss */
+.testimonials__footer {
+  font: 400 0.8em/1.4 "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
+  letter-spacing: .2em;
+  margin-bottom: 38px;
+  text-transform: uppercase;
+}
+
+/* line 39, ../sass/testimonials/_mobile.scss */
+.testimonials__byline {
+  display: block;
+  font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+  font-style: normal;
+  letter-spacing: .2em;
+}
+
+/* line 45, ../sass/testimonials/_mobile.scss */
+.testimonials__breadcrumb {
+  bottom: 35px;
+  display: block;
+  left: 50%;
+  margin-left: -43px;
+  position: absolute;
+  width: 86px;
+}
+
+/* line 53, ../sass/testimonials/_mobile.scss */
+.testimonials__crumb {
+  background: #787583;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  margin-right: 16px;
+  width: 5px;
+}
+
+/* line 61, ../sass/testimonials/_mobile.scss */
+.testimonials__crumb:last-child {
+  margin-right: 0;
+}
+
+/* line 64, ../sass/testimonials/_mobile.scss */
+.testimonials__crumb.is-active {
+  background: #372772;
+}
+
+/* line 3, ../sass/solutions/_mobile.scss */
+.solutions {
+  background: #372772;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  padding: 53px 43px;
+  position: relative;
+  text-align: left;
+}
+
+/* line 11, ../sass/solutions/_mobile.scss */
+.solutions__type {
+  display: block;
+  position: relative;
+}
+
+/* line 18, ../sass/solutions/_mobile.scss */
+.solutions__headline {
+  font: 400 2.1em/1.2 "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+}
+
+/* line 21, ../sass/solutions/_mobile.scss */
+.solutions__headline--sup {
+  font-size: .3em;
+  line-height: 2;
+  vertical-align: top;
+}
+
+/* line 26, ../sass/solutions/_mobile.scss */
+.solutions__headline--subhead {
+  display: block;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
 }
