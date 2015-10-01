@@ -121,7 +121,7 @@ textarea {
 :root {
   box-sizing: border-box;
   cursor: default;
-  font: 100%/1.5 sans-serif;
+  font: 62.5%/1.5 sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -129,14 +129,15 @@ textarea {
 html {
   background-color: #fff;
   color: #000;
+  font-size: 62.5%;
 }
 
-/* line 158, ../../sass/vendors/sanitize.scss */
+/* line 159, ../../sass/vendors/sanitize.scss */
 a {
   text-decoration: none;
 }
 
-/* line 164, ../../sass/vendors/sanitize.scss */
+/* line 165, ../../sass/vendors/sanitize.scss */
 audio,
 canvas,
 iframe,
@@ -146,7 +147,7 @@ video {
   vertical-align: middle;
 }
 
-/* line 175, ../../sass/vendors/sanitize.scss */
+/* line 176, ../../sass/vendors/sanitize.scss */
 button,
 input,
 select,
@@ -154,7 +155,7 @@ textarea {
   background-color: transparent;
 }
 
-/* line 184, ../../sass/vendors/sanitize.scss */
+/* line 185, ../../sass/vendors/sanitize.scss */
 button,
 input,
 select,
@@ -165,7 +166,7 @@ textarea {
   font-weight: inherit;
 }
 
-/* line 196, ../../sass/vendors/sanitize.scss */
+/* line 197, ../../sass/vendors/sanitize.scss */
 button,
 [type="button"],
 [type="date"],
@@ -188,7 +189,7 @@ textarea {
   min-height: 1.5em;
 }
 
-/* line 220, ../../sass/vendors/sanitize.scss */
+/* line 221, ../../sass/vendors/sanitize.scss */
 code,
 kbd,
 pre,
@@ -196,76 +197,76 @@ samp {
   font-family: monospace, monospace;
 }
 
-/* line 229, ../../sass/vendors/sanitize.scss */
+/* line 230, ../../sass/vendors/sanitize.scss */
 nav ol,
 nav ul {
   list-style: none;
 }
 
-/* line 236, ../../sass/vendors/sanitize.scss */
+/* line 237, ../../sass/vendors/sanitize.scss */
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
-/* line 240, ../../sass/vendors/sanitize.scss */
+/* line 241, ../../sass/vendors/sanitize.scss */
 select::-ms-expand {
   display: none;
 }
-/* line 244, ../../sass/vendors/sanitize.scss */
+/* line 245, ../../sass/vendors/sanitize.scss */
 select::-ms-value {
   color: currentColor;
 }
 
-/* line 251, ../../sass/vendors/sanitize.scss */
+/* line 252, ../../sass/vendors/sanitize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 258, ../../sass/vendors/sanitize.scss */
+/* line 259, ../../sass/vendors/sanitize.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 264, ../../sass/vendors/sanitize.scss */
+/* line 265, ../../sass/vendors/sanitize.scss */
 ::selection {
   background-color: #B3D4FC;
   color: #4c2b03;
   text-shadow: none;
 }
 
-/* line 272, ../../sass/vendors/sanitize.scss */
+/* line 273, ../../sass/vendors/sanitize.scss */
 [aria-busy="true"] {
   cursor: progress;
 }
 
-/* line 278, ../../sass/vendors/sanitize.scss */
+/* line 279, ../../sass/vendors/sanitize.scss */
 [aria-controls] {
   cursor: pointer;
 }
 
-/* line 284, ../../sass/vendors/sanitize.scss */
+/* line 285, ../../sass/vendors/sanitize.scss */
 [aria-disabled] {
   cursor: default;
 }
 
-/* line 290, ../../sass/vendors/sanitize.scss */
+/* line 291, ../../sass/vendors/sanitize.scss */
 [hidden][aria-hidden="false"] {
   clip: rect(0 0 0 0);
   display: inherit;
   position: absolute;
 }
-/* line 295, ../../sass/vendors/sanitize.scss */
+/* line 296, ../../sass/vendors/sanitize.scss */
 [hidden][aria-hidden="false"]:focus {
   clip: auto;
 }
 
-/* line 300, ../../sass/vendors/sanitize.scss */
+/* line 301, ../../sass/vendors/sanitize.scss */
 body {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 304, ../../sass/vendors/sanitize.scss */
+/* line 305, ../../sass/vendors/sanitize.scss */
 button {
   outline: none;
 }

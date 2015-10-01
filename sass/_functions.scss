@@ -1,0 +1,11 @@
+// Various Helper Functions
+
+// Return mobile pixel value from design doc
+@function m-px($px) {
+  @return round($px / 3.0625) + px;
+}
+
+// Return mobile rem value from design doc
+@function m-rem($px) {
+  @return ($px / 3.0625) / 10 + rem;
+}

@@ -1,7 +1,8 @@
 // Mobile Navigation
 
 .top-nav {
-  height: 64px;
+  height: 68px;
+  height: 6.8rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   left: 0;
@@ -29,18 +30,25 @@
 }
 .top-nav__banner > svg {
   height: 32px;
+  height: 3.2rem;
   left: 23px;
+  left: 2.3rem;
   position: absolute;
   top: 17px;
+  top: 1.7rem;
 }
 .top-nav__close-btn svg {
   height: 18px;
+  height: 1.8rem;
   position: absolute;
   right: 26px;
+  right: 2.6rem;
   top: 24px;
+  top: 2.4rem;
 }
 #mobile-close {
   right: 30px;
+  right: 3rem;
 }
 #mobile-close,
 .top-nav__banner.is-open #mobile-hamburger {
@@ -69,19 +77,30 @@
 .top-nav__header {
   border-bottom: 1px solid #59507b;
   color: #fff;
-  font: 400 1.4em/1 $bold-condensed;
+  font-family: $bold-condensed;
+  font-size: m-px(66);
+  font-size: m-rem(66);
+  font-weight: 400;
   display: block;
-  letter-spacing: .2em;
+  @include tracking(300);
+  line-height: 1;
   margin: 0;
-  padding: 25px 23px 22px;
+  padding: 28px 23px 24px;
+  padding: 2.8rem 2.3rem 2.4rem;
   text-decoration: none;
   text-transform: uppercase;
 }
 .top-nav__link--sublink {
   font-family: $condensed;
-  font-size: 1.2em;
-  letter-spacing: .1em;
-  margin-left: 2em;
+  font-size: m-px(60);
+  font-size: m-rem(60);
+  @include tracking(50);
+  margin-left: 60px;
+  margin-left: 6rem;
+  padding-bottom: 20px;
+  padding-bottom: 2rem;
+  padding-top: 21px;
+  padding-top: 2.1rem;
   text-transform: none;
 }
 .top-nav__link:active,

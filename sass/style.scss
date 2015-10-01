@@ -1,17 +1,21 @@
 // Screen
 // ======
 
+@import "functions";
 @import "vendors/sanitize";
 @import "vendors/temp";
 @import "grids";
 @import "colors";
 @import "fonts";
+@import "mixins";
 
 // Mobile Styles
+@import "all/mobile";
 @import "nav/mobile";
 @import "hero/mobile";
 @import "testimonials/mobile";
 @import "solutions/mobile";
+@import "footer/mobile";
 
 // Tablet Styles
 @media screen and (min-width: 64em) and (max-width: 80em) {

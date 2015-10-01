@@ -1,0 +1,34 @@
+// Mobile Footer
+
+.footer {
+  color: $cool-gray;
+  padding: 37px 43px 15px;
+  padding: 3.7rem 4.3rem 1.5rem;
+  position: relative;
+}
+.footer__contact {
+
+}
+.footer__p {
+  font-family: $condensed;
+  font-size: m-px(42);
+  font-size: m-rem(42);
+  font-weight: 400;
+  @include tracking(50);
+  @include leading(24);
+}
+.footer__logo {
+  .footer__p {
+    font-size: m-px(38);
+    font-size: m-rem(38);
+    @include leading(20);
+  }
+
+  svg {
+    float: left;
+    margin-right: 30px;
+    margin-right: 3rem;
+    width: 85px;
+    width: 8.5rem;
+  }
+}
