@@ -8,6 +8,7 @@
   var _topNav = document.querySelector('.top-nav');
   var _mobileMenu = _topNav.querySelector('.top-nav__banner');
   var _hamburger = _mobileMenu.querySelector('.top-nav__close-btn');
+  var testMobileNav;
   var scroll = {
     'current': 0,
     'previous': 0,
@@ -153,6 +154,39 @@
   }
 
   /**
+   * Load mobile functions and event listeners
+   * @param {Boolean} firstTime Whether the first time loading mobile functions
+   * @type {Function}
+   */
+  function loadMobileFunctionality(firstTime) {
+    if (firstTime) {
+      // throttle scrolling to check if mobile nav should recede
+      testMobileNav = throttle(function() {
+        scroll.current = _w.scrollY;
+        if (scroll.current > scroll.previous + 100 && scroll.direction) {
+          scroll.direction = false;
+          toggleMobileMenu();
+        } else if (scroll.current < scroll.previous - 50 && !scroll.direction) {
+          scroll.direction = true;
+          toggleMobileMenu();
+        }
+        scroll.previous = scroll.current;
+      }, 500);
+
+      // Add hamburger menu toggle to show/hide menu
+      _hamburger.addEventListener('click', function () {
+        if (!_mobileMenu.classList.contains('is-open')) {
+          _mobileMenu.classList.add('is-open');
+        } else {
+          _mobileMenu.classList.remove('is-open');
+        }
+      }, false);
+    }
+
+    document.addEventListener('scroll', testMobileNav, false);
+  }
+
+  /**
    * Throttles the events being received so it doesn't bog down the user experience
    * Taken from Remy Sharp's implementation: https://remysharp.com/2010/07/21/throttling-function-calls
    * @param{Object} fn The function to execute after throttling
@@ -187,37 +221,26 @@
    * @type {Function}
    */
   function init() {
-
+    var mobileLoaded = false;
     // if the homepage, start the testimonials carousel
     if (checkIfHomepage()) {
       loadTestimonials();
     }
 
-    /**
-     * Throttle scrolling to check if mobile nav should recede
-     * @type {Function}
-     */
-    var testMobileNav = throttle(function() {
-      scroll.current = _w.scrollY;
-      if (scroll.current > scroll.previous + 100 && scroll.direction) {
-        scroll.direction = false;
-        toggleMobileMenu();
-      } else if (scroll.current < scroll.previous - 50 && !scroll.direction) {
-        scroll.direction = true;
-        toggleMobileMenu();
+    var testBreakpoints = throttle(function() {
+      if (_w.innerWidth < 700 && !mobileLoaded) {
+        mobileLoaded = true;
+        loadMobileFunctionality(true);
+      } else if (_w.innerWidth < 700 && mobileLoaded) {
+        loadMobileFunctionality(false);
+      } else if (mobileLoaded) {
+        document.removeEventListener('scroll', testMobileNav, false);
       }
-      scroll.previous = scroll.current;
-    }, 500);
-    document.addEventListener('scroll', testMobileNav, false);
+    }, 100);
+    document.addEventListener('resize', testBreakpoints, false);
 
-    // Add hamburger menu toggle to show/hide menu
-    _hamburger.addEventListener('click', function () {
-      if (!_mobileMenu.classList.contains('is-open')) {
-        _mobileMenu.classList.add('is-open');
-      } else {
-        _mobileMenu.classList.remove('is-open');
-      }
-    }, false);
+    // load mobile functions if mobile
+    testBreakpoints();
   }
 
   init();
