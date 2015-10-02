@@ -1,13 +1,31 @@
 // Mobile Footer
 
 .footer {
+  background: $light-gray;
   color: $cool-gray;
   padding: 37px 43px 15px;
   padding: 3.7rem 4.3rem 1.5rem;
   position: relative;
 }
 .footer__contact {
-
+  margin-bottom: 41px;
+  margin-bottom: 4.1rem;
+  position: relative;
+}
+.footer__info {
+  margin-bottom: 22px;
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+.footer__header {
+  font-family: $bold-condensed;
+  font-size: m-px(42);
+  font-size: m-rem(42);
+  font-weight: 400;
+  @include tracking(300);
+  margin-bottom: 6px;
+  margin-bottom: .6rem;
+  text-transform: uppercase;
 }
 .footer__p {
   font-family: $condensed;
@@ -18,6 +36,10 @@
   @include leading(24);
 }
 .footer__logo {
+  margin-bottom: 41px;
+  margin-bottom: 4.1rem;
+  position: relative;
+
   .footer__p {
     font-size: m-px(38);
     font-size: m-rem(38);
@@ -28,7 +50,19 @@
     float: left;
     margin-right: 30px;
     margin-right: 3rem;
+    margin-top: 3px;
+    margin-top: .3rem;
     width: 85px;
     width: 8.5rem;
   }
+}
+.footer__copyright {
+  font-family: $medium;
+  font-size: m-px(18);
+  @include tracking(300);
+  line-height: 2.2;
+  text-transform: uppercase;
+}
+.footer__copyright--patent {
+  display: block;
 }

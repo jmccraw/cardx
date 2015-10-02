@@ -679,13 +679,40 @@ button {
 
 /* line 3, ../sass/footer/_mobile.scss */
 .footer {
+  background: #e4e4e7;
   color: #787583;
   padding: 37px 43px 15px;
   padding: 3.7rem 4.3rem 1.5rem;
   position: relative;
 }
 
-/* line 12, ../sass/footer/_mobile.scss */
+/* line 10, ../sass/footer/_mobile.scss */
+.footer__contact {
+  margin-bottom: 41px;
+  margin-bottom: 4.1rem;
+  position: relative;
+}
+
+/* line 15, ../sass/footer/_mobile.scss */
+.footer__info {
+  margin-bottom: 22px;
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+
+/* line 20, ../sass/footer/_mobile.scss */
+.footer__header {
+  font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+  font-size: 14px;
+  font-size: 1.37143rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  margin-bottom: 6px;
+  margin-bottom: .6rem;
+  text-transform: uppercase;
+}
+
+/* line 30, ../sass/footer/_mobile.scss */
 .footer__p {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 14px;
@@ -696,18 +723,40 @@ button {
   line-height: 2.4rem;
 }
 
-/* line 21, ../sass/footer/_mobile.scss */
+/* line 38, ../sass/footer/_mobile.scss */
+.footer__logo {
+  margin-bottom: 41px;
+  margin-bottom: 4.1rem;
+  position: relative;
+}
+/* line 43, ../sass/footer/_mobile.scss */
 .footer__logo .footer__p {
   font-size: 12px;
   font-size: 1.24082rem;
   line-height: 20px;
   line-height: 2rem;
 }
-/* line 27, ../sass/footer/_mobile.scss */
+/* line 49, ../sass/footer/_mobile.scss */
 .footer__logo svg {
   float: left;
   margin-right: 30px;
   margin-right: 3rem;
+  margin-top: 3px;
+  margin-top: .3rem;
   width: 85px;
   width: 8.5rem;
+}
+
+/* line 59, ../sass/footer/_mobile.scss */
+.footer__copyright {
+  font-family: "Trade Gothic Com", Arial, sans-serif;
+  font-size: 6px;
+  letter-spacing: 0.3em;
+  line-height: 2.2;
+  text-transform: uppercase;
+}
+
+/* line 66, ../sass/footer/_mobile.scss */
+.footer__copyright--patent {
+  display: block;
 }
