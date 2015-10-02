@@ -760,3 +760,12 @@ button {
 .footer__copyright--patent {
   display: block;
 }
+
+@media screen and (min-width: 64em) {
+  /* line 3, ../sass/nav/_desktop.scss */
+  .top-nav {
+    height: 100px;
+    height: 10rem;
+    position: relative;
+  }
+}

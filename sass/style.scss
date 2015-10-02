@@ -18,6 +18,11 @@
 @import "footer/mobile";
 
 // Tablet Styles
-@media screen and (min-width: 64em) and (max-width: 80em) {
+@media screen and (min-width: 34em) and (max-width: 63.99em) {
 
+}
+
+// Desktop Styles
+@media screen and (min-width: 64em) {
+  @import "nav/desktop";
 }
