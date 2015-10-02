@@ -315,16 +315,16 @@ button {
   top: 0;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  -webkit-transition: -webkit-transform .5s ease-in-out;
-  transition: transform .5s ease-in-out;
+  -webkit-transition: -webkit-transform .25s linear;
+  transition: transform .25s linear;
   width: 100%;
   z-index: 10;
 }
 
 /* line 19, ../sass/nav/_mobile.scss */
 .top-nav.is-hidden {
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translate3D(0, -100%, 0);
+  transform: translate3D(0, -100%, 0);
 }
 
 /* line 24, ../sass/nav/_mobile.scss */
@@ -388,8 +388,8 @@ button {
 
 /* line 70, ../sass/nav/_mobile.scss */
 .top-nav__banner.is-open + .top-nav__links {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+  -webkit-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
 }
 
 /* line 75, ../sass/nav/_mobile.scss */
