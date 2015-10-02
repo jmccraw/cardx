@@ -13,3 +13,5 @@ A work in progress. Uses BEM Sass and Susy.
  * ３.５時間
 * ９月３０日
  * ３.５時間
+* １０月１日
+ * ４時間
