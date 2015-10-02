@@ -222,4 +222,6 @@
 
   init();
 
+  // TODO FIXME Update so the transition uses translate instead of display none/block.
+
 })();
