@@ -1,7 +1,99 @@
 // Desktop Navigation
 
 .top-nav {
+  background: $purple;
+  border-bottom: 1px solid #59507b;
   height: 100px;
   height: 10rem;
   position: relative;
+}
+.top-nav__container {
+  margin: 0 auto;
+  max-width: 1140px;
+  max-width: 114rem;
+}
+.top-nav__banner {
+  border-bottom: 0;
+  display: inline-block;
+  width: 80px;
+  width: 8rem;
+}
+.top-nav__banner > svg {
+  height: 50px;
+  height: 5rem;
+  left: 0;
+  top: 25px;
+  top: 2.5rem;
+  width: 78px;
+  width: 7.8rem;
+}
+.top-nav__close-btn {
+  display: none;
+}
+.top-nav__links {
+  display: inline-block;
+  padding-top: 59px;
+  padding-top: 5.9rem;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: none;
+  transition: none;
+  vertical-align: top;
+  z-index: 11;
+}
+.top-nav__link,
+.top-nav__header,
+.top-nav__link-container {
+  border-bottom: none;
+  display: inline-block;
+  font-size: 15px;
+  font-size: 1.5rem;
+  @include tracking(300);
+  margin: 0 0 0 60px;
+  margin: 0 0 0 6rem;
+  padding: 0;
+  position: relative;
+}
+.top-nav__header {
+  cursor: pointer;
+  margin-left: 0;
+}
+.top-nav__link:first-of-type {
+  padding: 0;
+  margin-left: 64px;
+  margin-left: 6.4rem;
+}
+.top-nav__link--sublink {
+  background: rgba(255, 255, 150, .4);
+  border-bottom: none;
+  display: none;
+  font-size: 14px;
+  font-size: 1.4rem;
+  @include tracking(50);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 52px;
+  top: 5.2rem;
+}
+.top-nav__link--sublink:nth-child(2) {
+  top: 104px;
+  top: 10.4rem;
+}
+.top-nav__header:active ~ .top-nav__link--sublink,
+.top-nav__header:hover ~ .top-nav__link--sublink {
+  display: block;
+}
+.top-nav__header:hover::after,
+.top-nav__link:hover::after,
+.top-nav__link--sublink:hover::after {
+  background: #fff;
+  bottom: -6px;
+  bottom: -.6rem;
+  content: '';
+  height: 2px;
+  height: .2rem;
+  left: 0;
+  position: absolute;
+  width: 95%;
 }

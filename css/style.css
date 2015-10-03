@@ -305,6 +305,8 @@ button {
 
 /* line 3, ../sass/nav/_mobile.scss */
 .top-nav {
+  background: #372772;
+  border-bottom: 1px solid #59507b;
   height: 68px;
   height: 6.8rem;
   -webkit-font-smoothing: antialiased;
@@ -321,13 +323,19 @@ button {
   z-index: 10;
 }
 
-/* line 19, ../sass/nav/_mobile.scss */
+/* line 21, ../sass/nav/_mobile.scss */
 .top-nav.is-hidden {
   -webkit-transform: translate3D(0, -100%, 0);
   transform: translate3D(0, -100%, 0);
 }
 
-/* line 24, ../sass/nav/_mobile.scss */
+/* line 25, ../sass/nav/_mobile.scss */
+.top-nav__container {
+  height: 100%;
+  position: relative;
+}
+
+/* line 29, ../sass/nav/_mobile.scss */
 .top-nav__banner {
   background: #372772;
   border-bottom: 1px solid #59507b;
@@ -336,7 +344,7 @@ button {
   z-index: 10;
 }
 
-/* line 31, ../sass/nav/_mobile.scss */
+/* line 36, ../sass/nav/_mobile.scss */
 .top-nav__banner > svg {
   height: 32px;
   height: 3.2rem;
@@ -347,7 +355,7 @@ button {
   top: 1.7rem;
 }
 
-/* line 40, ../sass/nav/_mobile.scss */
+/* line 45, ../sass/nav/_mobile.scss */
 .top-nav__close-btn svg {
   height: 18px;
   height: 1.8rem;
@@ -358,24 +366,24 @@ button {
   top: 2.4rem;
 }
 
-/* line 49, ../sass/nav/_mobile.scss */
+/* line 54, ../sass/nav/_mobile.scss */
 #mobile-close {
   right: 30px;
   right: 3rem;
 }
 
-/* line 53, ../sass/nav/_mobile.scss */
+/* line 58, ../sass/nav/_mobile.scss */
 #mobile-close,
 .top-nav__banner.is-open #mobile-hamburger {
   display: none;
 }
 
-/* line 57, ../sass/nav/_mobile.scss */
+/* line 62, ../sass/nav/_mobile.scss */
 .top-nav__banner.is-open #mobile-close {
   display: block;
 }
 
-/* line 61, ../sass/nav/_mobile.scss */
+/* line 66, ../sass/nav/_mobile.scss */
 .top-nav__links {
   background: #372772;
   position: relative;
@@ -386,13 +394,13 @@ button {
   z-index: 9;
 }
 
-/* line 70, ../sass/nav/_mobile.scss */
+/* line 75, ../sass/nav/_mobile.scss */
 .top-nav__banner.is-open + .top-nav__links {
   -webkit-transform: translate3D(0, 0, 0);
   transform: translate3D(0, 0, 0);
 }
 
-/* line 75, ../sass/nav/_mobile.scss */
+/* line 80, ../sass/nav/_mobile.scss */
 .top-nav__link,
 .top-nav__link--sublink,
 .top-nav__header {
@@ -412,7 +420,7 @@ button {
   text-transform: uppercase;
 }
 
-/* line 93, ../sass/nav/_mobile.scss */
+/* line 98, ../sass/nav/_mobile.scss */
 .top-nav__link--sublink {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 20px;
@@ -427,7 +435,7 @@ button {
   text-transform: none;
 }
 
-/* line 106, ../sass/nav/_mobile.scss */
+/* line 111, ../sass/nav/_mobile.scss */
 .top-nav__link:active,
 .top-nav__link--sublink:active {
   background: #fff;
@@ -764,8 +772,124 @@ button {
 @media screen and (min-width: 64em) {
   /* line 3, ../sass/nav/_desktop.scss */
   .top-nav {
+    background: #372772;
+    border-bottom: 1px solid #59507b;
     height: 100px;
     height: 10rem;
     position: relative;
+  }
+
+  /* line 10, ../sass/nav/_desktop.scss */
+  .top-nav__container {
+    margin: 0 auto;
+    max-width: 1140px;
+    max-width: 114rem;
+  }
+
+  /* line 15, ../sass/nav/_desktop.scss */
+  .top-nav__banner {
+    border-bottom: 0;
+    display: inline-block;
+    width: 80px;
+    width: 8rem;
+  }
+
+  /* line 21, ../sass/nav/_desktop.scss */
+  .top-nav__banner > svg {
+    height: 50px;
+    height: 5rem;
+    left: 0;
+    top: 25px;
+    top: 2.5rem;
+    width: 78px;
+    width: 7.8rem;
+  }
+
+  /* line 30, ../sass/nav/_desktop.scss */
+  .top-nav__close-btn {
+    display: none;
+  }
+
+  /* line 33, ../sass/nav/_desktop.scss */
+  .top-nav__links {
+    display: inline-block;
+    padding-top: 59px;
+    padding-top: 5.9rem;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: none;
+    transition: none;
+    vertical-align: top;
+    z-index: 11;
+  }
+
+  /* line 44, ../sass/nav/_desktop.scss */
+  .top-nav__link,
+  .top-nav__header,
+  .top-nav__link-container {
+    border-bottom: none;
+    display: inline-block;
+    font-size: 15px;
+    font-size: 1.5rem;
+    letter-spacing: 0.3em;
+    margin: 0 0 0 60px;
+    margin: 0 0 0 6rem;
+    padding: 0;
+    position: relative;
+  }
+
+  /* line 57, ../sass/nav/_desktop.scss */
+  .top-nav__header {
+    cursor: pointer;
+    margin-left: 0;
+  }
+
+  /* line 61, ../sass/nav/_desktop.scss */
+  .top-nav__link:first-of-type {
+    padding: 0;
+    margin-left: 64px;
+    margin-left: 6.4rem;
+  }
+
+  /* line 66, ../sass/nav/_desktop.scss */
+  .top-nav__link--sublink {
+    background: rgba(255, 255, 150, 0.4);
+    border-bottom: none;
+    display: none;
+    font-size: 14px;
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 52px;
+    top: 5.2rem;
+  }
+
+  /* line 79, ../sass/nav/_desktop.scss */
+  .top-nav__link--sublink:nth-child(2) {
+    top: 104px;
+    top: 10.4rem;
+  }
+
+  /* line 83, ../sass/nav/_desktop.scss */
+  .top-nav__header:active ~ .top-nav__link--sublink,
+  .top-nav__header:hover ~ .top-nav__link--sublink {
+    display: block;
+  }
+
+  /* line 87, ../sass/nav/_desktop.scss */
+  .top-nav__header:hover::after,
+  .top-nav__link:hover::after,
+  .top-nav__link--sublink:hover::after {
+    background: #fff;
+    bottom: -6px;
+    bottom: -.6rem;
+    content: '';
+    height: 2px;
+    height: .2rem;
+    left: 0;
+    position: absolute;
+    width: 95%;
   }
 }

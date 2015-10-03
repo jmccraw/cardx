@@ -1,6 +1,8 @@
 // Mobile Navigation
 
 .top-nav {
+  background: $purple;
+  border-bottom: 1px solid #59507b;
   height: 68px;
   height: 6.8rem;
   -webkit-font-smoothing: antialiased;
@@ -20,7 +22,10 @@
   -webkit-transform: translate3D(0, -100%, 0);
   transform: translate3D(0, -100%, 0);
 }
-
+.top-nav__container {
+  height: 100%;
+  position: relative;
+}
 .top-nav__banner {
   background: $purple;
   border-bottom: 1px solid #59507b;
