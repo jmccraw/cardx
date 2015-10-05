@@ -1102,4 +1102,15 @@ button {
     -webkit-animation: hover-jump 1s cubic-bezier(0, 0, 0.58, 1);
     animation: hover-jump 1s cubic-bezier(0, 0, 0.58, 1);
   }
+
+  /* line 3, ../sass/testimonials/_desktop.scss */
+  .testimonials {
+    height: 388px;
+    height: 38.8rem;
+  }
+
+  /* line 7, ../sass/testimonials/_desktop.scss */
+  .testimonials__breadcrumb {
+    display: none;
+  }
 }
