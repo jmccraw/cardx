@@ -1,0 +1,20 @@
+// Desktop Standard Buttons
+
+.standard-button {
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 15px 18px 13px;
+  padding: 1.5rem 1.8rem 1.3rem;
+  -webkit-transition: background .1s ease-in,
+    color .1s ease-in;
+  transition: background .1s ease-in,
+    color .1s ease-in;
+}
+.standard-button--arrow {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+.standard-button:hover {
+  background: $purple;
+  color: #fff;
+}

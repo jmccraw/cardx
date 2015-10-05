@@ -16,6 +16,9 @@
     'direction': true
   };
 
+  // hero vars
+  var _heroJump = document.querySelector('.hero__jump-btn');
+
   // testimonial vars
   var _testimonial;
   var _testimonialList;
@@ -187,6 +190,27 @@
   }
 
   /**
+   * Load desktop functions and event listeners
+   * @param {Boolean} firstTime Whether the first time loading desktop functions
+   * @type {Function}
+   */
+  function loadDesktopFunctionality(firstTime) {
+    var scrollBy;
+    if (firstTime) {
+      _heroJump.addEventListener('click', function() {
+        scrollBy = _w.setInterval(function() {
+          var h = _w.innerHeight;
+          if (_w.scrollY + 10 <= h - 30) {
+            _w.scrollBy(0, 10);
+          } else {
+            _w.clearInterval(scrollBy);
+          }
+        }, 2);
+      }, false);
+    }
+  }
+
+  /**
    * Throttles the events being received so it doesn't bog down the user experience
    * Taken from Remy Sharp's implementation: https://remysharp.com/2010/07/21/throttling-function-calls
    * @param{Object} fn The function to execute after throttling
@@ -222,18 +246,23 @@
    */
   function init() {
     var mobileLoaded = false;
+    var desktopLoaded = false;
     // if the homepage, start the testimonials carousel
     if (checkIfHomepage()) {
       loadTestimonials();
     }
 
     var testBreakpoints = throttle(function() {
-      if (_w.innerWidth < 700 && !mobileLoaded) {
+      if (_w.innerWidth <= 700 && !mobileLoaded) {
         mobileLoaded = true;
         loadMobileFunctionality(true);
-      } else if (_w.innerWidth < 700 && mobileLoaded) {
+      } else if (_w.innerWidth <= 700 && mobileLoaded) {
         loadMobileFunctionality(false);
-      } else if (mobileLoaded) {
+      } else if (_w.innerWidth > 700 && !desktopLoaded) {
+        desktopLoaded = true;
+        document.removeEventListener('scroll', testMobileNav, false);
+        loadDesktopFunctionality(true);
+      } else if (_w.innerWidth > 700 && mobileLoaded) {
         document.removeEventListener('scroll', testMobileNav, false);
       }
     }, 100);

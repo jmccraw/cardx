@@ -24,5 +24,7 @@
 
 // Desktop Styles
 @media screen and (min-width: 64em) {
+  @import "all/desktop";
   @import "nav/desktop";
+  @import "hero/desktop";
 }

@@ -18,12 +18,12 @@
   width: 80px;
   width: 8rem;
 }
-.top-nav__banner > svg {
+.top-nav__banner--link > svg {
   height: 50px;
   height: 5rem;
   left: 0;
-  top: 25px;
-  top: 2.5rem;
+  top: 23px;
+  top: 2.3rem;
   width: 78px;
   width: 7.8rem;
 }
@@ -32,8 +32,8 @@
 }
 .top-nav__links {
   display: inline-block;
-  padding-top: 59px;
-  padding-top: 5.9rem;
+  padding-top: 56px;
+  padding-top: 5.6rem;
   -webkit-transform: translateY(0);
   transform: translateY(0);
   -webkit-transition: none;
@@ -57,6 +57,7 @@
 .top-nav__header {
   cursor: pointer;
   margin-left: 0;
+  z-index: 3;
 }
 .top-nav__link:first-of-type {
   padding: 0;
@@ -64,25 +65,37 @@
   margin-left: 6.4rem;
 }
 .top-nav__link--sublink {
-  background: rgba(255, 255, 150, .4);
+  background: $purple;
   border-bottom: none;
-  display: none;
+  font-family: $bold;
   font-size: 14px;
   font-size: 1.4rem;
+  left: -99999em;
   @include tracking(50);
   margin: 0;
-  padding: 0;
+  padding: 47px 36px 36px;
+  padding: 4.7rem 3.6rem 3.6rem;
   position: absolute;
-  top: 52px;
-  top: 5.2rem;
+  top: 16px;
+  top: 1.6rem;
+  width: 187px;
+  width: 18.7rem;
+  z-index: 2;
 }
-.top-nav__link--sublink:nth-child(2) {
+.top-nav__link--sublink:nth-child(3) {
+  padding-bottom: 36px;
+  padding-bottom: 3.6rem;
+  padding-top: 9px;
+  padding-top: .9rem;
   top: 104px;
   top: 10.4rem;
+  z-index: 1;
 }
-.top-nav__header:active ~ .top-nav__link--sublink,
-.top-nav__header:hover ~ .top-nav__link--sublink {
-  display: block;
+.top-nav__link--sublink:focus,
+.top-nav__link-container:focus .top-nav__link--sublink,
+.top-nav__link-container:hover .top-nav__link--sublink {
+  left: -14px;
+  left: -1.4rem;
 }
 .top-nav__header:hover::after,
 .top-nav__link:hover::after,
@@ -96,4 +109,40 @@
   left: 0;
   position: absolute;
   width: 95%;
+}
+.top-nav__link--sublink:hover::after {
+  bottom: 29px;
+  bottom: 2.9rem;
+  left: 36px;
+  left: 3.6rem;
+  width: 53%;
+}
+.top-nav__link--sublink:nth-child(3):hover::after {
+  width: 56%;
+}
+.top-nav__login-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: $bold-condensed;
+  font-size: 15px;
+  font-size: 1.5rem;
+  @include tracking(300);
+  line-height: 1;
+  padding: 11px 7px 8px 11px;
+  padding: 1.1rem .7rem .8rem 1.1rem;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 48px;
+  top: 4.8rem;
+  -webkit-transition: background .1s ease-in,
+    color .1s ease-in;
+  transition: background .1s ease-in,
+    color .1s ease-in;
+}
+.top-nav__login-btn:hover {
+  background: #fff;
+  color: $purple;
 }

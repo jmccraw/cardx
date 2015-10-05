@@ -33,7 +33,7 @@
   position: relative;
   z-index: 10;
 }
-.top-nav__banner > svg {
+.top-nav__banner--link > svg {
   height: 32px;
   height: 3.2rem;
   left: 23px;
@@ -56,7 +56,8 @@
   right: 3rem;
 }
 #mobile-close,
-.top-nav__banner.is-open #mobile-hamburger {
+.top-nav__banner.is-open #mobile-hamburger,
+.top-nav__login-btn {
   display: none;
 }
 .top-nav__banner.is-open #mobile-close {
