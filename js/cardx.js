@@ -268,16 +268,16 @@
     }
 
     var testBreakpoints = throttle(function() {
-      if (_w.innerWidth <= 700 && !mobileLoaded) {
+      if (_w.innerWidth < 768 && !mobileLoaded) {
         mobileLoaded = true;
         loadMobileFunctionality(true);
-      } else if (_w.innerWidth <= 700 && mobileLoaded) {
+      } else if (_w.innerWidth < 768 && mobileLoaded) {
         loadMobileFunctionality(false);
-      } else if (_w.innerWidth > 700 && !desktopLoaded) {
+      } else if (_w.innerWidth >= 768 && !desktopLoaded) {
         desktopLoaded = true;
         document.removeEventListener('scroll', testMobileNav, false);
         loadDesktopFunctionality(true);
-      } else if (_w.innerWidth > 700 && mobileLoaded) {
+      } else if (_w.innerWidth >= 768 && mobileLoaded) {
         document.removeEventListener('scroll', testMobileNav, false);
       }
     }, 100);

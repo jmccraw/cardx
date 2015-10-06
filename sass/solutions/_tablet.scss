@@ -1,0 +1,23 @@
+// Tablet Solutions Section
+
+.solutions__container {
+  padding-right: 128px;
+  padding-right: 12.8rem;
+}
+.solutions__type {
+  border-bottom: 2px solid $light-gray;
+  display: block;
+  max-width: 100%;
+  padding-bottom: 55px;
+  padding-bottom: 5.5rem;
+  padding-right: 0;
+}
+.solutions__type:last-child {
+  max-width: 100%;
+  padding-bottom: 36px;
+  padding-bottom: 3.6rem;
+  padding-left: 0;
+}
+.solutions__type::after {
+  display: none;
+}

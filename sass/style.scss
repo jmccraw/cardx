@@ -17,17 +17,26 @@
 @import "solutions/mobile";
 @import "footer/mobile";
 
-// Tablet Styles
-@media screen and (min-width: 34em) and (max-width: 63.99em) {
-
-}
-
-// Desktop Styles
-@media screen and (min-width: 64em) {
+// Tablet/Desktop Styles
+@media screen and (min-width: 48em) {
   @import "all/desktop";
   @import "nav/desktop";
   @import "hero/desktop";
   @import "testimonials/desktop";
   @import "solutions/desktop";
   @import "footer/desktop";
+}
+
+// Tablet-only Styles
+@media screen and (min-width: 48em) and (max-width: 70.99em) {
+  @import "nav/tablet";
+  @import "hero/tablet";
+  @import "testimonials/tablet";
+  @import "solutions/tablet";
+  @import "footer/tablet";
+}
+
+// Desktop-only Styles
+@media screen and (min-width: 71em) {
+
 }

@@ -1,0 +1,20 @@
+// Tablet Navigation
+
+.top-nav__container {
+  max-width: 100%;
+}
+.top-nav__banner,
+.top-nav__link,
+.top-nav__link:first-of-type,
+.top-nav__link-container {
+  margin-left: 30px;
+  margin-left: 3rem;
+}
+.top-nav__login-btn {
+  right: 30px;
+  right: 3rem;
+}
+.top-nav__login-btn:active {
+  background: #fff;
+  color: $purple;
+}

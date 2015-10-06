@@ -1,0 +1,31 @@
+// Tablet Footer
+
+.footer__contact {
+  width: 75%;
+}
+.footer__info {
+  margin-right: 35px;
+  margin-right: 3.5rem;
+}
+.footer__info:nth-child(2) {
+  margin-right: 30px;
+  margin-right: 3rem;
+}
+.footer__logo {
+  width: 130px;
+  width: 13rem;
+
+  .footer__p,
+  svg {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  svg {
+    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
+  }
+}
+.footer__copyright {
+  margin-left: 0;
+}

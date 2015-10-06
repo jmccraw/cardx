@@ -1,0 +1,11 @@
+// Tablet Hero Section
+
+.hero__headline {
+  font-size: 43px;
+  font-size: 4.3rem;
+  @include leading(55);
+}
+.hero__p {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
