@@ -1,0 +1,28 @@
+// Mobile Splash Pages
+
+.splash {
+  margin-top: 64px;
+  margin-top: 6.4rem;
+  padding: 36px 43px 0;
+  padding: 3.6rem 4.3rem 0;
+  position: relative;
+}
+.splash__container {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.splash__header {
+  color: $purple;
+  font-family: $bold-condensed;
+  font-size: m-px(72);
+  font-size: m-rem(72);
+  @include tracking(50);
+  @include leading(28);
+}
+.splash__subhead {
+  font-size: m-px(44);
+  font-size: m-rem(44);
+  line-height: 1;
+  text-transform: uppercase;
+}

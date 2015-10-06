@@ -799,6 +799,41 @@ button {
   display: block;
 }
 
+/* line 3, ../sass/splash/_mobile.scss */
+.splash {
+  margin-top: 64px;
+  margin-top: 6.4rem;
+  padding: 36px 43px 0;
+  padding: 3.6rem 4.3rem 0;
+  position: relative;
+}
+
+/* line 10, ../sass/splash/_mobile.scss */
+.splash__container {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 15, ../sass/splash/_mobile.scss */
+.splash__header {
+  color: #372772;
+  font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
+  font-size: 24px;
+  font-size: 2.35102rem;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  line-height: 2.8rem;
+}
+
+/* line 23, ../sass/splash/_mobile.scss */
+.splash__subhead {
+  font-size: 14px;
+  font-size: 1.43673rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 48em) {
   /* line 3, ../sass/all/_desktop.scss */
   .standard-button {
@@ -944,6 +979,10 @@ button {
   }
 
   /* line 100, ../sass/nav/_desktop.scss */
+  .about .top-nav__link:first-child::after,
+  .solutions .top-nav__header::after,
+  .news .top-nav__link:nth-child(3)::after,
+  .contact .top-nav__link:last-child::after,
   .top-nav__header:hover::after,
   .top-nav__link:hover::after,
   .top-nav__link--sublink:hover::after {
@@ -958,7 +997,7 @@ button {
     width: 95%;
   }
 
-  /* line 113, ../sass/nav/_desktop.scss */
+  /* line 117, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:hover::after {
     bottom: 29px;
     bottom: 2.9rem;
@@ -967,12 +1006,12 @@ button {
     width: 53%;
   }
 
-  /* line 120, ../sass/nav/_desktop.scss */
+  /* line 124, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3):hover::after {
     width: 56%;
   }
 
-  /* line 123, ../sass/nav/_desktop.scss */
+  /* line 127, ../sass/nav/_desktop.scss */
   .top-nav__login-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -994,7 +1033,7 @@ button {
     transition: background .1s ease-in, color .1s ease-in;
   }
 
-  /* line 145, ../sass/nav/_desktop.scss */
+  /* line 149, ../sass/nav/_desktop.scss */
   .top-nav__login-btn:hover {
     background: #fff;
     color: #372772;

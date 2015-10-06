@@ -97,6 +97,10 @@
   left: -14px;
   left: -1.4rem;
 }
+.about .top-nav__link:first-child::after,
+.solutions .top-nav__header::after,
+.news .top-nav__link:nth-child(3)::after,
+.contact .top-nav__link:last-child::after,
 .top-nav__header:hover::after,
 .top-nav__link:hover::after,
 .top-nav__link--sublink:hover::after {

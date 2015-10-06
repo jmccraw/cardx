@@ -38,12 +38,11 @@
    * @type {Function}
    * @returns {Boolean}
    */
-  function checkIfHomepage() {
-    // if there's a hero section, return true
-    if (document.querySelector('main.hero')) {
-      return true;
-    } else {
+  function isHomepage() {
+    if (!_body.classList.contains('index')) {
       return false;
+    } else {
+      return true;
     }
   }
 
@@ -189,6 +188,7 @@
         }
         scroll.previous = scroll.current;
       }, 500);
+      document.addEventListener('scroll', testMobileNav, false);
 
       // Add hamburger menu toggle to show/hide menu
       _hamburger.addEventListener('click', function () {
@@ -211,17 +211,19 @@
     if (firstTime) {
       scrollHeight = _body.scrollHeight;
 
-      // add click to hero image Learn More
-      _heroJump.addEventListener('click', function() {
-        scrollBy = _w.setInterval(function() {
-          var h = _w.innerHeight;
-          if (_w.scrollY + 10 <= h - 30 && _w.scrollY + 250 + _w.innerHeight < scrollHeight) {
-            _w.scrollBy(0, 10);
-          } else {
-            _w.clearInterval(scrollBy);
-          }
-        }, 2);
-      }, false);
+      if (isHomepage()) {
+        // add click to hero image Learn More
+        _heroJump.addEventListener('click', function() {
+          scrollBy = _w.setInterval(function() {
+            var h = _w.innerHeight;
+            if (_w.scrollY + 10 <= h - 30 && _w.scrollY + 250 + _w.innerHeight < scrollHeight) {
+              _w.scrollBy(0, 10);
+            } else {
+              _w.clearInterval(scrollBy);
+            }
+          }, 2);
+        }, false);
+      }
     }
   }
 
@@ -263,7 +265,7 @@
     var mobileLoaded = false;
     var desktopLoaded = false;
     // if the homepage, start the testimonials carousel
-    if (checkIfHomepage()) {
+    if (isHomepage()) {
       loadTestimonials();
     }
 
