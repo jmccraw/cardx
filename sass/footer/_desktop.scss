@@ -1,0 +1,64 @@
+// Desktop Footer
+
+.footer {
+  padding-top: 48px;
+  padding-top: 4.8rem;
+}
+.footer__container {
+  margin: 0 auto;
+  max-width: 1140px;
+  max-width: 114rem;
+  position: relative;
+}
+.footer__contact {
+  float: right;
+  margin-bottom: 0;
+  width: 63%;
+}
+.footer__info {
+  display: inline-block;
+  margin-right: 175px;
+  margin-right: 17.5rem;
+  position: relative;
+}
+.footer__info:nth-child(2) {
+  margin-right: 120px;
+  margin-right: 12rem;
+}
+.footer__info:last-child {
+  margin-right: 0;
+}
+.footer__header,
+.footer__p,
+.footer__logo .footer__p {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+.footer__logo {
+  float: left;
+  width: 280px;
+  width: 28rem;
+
+  .footer__p {
+    margin-left: 150px;
+    margin-left: 15rem;
+  }
+
+  svg {
+    margin-top: 10px;
+    margin-top: 1rem;
+  }
+}
+.footer__copyright {
+  clear: both;
+  font-family: $condensed;
+  font-size: 10px;
+  font-size: 1rem;
+  margin-left: 150px;
+  margin-left: 15rem;
+}
+.footer__copyright--patent {
+  display: inline;
+  margin-right: 6px;
+  margin-right: .6rem;
+}

@@ -3,6 +3,8 @@
 
   // utility vars
   var _w = window;
+  var _body = document.querySelector('body');
+  var scrollHeight = 0;
 
   // navigation vars
   var _topNav = document.querySelector('.top-nav');
@@ -207,11 +209,13 @@
   function loadDesktopFunctionality(firstTime) {
     var scrollBy;
     if (firstTime) {
+      scrollHeight = _body.scrollHeight;
+
       // add click to hero image Learn More
       _heroJump.addEventListener('click', function() {
         scrollBy = _w.setInterval(function() {
           var h = _w.innerHeight;
-          if (_w.scrollY + 10 <= h - 30) {
+          if (_w.scrollY + 10 <= h - 30 && _w.scrollY + 250 + _w.innerHeight < scrollHeight) {
             _w.scrollBy(0, 10);
           } else {
             _w.clearInterval(scrollBy);
