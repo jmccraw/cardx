@@ -9,7 +9,9 @@
   position: relative;
   text-align: center;
 }
-.testimonials__testimonial {
+.testimonials__testimonial,
+.testimonials__arrow--left,
+.testimonials__arrow--right {
   display: none;
   position: relative;
 }

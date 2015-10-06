@@ -23,6 +23,8 @@
   var _testimonial;
   var _testimonialList;
   var _testimonialCrumbs;
+  var _tArrowLeft;
+  var _tArrowRight;
   var testimonialAutoAdvance;
   var touches = {
     'current': 0,
@@ -117,6 +119,8 @@
     _testimonial= document.querySelector('.testimonials');
     _testimonialList = _testimonial.querySelectorAll('.testimonials__testimonial');
     _testimonialCrumbs = _testimonial.querySelectorAll('.testimonials__crumb');
+    _tArrowLeft = _testimonial.querySelector('.testimonials__arrow--left');
+    _tArrowRight = _testimonial.querySelector('.testimonials__arrow--right');
 
     // attach event handlers to testimonials
     _testimonial.addEventListener('touchstart', function(e) {
@@ -134,6 +138,14 @@
       } else if (touches.current > touches.previous) {
         loadPreviousTestimonial(true);
       }
+    }, false);
+
+    _tArrowLeft.addEventListener('click', function() {
+      loadPreviousTestimonial(true);
+    }, false);
+
+    _tArrowRight.addEventListener('click', function() {
+      loadNextTestimonial(true);
     }, false);
 
     // auto advance the testimonials section
@@ -185,8 +197,6 @@
         }
       }, false);
     }
-
-    document.addEventListener('scroll', testMobileNav, false);
   }
 
   /**
@@ -197,6 +207,7 @@
   function loadDesktopFunctionality(firstTime) {
     var scrollBy;
     if (firstTime) {
+      // add click to hero image Learn More
       _heroJump.addEventListener('click', function() {
         scrollBy = _w.setInterval(function() {
           var h = _w.innerHeight;
