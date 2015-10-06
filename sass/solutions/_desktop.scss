@@ -1,0 +1,83 @@
+// Desktop Solutions Section
+
+.solutions {
+  padding-bottom: 19px;
+  padding-bottom: 1.9rem;
+  padding-top: 74px;
+  padding-top: 7.4rem;
+
+  .standard-button {
+    border: 1px solid $purple;
+  }
+  .standard-button:hover {
+    border: 1px solid #fff;
+  }
+}
+.solutions__container {
+  margin: 0 auto;
+  max-width: 1140px;
+  max-width: 114rem;
+  padding-left: 128px;
+  padding-left: 12.8rem;
+  position: relative;
+}
+.solutions__type {
+  border-bottom: none;
+  display: inline-block;
+  max-width: 443px;
+  max-width: 44.3rem;
+  padding-bottom: 0;
+  padding-right: 30px;
+  padding-right: 3rem;
+}
+.solutions__type:last-child {
+  max-width: 510px;
+  max-width: 51rem;
+  padding-left: 90px;
+  padding-left: 9rem;
+  vertical-align: top;
+}
+.solutions__type::after {
+  background: $light-gray;
+  content: '';
+  height: 120%;
+  position: absolute;
+  right: 0;
+  top: -64px;
+  top: -6.4rem;
+  width: 1px;
+}
+.solutions__type:last-child::after {
+  display: none;
+}
+.solutions__headline {
+  font-size: 48px;
+  font-size: 4.8rem;
+  margin-bottom: 27px;
+  margin-bottom: 2.7rem;
+}
+.solutions__headline--sup {
+  line-height: 2.3;
+}
+.solutions__headline--subhead {
+  font-size: 18px;
+  font-size: 1.8rem;
+  @include tracking(300);
+  line-height: 2.2;
+}
+.solutions__list {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 26px;
+  line-height: 2.6rem;
+  margin-bottom: 50px;
+  margin-bottom: 5rem;
+}
+.solutions__type:last-child .solutions__list {
+  margin-bottom: 76px;
+  margin-bottom: 7.6rem;
+}
+.solutions__list--item {
+  margin-bottom: 23px;
+  margin-bottom: 2.3rem;
+}
