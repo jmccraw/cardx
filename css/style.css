@@ -460,7 +460,7 @@ button {
 
 /* line 3, ../sass/hero/_mobile.scss */
 .hero {
-  background: transparent url(../media/hero-index.jpg) no-repeat 50% 50%;
+  background: transparent url(/media/hero-index.jpg) no-repeat 50% 50%;
   background-size: cover;
   color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -528,6 +528,17 @@ button {
 /* line 56, ../sass/hero/_mobile.scss */
 .hero__jump-btn {
   display: none;
+}
+
+/* line 63, ../sass/hero/_mobile.scss */
+.intelligence .hero {
+  background-image: url(/media/hero-intelligence.jpg);
+  text-align: center;
+}
+/* line 67, ../sass/hero/_mobile.scss */
+.intelligence .hero__headline--sup {
+  font-size: 10px;
+  font-size: 1rem;
 }
 
 /* line 3, ../sass/testimonials/_mobile.scss */
