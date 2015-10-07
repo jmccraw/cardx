@@ -3,6 +3,7 @@
 .splash {
   margin-top: 64px;
   margin-top: 6.4rem;
+  -webkit-font-smoothing: antialiased;
   padding: 36px 43px 70px;
   padding: 3.6rem 4.3rem 7rem;
   position: relative;
@@ -16,8 +17,8 @@
 .splash__header {
   color: $purple;
   font-family: $bold-condensed;
-  font-size: 33px;
-  font-size: 3.3rem;
+  font-size: m-px(98);
+  font-size: m-rem(98);
   @include tracking(50);
   line-height: 1;
   margin-bottom: 36px;
@@ -28,8 +29,9 @@
   margin-bottom: 1.7rem;
 }
 .splash__subhead {
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: m-px(56);
+  font-size: m-rem(56);
+  @include tracking(300);
   line-height: 1.6;
   text-transform: uppercase;
 }

@@ -2,8 +2,10 @@
 
 .splash {
   margin-top: 0;
-  padding: 36px 43px 70px;
-  padding: 3.6rem 4.3rem 7rem;
+  padding-bottom: 366px;
+  padding-bottom: 36.6rem;
+  padding-top: 74px;
+  padding-top: 7.4rem;
 }
 .splash__container {
   margin: 0 auto;
@@ -11,48 +13,36 @@
   max-width: 85rem;
 }
 .splash__header {
-  color: $purple;
-  font-family: $bold-condensed;
-  font-size: 33px;
-  font-size: 3.3rem;
-  @include tracking(50);
-  line-height: 1;
-  margin-bottom: 36px;
-  margin-bottom: 3.6rem;
+  font-size: 60px;
+  font-size: 6rem;
+  margin-bottom: 59px;
+  margin-bottom: 5.9rem;
+  width: 70%;
 }
 .splash__headline {
-  margin-bottom: 17px;
-  margin-bottom: 1.7rem;
+  margin-bottom: 39px;
+  margin-bottom: 3.9rem;
 }
 .splash__subhead {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.6;
-  text-transform: uppercase;
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 1.65;
 }
 .splash__p {
-  color: $cool-gray;
-  font-family: $medium;
-  font-size: m-px(44);
-  font-size: m-rem(44);
-  @include tracking(50);
-  line-height: 1.8;
-  margin-bottom: 16px;
-  margin-bottom: 1.6rem;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 2.1;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 
-  a {
-    color: $purple;
-    position: relative;
-  }
   a::after {
-    background: $purple;
-    bottom: -2px;
-    bottom: -.2rem;
-    content: '';
-    height: 1px;
-    height: .1rem;
-    left: 0;
-    position: absolute;
-    width: 100%;
+    bottom: -5px;
+    bottom: -.5rem;
+    -webkit-transition: bottom .2s ease-in;
+    transition: bottom .2s ease-in;
+  }
+
+  a:hover::after {
+    bottom: 0;
   }
 }
