@@ -1019,7 +1019,8 @@ button {
 
   /* line 100, ../sass/nav/_desktop.scss */
   .about .top-nav__link:first-child::after,
-  .solutions .top-nav__header::after,
+  .intelligence .top-nav__header::after,
+  .zero .top-nav__header::after,
   .news .top-nav__link:nth-child(3)::after,
   .contact .top-nav__link:last-child::after,
   .top-nav__header:hover::after,
@@ -1036,7 +1037,7 @@ button {
     width: 95%;
   }
 
-  /* line 117, ../sass/nav/_desktop.scss */
+  /* line 118, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:hover::after {
     bottom: 29px;
     bottom: 2.9rem;
@@ -1045,12 +1046,12 @@ button {
     width: 53%;
   }
 
-  /* line 124, ../sass/nav/_desktop.scss */
+  /* line 125, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3):hover::after {
     width: 56%;
   }
 
-  /* line 127, ../sass/nav/_desktop.scss */
+  /* line 128, ../sass/nav/_desktop.scss */
   .top-nav__login-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -1072,7 +1073,7 @@ button {
     transition: background .1s ease-in, color .1s ease-in;
   }
 
-  /* line 149, ../sass/nav/_desktop.scss */
+  /* line 150, ../sass/nav/_desktop.scss */
   .top-nav__login-btn:hover {
     background: #fff;
     color: #372772;
