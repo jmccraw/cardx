@@ -27,8 +27,8 @@
 }
 
 .hero {
-  height: calc(100vh - 100px);
-  height: calc(100vh - 10rem);
+  height: calc(100vh - 200px);
+  height: calc(100vh - 20rem);
   padding-top: 36px;
   padding-top: 3.6rem;
   text-align: left;
@@ -68,6 +68,12 @@
   font-size: 1.2rem;
   line-height: 1.8;
 }
+.hero__list--item {
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 7px;
+  margin-bottom: .7rem;
+}
 .hero__jump-btn {
   background: transparent;
   bottom: 41px;
@@ -100,4 +106,41 @@
 .hero__jump-btn:hover .hero__jump-btn--header {
   -webkit-animation: hover-jump 1s cubic-bezier(0, 0, .58, 1);
   animation: hover-jump 1s cubic-bezier(0, 0, .58, 1);
+}
+
+// Section-specific styles
+
+.intelligence,
+.zero {
+  .hero {
+    height: calc(100vh - 200px);
+    height: calc(100vh - 20rem);
+    padding-top: 60px;
+    padding-top: 6rem;
+    text-align: left;
+  }
+  .hero__container {
+    padding-right: 0;
+  }
+  .hero__header {
+    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
+  }
+  .hero__headline {
+    line-height: 73px;
+    line-height: 7.3rem;
+    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
+  }
+  .hero__headline--sup {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  .hero__subhead {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+  .hero__list {
+    padding-left: 0;
+  }
 }

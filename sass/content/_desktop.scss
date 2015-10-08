@@ -1,0 +1,153 @@
+// Desktop Content Section
+
+.content {
+  border-bottom: none;
+
+  .standard-button {
+    border: 1px solid $purple;
+    display: block;
+    height: 43px;
+    height: 4.3rem;
+    margin: 56px auto 96px;
+    margin: 5.6rem auto 9.6rem;
+    width: 240px;
+    width: 24rem;
+  }
+  .standard-button:hover {
+    background: #fff;
+    border: 1px solid $purple;
+  }
+}
+.content__container {
+  max-width: 1010px;
+  max-width: 101rem;
+  padding: 100px 0;
+  padding: 10rem 0;
+}
+.content__article {
+  margin-bottom: 71px;
+  margin-bottom: 7.1rem;
+}
+.content__header {
+  padding-top: 51px;
+  padding-top: 5.1rem;
+}
+.content__headline {
+  font-size: 30px;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  margin-bottom: 6rem;
+}
+.content__outro {
+  .content__headline {
+    height: 52px;
+    height: 5.2rem;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 1010px;
+    max-width: 101rem;
+  }
+}
+.content__subhead,
+.content__table--zero tbody tr {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+
+.content__problem {
+  display: inline-block;
+  padding-right: 23px;
+  padding-right: 2.3rem;
+  position: relative;
+  vertical-align: top;
+  width: 49%;
+}
+.content__problem:last-of-type {
+  padding-right: 0;
+}
+.content__table--intelligence {
+  font-family: $bold-condensed;
+  margin-bottom: 54px;
+  margin-bottom: 5.4rem;
+  width: 100%;
+
+  th {
+    font-size: 22px;
+    font-size: 2.2rem;
+    width: 32%;
+  }
+  th:nth-child(2),
+  th:last-child {
+    line-height: 1.7;
+    padding: 0 50px 30px 8.5%;
+    padding: 0 5rem 3rem 8.5%;
+    text-align: left;
+    width: 25%;
+  }
+  td:first-child {
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+  td:nth-child(n + 2) {
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 0;
+    padding-left: 8.5%;
+    text-align: left;
+  }
+  td:nth-child(2) {
+    font-family: $condensed;
+  }
+
+}
+.content__table--zero {
+  color: $purple;
+  margin-top: 59px;
+  margin-top: 5.9rem;
+
+  thead {
+    display: block;
+  }
+  tbody tr {
+    border-bottom: 1px solid $light-gray;
+    display: block;
+    margin-bottom: 52px;
+    margin-bottom: 5.2rem;
+    padding-bottom: 50px;
+    padding-bottom: 5rem;
+    position: relative;
+  }
+  tbody tr:last-of-type {
+    border-bottom: none;
+    margin-bottom: 5px;
+    margin-bottom: .5rem;
+    padding-bottom: 0;
+  }
+  tbody tr::after {
+    content: 'The Rule';
+    color: $purple;
+    left: 0;
+    position: absolute;
+    top: -26px;
+    top: -2.6rem;
+  }
+  td {
+    display: block;
+  }
+}
+.content__table--small-print {
+  display: inline;
+  font-family: $condensed;
+  font-size: 36px;
+  font-size: 3.6rem;
+  padding-right: 10px;
+  padding-right : 1rem;
+}
+.content__footer {
+  font-size: 11px;
+  font-size: 1.1rem;
+  margin-bottom: 92px;
+  margin-bottom: 9.2rem;
+  max-width: 400px;
+  max-width: 40rem;
+}

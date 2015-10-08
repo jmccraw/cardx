@@ -26,3 +26,7 @@ A work in progress. Uses BEM Sass and Susy.
 * １０月６日
  * ５時間
  * ３時間
+* １０月７日
+ * ４.５時間
+* １０月８日
+ * １２時から

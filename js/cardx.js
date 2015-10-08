@@ -216,7 +216,7 @@
         _heroJump.addEventListener('click', function() {
           scrollBy = _w.setInterval(function() {
             var h = _w.innerHeight;
-            if (_w.scrollY + 10 <= h - 30 && _w.scrollY + 250 + _w.innerHeight < scrollHeight) {
+            if (_w.scrollY + 10 <= h - 30 && _w.scrollY + 230 + _w.innerHeight < scrollHeight) {
               _w.scrollBy(0, 10);
             } else {
               _w.clearInterval(scrollBy);
