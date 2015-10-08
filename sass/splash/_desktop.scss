@@ -9,8 +9,8 @@
 }
 .splash__container {
   margin: 0 auto;
-  max-width: 850px;
-  max-width: 85rem;
+  max-width: 1010px;
+  max-width: 101rem;
 }
 .splash__header {
   font-size: 60px;
@@ -34,6 +34,8 @@
   line-height: 2.1;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
+  max-width: 850px;
+  max-width: 85rem;
 
   a::after {
     bottom: -5px;
