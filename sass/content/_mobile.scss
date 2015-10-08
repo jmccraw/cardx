@@ -1,0 +1,227 @@
+// Mobile Content Section
+
+.content {
+  border-bottom: 5px solid $light-gray;
+  color: $purple;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+
+  .standard-button {
+    background: $purple;
+    border: 1px solid $purple;
+    color: #fff;
+    line-height: .6;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+  }
+  .standard-button:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: $purple;
+  }
+  .standard--p + .content__subhead {
+    padding-top: 10px;
+    padding-top: 1rem;
+  }
+  .standard--p + .standard-button {
+    margin-bottom: 5px;
+    margin-bottom: .5rem;
+    margin-top: 24px;
+    margin-top: 2.4rem;
+  }
+}
+.content__container {
+  height: 100%;
+  margin: 0 auto;
+  padding: 46px 25px 69px;
+  padding: 4.6rem 2.5rem 6.9rem;
+  position: relative;
+  width: 100%;
+}
+.content__article {
+  margin: 0 auto 44px;
+  margin: 0 auto 4.4rem;
+  position: relative;
+
+  sup {
+    font-size: 25%;
+    vertical-align: top;
+  }
+}
+.content__header {
+  border-top: 2px solid $purple;
+  padding-top: 27px;
+  padding-top: 2.7rem;
+}
+.content__headline,
+.content__subhead,
+.content__table--zero tbody tr {
+  color: $purple;
+  font-family: $bold-condensed;
+  font-size: m-px(56);
+  font-size: m-rem(56);
+  @include tracking(300);
+  text-transform: uppercase;
+}
+.content__headline {
+  margin-bottom: 33px;
+  margin-bottom: 3.3rem;
+}
+.content__outro {
+  background: $light-gray;
+  padding: 15px 25px 1px;
+  padding: 1.5rem 2.5rem .1rem;
+  margin-bottom: 0;
+
+  .content__headline {
+    line-height: 1.8;
+    margin-bottom: 0;
+  }
+}
+.content__subhead,
+.content__table--zero tbody tr {
+  font-size: m-px(48);
+  font-size: m-rem(48);
+  @include tracking(50);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  text-transform: none;
+}
+.content__table--intelligence {
+  color: $purple;
+  font-family: $condensed;
+  @include tracking(50);
+  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
+
+  thead tr {
+    height: 60px;
+    height: 6rem;
+    vertical-align: top;
+  }
+  th {
+    font-size: m-px(48);
+    font-size: m-rem(48);
+    line-height: 1.2;
+    width: 30%;
+  }
+  th:nth-child(2) {
+    color: $cool-gray;
+    width: 40%;
+  }
+  tbody tr {
+    height: 94px;
+    height: 9.4rem;
+    vertical-align: top;
+  }
+  tbody tr + tr {
+    height: auto;
+  }
+  td:first-child {
+    border-right: 1px solid $cool-gray;
+    font-size: m-px(36);
+    font-size: m-rem(36);
+    padding-right: 20px;
+    padding-right: 2rem;
+  }
+  td:nth-child(2) {
+    border-right: 1px solid $cool-gray;
+    color: $cool-gray;
+  }
+  td:nth-child(n + 2) {
+    font-size: m-px(48);
+    font-size: m-rem(48);
+    padding-top: 16px;
+    padding-top: 1.6rem;
+    text-align: center;
+  }
+}
+.content__table--zero {
+  color: $purple;
+  margin-top: 59px;
+  margin-top: 5.9rem;
+
+  thead {
+    display: none;
+  }
+  tbody tr {
+    border-bottom: 1px solid $light-gray;
+    display: block;
+    margin-bottom: 52px;
+    margin-bottom: 5.2rem;
+    padding-bottom: 50px;
+    padding-bottom: 5rem;
+    position: relative;
+  }
+  tbody tr:last-of-type {
+    border-bottom: none;
+    margin-bottom: 5px;
+    margin-bottom: .5rem;
+    padding-bottom: 0;
+  }
+  tbody tr::after {
+    content: 'The Rule';
+    color: $purple;
+    left: 0;
+    position: absolute;
+    top: -26px;
+    top: -2.6rem;
+  }
+  td {
+    display: block;
+  }
+  td:first-child {
+    color: $cool-gray;
+  }
+}
+.content__table--small-print {
+  display: block;
+  font-size: m-px(36);
+  font-size: m-rem(36);
+  margin-top: -10px;
+  margin-top: -1rem;
+}
+.content__footer {
+  color: $cool-gray;
+  font-family: $medium;
+  font-size: m-px(24);
+  font-size: m-rem(24);
+  @include tracking(50);
+  line-height: 1.7;
+
+  sup {
+    font-size: 8px;
+  }
+}
+.content__list {
+  list-style: none;
+
+  .standard--p {
+    margin-bottom: 7px;
+    margin-bottom: .7rem;
+  }
+}
+
+// Section-specific styles
+
+.zero {
+  .content__container {
+    padding-bottom: 0;
+  }
+  .content__article:last-of-type {
+    margin-bottom: 36px;
+    margin-bottom: 3.6rem;
+  }
+  .content__list--section {
+    float: left;
+  }
+  .content__list--section:last-of-type {
+    float: right;
+    margin-bottom: 55px;
+    margin-bottom: 5.5rem;
+  }
+  .content__footer {
+    clear: both;
+  }
+}

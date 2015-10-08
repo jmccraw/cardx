@@ -21,6 +21,20 @@
   background: $purple;
   color: #fff;
 }
+
+// Mobile Standard Paragraphs
+.standard--p {
+  color: $cool-gray;
+  font-family: $medium;
+  font-size: m-px(44);
+  font-size: m-rem(44);
+  @include tracking(50);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+// Global SVG Colors
 .st0 {
   fill: #372772;
 }

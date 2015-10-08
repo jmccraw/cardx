@@ -36,6 +36,8 @@
   font-weight: 400;
   @include tracking(50);
   line-height: 1.2;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
   padding-left: 20px;
   padding-left: 2rem;
 }
@@ -60,4 +62,18 @@
   @include leading(32);
   margin: 0 20px 54px;
   margin: 0 2rem 5.4rem;
+}
+
+// Section-specific styles
+
+.intelligence,
+.zero {
+  .solutions {
+    padding-bottom: 28px;
+    padding-bottom: 2.8rem;
+
+    .standard-button {
+      margin-bottom: 0;
+    }
+  }
 }

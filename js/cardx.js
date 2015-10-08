@@ -179,7 +179,7 @@
       // throttle scrolling to check if mobile nav should recede
       testMobileNav = throttle(function() {
         scroll.current = _w.scrollY;
-        if (scroll.current > scroll.previous + 100 && scroll.direction) {
+        if (scroll.current > scroll.previous + 50 && scroll.direction) {
           scroll.direction = false;
           toggleMobileMenu();
         } else if (scroll.current < scroll.previous - 50 && !scroll.direction) {
