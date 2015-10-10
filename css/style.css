@@ -463,13 +463,6 @@ button {
   text-transform: none;
 }
 
-/* line 112, ../sass/nav/_mobile.scss */
-.top-nav__link:active,
-.top-nav__link--sublink:active {
-  background: #fff;
-  color: #372772;
-}
-
 /* line 3, ../sass/hero/_mobile.scss */
 .hero {
   background: transparent url(/media/hero-index-2.jpg) no-repeat 50% 50%;
@@ -1362,8 +1355,8 @@ button {
     left: -99999em;
     letter-spacing: 0.05em;
     margin: 0;
-    padding: 47px 36px 36px;
-    padding: 4.7rem 3.6rem 3.6rem;
+    padding: 47px 36px 20px;
+    padding: 4.7rem 3.6rem 2rem;
     position: absolute;
     top: 16px;
     top: 1.6rem;
@@ -1376,10 +1369,10 @@ button {
   .top-nav__link--sublink:nth-child(3) {
     padding-bottom: 36px;
     padding-bottom: 3.6rem;
-    padding-top: 9px;
-    padding-top: .9rem;
-    top: 104px;
-    top: 10.4rem;
+    padding-top: 29px;
+    padding-top: 2.9rem;
+    top: 84px;
+    top: 8.4rem;
     z-index: 1;
   }
 
@@ -1413,8 +1406,8 @@ button {
 
   /* line 120, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:hover::after {
-    bottom: 29px;
-    bottom: 2.9rem;
+    bottom: 13px;
+    bottom: 1.3rem;
     left: 36px;
     left: 3.6rem;
     width: 53%;
@@ -1422,10 +1415,12 @@ button {
 
   /* line 127, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3):hover::after {
+    bottom: 29px;
+    bottom: 2.9rem;
     width: 56%;
   }
 
-  /* line 130, ../sass/nav/_desktop.scss */
+  /* line 132, ../sass/nav/_desktop.scss */
   .top-nav__login-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -1447,7 +1442,7 @@ button {
     transition: background .1s ease-in, color .1s ease-in;
   }
 
-  /* line 152, ../sass/nav/_desktop.scss */
+  /* line 154, ../sass/nav/_desktop.scss */
   .top-nav__login-btn:hover {
     background: #fff;
     color: #372772;
@@ -2297,6 +2292,12 @@ button {
   }
 
   /* line 3, ../sass/hero/_tablet.scss */
+  .hero {
+    padding: 50px 43px 0;
+    padding: 5rem 4.3rem 0;
+  }
+
+  /* line 7, ../sass/hero/_tablet.scss */
   .hero__headline {
     font-size: 43px;
     font-size: 4.3rem;
@@ -2304,7 +2305,7 @@ button {
     line-height: 5.5rem;
   }
 
-  /* line 8, ../sass/hero/_tablet.scss */
+  /* line 12, ../sass/hero/_tablet.scss */
   .hero__p {
     font-size: 16px;
     font-size: 1.6rem;
@@ -2324,12 +2325,18 @@ button {
   }
 
   /* line 3, ../sass/solutions/_tablet.scss */
+  .solutions {
+    padding-left: 43px;
+    padding-left: 4.3rem;
+  }
+
+  /* line 7, ../sass/solutions/_tablet.scss */
   .solutions__container {
     padding-right: 128px;
     padding-right: 12.8rem;
   }
 
-  /* line 7, ../sass/solutions/_tablet.scss */
+  /* line 11, ../sass/solutions/_tablet.scss */
   .solutions__type {
     border-bottom: 2px solid #e4e4e7;
     display: block;
@@ -2339,17 +2346,36 @@ button {
     padding-right: 0;
   }
 
-  /* line 15, ../sass/solutions/_tablet.scss */
+  /* line 19, ../sass/solutions/_tablet.scss */
   .solutions__type:last-child {
+    left: 0;
     max-width: 100%;
     padding-bottom: 36px;
     padding-bottom: 3.6rem;
     padding-left: 0;
+    position: relative;
   }
 
-  /* line 21, ../sass/solutions/_tablet.scss */
+  /* line 27, ../sass/solutions/_tablet.scss */
   .solutions__type::after {
     display: none;
+  }
+
+  /* line 3, ../sass/content/_tablet.scss */
+  .content__container {
+    padding: 100px 43px;
+    padding: 10rem 4.3rem;
+  }
+
+  /* line 7, ../sass/content/_tablet.scss */
+  .content__outro {
+    padding: 15px 43px 1px;
+    padding: 1.5rem 4.3rem .1rem;
+  }
+
+  /* line 11, ../sass/content/_tablet.scss */
+  .content__table--zero tr td:first-child {
+    width: 50%;
   }
 
   /* line 3, ../sass/footer/_tablet.scss */
@@ -2371,22 +2397,23 @@ button {
 
   /* line 14, ../sass/footer/_tablet.scss */
   .footer__logo {
+    margin-left: 0;
     width: 130px;
     width: 13rem;
   }
-  /* line 18, ../sass/footer/_tablet.scss */
+  /* line 19, ../sass/footer/_tablet.scss */
   .footer__logo .footer__p,
   .footer__logo svg {
     margin-left: 0;
     margin-top: 0;
   }
-  /* line 24, ../sass/footer/_tablet.scss */
+  /* line 25, ../sass/footer/_tablet.scss */
   .footer__logo svg {
     margin-bottom: 15px;
     margin-bottom: 1.5rem;
   }
 
-  /* line 29, ../sass/footer/_tablet.scss */
+  /* line 30, ../sass/footer/_tablet.scss */
   .footer__copyright {
     margin-left: 0;
   }
