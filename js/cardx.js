@@ -150,7 +150,7 @@
     }, false);
 
     // auto advance the testimonials section
-    testimonialAutoAdvance = _w.setInterval(loadNextTestimonial, 3000);
+    testimonialAutoAdvance = _w.setInterval(loadNextTestimonial, 6000);
   }
 
   /**

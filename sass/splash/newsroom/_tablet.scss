@@ -1,5 +1,10 @@
 // Tablet Newsroom
 
+.splash__article--nav {
+  display: none;
+}
+
+// Article-specific styles
 .news.news-article {
   .splash__article--header {
     img {

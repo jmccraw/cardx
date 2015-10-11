@@ -51,15 +51,26 @@
     margin-top: 1rem;
   }
 }
-.footer__copyright {
-  clear: both;
-  font-family: $condensed;
-  font-size: 10px;
-  font-size: 1rem;
-  margin-left: 0;
-}
-.footer__copyright--patent {
-  display: inline;
-  margin-right: 6px;
-  margin-right: .6rem;
+
+// Specificity to override other styles
+
+.index,
+.about,
+.intelligence,
+.zero,
+.news,
+.news.news-article,
+.contact {
+  .footer__copyright {
+    clear: both;
+    font-family: $condensed;
+    font-size: 10px;
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .footer__copyright--patent {
+    display: inline;
+    margin-right: 6px;
+    margin-right: .6rem;
+  }
 }

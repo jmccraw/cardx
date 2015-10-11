@@ -1,5 +1,11 @@
 // Tablet Content Section
 
+.content {
+  .standard-button {
+    width: 250px;
+    width: 25rem;
+  }
+}
 .content__container {
   padding: 100px 43px;
   padding: 10rem 4.3rem;
@@ -10,4 +16,21 @@
 }
 .content__table--zero tr td:first-child {
   width: 50%;
+}
+.content__table--logo {
+  display: none;
+}
+.content__table--logo-span {
+  padding-left: 0;
+}
+
+// Site-specific styles
+
+.intelligence {
+  .content__problem {
+    width: 100%;
+  }
+  .content__problem:last-of-type {
+    padding-left: 0;
+  }
 }

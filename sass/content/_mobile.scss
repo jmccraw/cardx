@@ -200,7 +200,6 @@
   font-family: $medium;
   font-size: m-px(24);
   font-size: m-rem(24);
-  @include tracking(50);
   line-height: 1.7;
 
   sup {

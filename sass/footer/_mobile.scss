@@ -56,13 +56,24 @@
     width: 8.5rem;
   }
 }
-.footer__copyright {
-  font-family: $medium;
-  font-size: m-px(18);
-  @include tracking(300);
-  line-height: 2.2;
-  text-transform: uppercase;
-}
-.footer__copyright--patent {
-  display: block;
+
+// Specificity to override other styles
+
+.index,
+.about,
+.intelligence,
+.zero,
+.news,
+.news.news-article,
+.contact {
+  .footer__copyright {
+    font-family: $medium;
+    font-size: m-px(18);
+    @include tracking(300);
+    line-height: 2.2;
+    text-transform: uppercase;
+  }
+  .footer__copyright--patent {
+    display: block;
+  }
 }
