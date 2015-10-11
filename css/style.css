@@ -1604,6 +1604,12 @@ button {
   }
 
   /* line 88, ../sass/nav/_desktop.scss */
+  .top-nav__link--sublink:first-of-type {
+    padding-top: 47px;
+    padding-top: 4.7rem;
+  }
+
+  /* line 92, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3) {
     padding-bottom: 36px;
     padding-bottom: 3.6rem;
@@ -1614,7 +1620,7 @@ button {
     z-index: 1;
   }
 
-  /* line 97, ../sass/nav/_desktop.scss */
+  /* line 101, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:focus,
   .top-nav__link-container:focus .top-nav__link--sublink,
   .top-nav__link-container:hover .top-nav__link--sublink {
@@ -1622,14 +1628,14 @@ button {
     left: -1.4rem;
   }
 
-  /* line 103, ../sass/nav/_desktop.scss */
+  /* line 107, ../sass/nav/_desktop.scss */
   .top-nav__header,
   .top-nav__link,
   .top-nav__link--sublink {
     outline: none;
   }
 
-  /* line 108, ../sass/nav/_desktop.scss */
+  /* line 112, ../sass/nav/_desktop.scss */
   .about .top-nav__link:first-child::after,
   .intelligence .top-nav__header::after,
   .zero .top-nav__header::after,
@@ -1649,7 +1655,7 @@ button {
     width: 95%;
   }
 
-  /* line 126, ../sass/nav/_desktop.scss */
+  /* line 130, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:hover::after {
     bottom: 13px;
     bottom: 1.3rem;
@@ -1658,14 +1664,14 @@ button {
     width: 53%;
   }
 
-  /* line 133, ../sass/nav/_desktop.scss */
+  /* line 137, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3):hover::after {
     bottom: 29px;
     bottom: 2.9rem;
     width: 56%;
   }
 
-  /* line 138, ../sass/nav/_desktop.scss */
+  /* line 142, ../sass/nav/_desktop.scss */
   .top-nav__login-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -1687,7 +1693,7 @@ button {
     transition: background .1s ease-in, color .1s ease-in;
   }
 
-  /* line 160, ../sass/nav/_desktop.scss */
+  /* line 164, ../sass/nav/_desktop.scss */
   .top-nav__login-btn:hover {
     background: #fff;
     color: #372772;
