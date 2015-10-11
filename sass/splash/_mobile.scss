@@ -25,13 +25,15 @@
   margin-bottom: 3.6rem;
 }
 .splash__headline {
+  font-weight: 400;
   margin-bottom: 17px;
   margin-bottom: 1.7rem;
 }
 .splash__subhead {
-  font-size: m-px(56);
-  font-size: m-rem(56);
-  @include tracking(300);
+  font-size: 19px;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: .25em;
   line-height: 1.6;
   text-transform: uppercase;
 }

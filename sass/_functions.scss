@@ -7,5 +7,5 @@
 
 // Return mobile rem value from design doc
 @function m-rem($px) {
-  @return ($px / 3.0625) / 10 + rem;
+  @return round($px / 3.0625) / 10 + rem;
 }

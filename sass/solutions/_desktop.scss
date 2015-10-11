@@ -49,7 +49,7 @@
 .solutions__type::after {
   background: $light-gray;
   content: '';
-  height: 120%;
+  height: 134%;
   position: absolute;
   right: 0;
   top: -64px;
@@ -75,8 +75,8 @@
   line-height: 2.2;
 }
 .solutions__list {
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 26px;
   line-height: 2.6rem;
   margin-bottom: 40px;
@@ -135,7 +135,7 @@
 
 .zero {
   .solutions {
-    padding-bottom: 45px;
-    padding-bottom: 4.5rem;
+    padding-bottom: 73px;
+    padding-bottom: 7.3rem;
   }
 }

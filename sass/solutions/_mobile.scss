@@ -50,7 +50,9 @@
   display: block;
   font-size: m-px(38);
   font-size: m-rem(38);
-  @include leading(32);
+  letter-spacing: .25em;
+  padding-top: 10px;
+  padding-top: 1rem;
   text-transform: uppercase;
 }
 .solutions__list {
@@ -69,11 +71,14 @@
 .intelligence,
 .zero {
   .solutions {
-    padding-bottom: 28px;
-    padding-bottom: 2.8rem;
+    padding-bottom: 55px;
+    padding-bottom: 5.5rem;
 
     .standard-button {
+      bottom: -22px;
+      bottom: -2.2rem;
       margin-bottom: 0;
+      position: absolute;
     }
   }
 }

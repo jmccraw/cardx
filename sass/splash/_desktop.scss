@@ -26,6 +26,7 @@
 .splash__subhead {
   font-size: 30px;
   font-size: 3rem;
+  @include tracking(300);
   line-height: 1.65;
 }
 .splash__p {

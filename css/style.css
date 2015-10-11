@@ -282,7 +282,7 @@ button {
   color: #372772;
   font-family: "Trade Gothic Com", Arial, sans-serif;
   font-size: 11px;
-  font-size: 1.1102rem;
+  font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: 0.3em;
   padding: 15px 18px 13px;
@@ -294,7 +294,7 @@ button {
 /* line 16, ../sass/all/_mobile.scss */
 .standard-button--arrow {
   font-size: 16px;
-  font-size: 1.63265rem;
+  font-size: 1.6rem;
 }
 
 /* line 20, ../sass/all/_mobile.scss */
@@ -308,7 +308,7 @@ button {
   color: #787583;
   font-family: "Trade Gothic Com", Arial, sans-serif;
   font-size: 14px;
-  font-size: 1.43673rem;
+  font-size: 1.4rem;
   letter-spacing: 0.05em;
   line-height: 1.7;
   margin-bottom: 20px;
@@ -436,7 +436,7 @@ button {
   color: #fff;
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   font-size: 22px;
-  font-size: 2.1551rem;
+  font-size: 2.2rem;
   font-weight: 400;
   display: block;
   letter-spacing: 0.3em;
@@ -452,7 +452,7 @@ button {
 .top-nav__link--sublink {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 20px;
-  font-size: 1.95918rem;
+  font-size: 2rem;
   letter-spacing: 0.05em;
   margin-left: 60px;
   margin-left: 6rem;
@@ -466,7 +466,7 @@ button {
 /* line 3, ../sass/hero/_mobile.scss */
 .hero {
   background: transparent url(..//media/hero-index-3.jpg) no-repeat 50% 50%;
-  background-size: cover;
+  background-size: 335%;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -516,8 +516,8 @@ button {
 .hero__list {
   font-family: "Trade Gothic Com", Arial, sans-serif;
   font-size: 14px;
-  font-size: 1.43673rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 900;
   padding-left: 40px;
   padding-left: 4rem;
   padding-right: 40px;
@@ -578,26 +578,27 @@ button {
 .intelligence .hero,
 .zero .hero {
   background-image: url(..//media/hero-intelligence-2.jpg);
+  background-size: 266%;
   height: 100%;
   text-align: center;
 }
-/* line 100, ../sass/hero/_mobile.scss */
+/* line 101, ../sass/hero/_mobile.scss */
 .intelligence .hero__headline--sup,
 .zero .hero__headline--sup {
   font-size: 10px;
   font-size: 1rem;
 }
-/* line 104, ../sass/hero/_mobile.scss */
+/* line 105, ../sass/hero/_mobile.scss */
 .intelligence .hero__subhead,
 .zero .hero__subhead {
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   font-size: 18px;
-  font-size: 1.82857rem;
-  letter-spacing: 0.3em;
+  font-size: 1.8rem;
+  letter-spacing: .25em;
   line-height: 1.8;
   text-transform: uppercase;
 }
-/* line 112, ../sass/hero/_mobile.scss */
+/* line 113, ../sass/hero/_mobile.scss */
 .intelligence .standard-button,
 .zero .standard-button {
   display: inline-block;
@@ -608,14 +609,16 @@ button {
   margin-bottom: 4.6rem;
 }
 
-/* line 122, ../sass/hero/_mobile.scss */
+/* line 123, ../sass/hero/_mobile.scss */
 .zero .hero {
   background-image: url(../media/hero-zero-2.jpg);
+  background-position: 37% 80%;
+  background-size: 260%;
 }
 
 /* line 3, ../sass/testimonials/_mobile.scss */
 .testimonials {
-  background: #e4e4e7;
+  background: #fff;
   color: #372772;
   -webkit-font-smoothing: antialiased;
   padding: 40px 20px;
@@ -642,7 +645,7 @@ button {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  font-size: 1.82857rem;
+  font-size: 1.8rem;
   letter-spacing: 0.05em;
   line-height: 1.4;
   margin-bottom: 16px;
@@ -669,7 +672,7 @@ button {
 .testimonials__footer {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 12px;
-  font-size: 1.17551rem;
+  font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.3em;
   line-height: 1.4;
@@ -781,17 +784,18 @@ button {
 .solutions__headline--subhead {
   display: block;
   font-size: 12px;
-  font-size: 1.24082rem;
-  line-height: 32px;
-  line-height: 3.2rem;
+  font-size: 1.2rem;
+  letter-spacing: .25em;
+  padding-top: 10px;
+  padding-top: 1rem;
   text-transform: uppercase;
 }
 
-/* line 56, ../sass/solutions/_mobile.scss */
+/* line 58, ../sass/solutions/_mobile.scss */
 .solutions__list {
   font-family: "Trade Gothic Com", Arial, sans-serif;
   font-size: 14px;
-  font-size: 1.43673rem;
+  font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.05em;
   line-height: 32px;
@@ -800,16 +804,19 @@ button {
   margin: 0 2rem 5.4rem;
 }
 
-/* line 71, ../sass/solutions/_mobile.scss */
+/* line 73, ../sass/solutions/_mobile.scss */
 .intelligence .solutions,
 .zero .solutions {
-  padding-bottom: 28px;
-  padding-bottom: 2.8rem;
+  padding-bottom: 55px;
+  padding-bottom: 5.5rem;
 }
-/* line 75, ../sass/solutions/_mobile.scss */
+/* line 77, ../sass/solutions/_mobile.scss */
 .intelligence .solutions .standard-button,
 .zero .solutions .standard-button {
+  bottom: -22px;
+  bottom: -2.2rem;
   margin-bottom: 0;
+  position: absolute;
 }
 
 /* line 3, ../sass/footer/_mobile.scss */
@@ -839,7 +846,7 @@ button {
 .footer__header {
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   font-size: 14px;
-  font-size: 1.37143rem;
+  font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.3em;
   margin-bottom: 6px;
@@ -851,7 +858,7 @@ button {
 .footer__p {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 14px;
-  font-size: 1.37143rem;
+  font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.05em;
   line-height: 24px;
@@ -867,7 +874,7 @@ button {
 /* line 43, ../sass/footer/_mobile.scss */
 .footer__logo .footer__p {
   font-size: 12px;
-  font-size: 1.24082rem;
+  font-size: 1.2rem;
   line-height: 20px;
   line-height: 2rem;
 }
@@ -928,36 +935,38 @@ button {
 
 /* line 27, ../sass/splash/_mobile.scss */
 .splash__headline {
+  font-weight: 400;
   margin-bottom: 17px;
   margin-bottom: 1.7rem;
 }
 
-/* line 31, ../sass/splash/_mobile.scss */
+/* line 32, ../sass/splash/_mobile.scss */
 .splash__subhead {
-  font-size: 18px;
-  font-size: 1.82857rem;
-  letter-spacing: 0.3em;
+  font-size: 19px;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: .25em;
   line-height: 1.6;
   text-transform: uppercase;
 }
 
-/* line 38, ../sass/splash/_mobile.scss */
+/* line 40, ../sass/splash/_mobile.scss */
 .splash__p {
   color: #787583;
   font-family: "Trade Gothic Com", Arial, sans-serif;
   font-size: 14px;
-  font-size: 1.43673rem;
+  font-size: 1.4rem;
   letter-spacing: 0.05em;
   line-height: 1.8;
   margin-bottom: 16px;
   margin-bottom: 1.6rem;
 }
-/* line 48, ../sass/splash/_mobile.scss */
+/* line 50, ../sass/splash/_mobile.scss */
 .splash__p a {
   color: #372772;
   position: relative;
 }
-/* line 52, ../sass/splash/_mobile.scss */
+/* line 54, ../sass/splash/_mobile.scss */
 .splash__p a::after {
   background: #372772;
   bottom: -2px;
@@ -1041,35 +1050,43 @@ button {
   color: #372772;
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   font-size: 18px;
-  font-size: 1.82857rem;
+  font-size: 1.8rem;
+  font-weight: 400;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
-/* line 66, ../sass/content/_mobile.scss */
+/* line 67, ../sass/content/_mobile.scss */
 .content__headline {
   margin-bottom: 33px;
   margin-bottom: 3.3rem;
 }
 
-/* line 70, ../sass/content/_mobile.scss */
+/* line 71, ../sass/content/_mobile.scss */
+.content__subhead {
+  font-family: "Trade Gothic Com Bold", Arial, sans-serif;
+}
+
+/* line 74, ../sass/content/_mobile.scss */
 .content__outro {
   background: #e4e4e7;
   padding: 15px 25px 1px;
   padding: 1.5rem 2.5rem .1rem;
   margin-bottom: 0;
 }
-/* line 76, ../sass/content/_mobile.scss */
+/* line 80, ../sass/content/_mobile.scss */
 .content__outro .content__headline {
   line-height: 1.8;
   margin-bottom: 0;
+  margin-top: -5px;
+  margin-top: -.5rem;
 }
 
-/* line 81, ../sass/content/_mobile.scss */
+/* line 87, ../sass/content/_mobile.scss */
 .content__subhead,
 .content__table--zero tbody tr {
   font-size: 16px;
-  font-size: 1.56735rem;
+  font-size: 1.6rem;
   letter-spacing: 0.05em;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -1077,7 +1094,7 @@ button {
   text-transform: none;
 }
 
-/* line 91, ../sass/content/_mobile.scss */
+/* line 97, ../sass/content/_mobile.scss */
 .content__table--intelligence {
   color: #372772;
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
@@ -1085,67 +1102,72 @@ button {
   margin-bottom: 48px;
   margin-bottom: 4.8rem;
 }
-/* line 98, ../sass/content/_mobile.scss */
+/* line 104, ../sass/content/_mobile.scss */
 .content__table--intelligence thead tr {
   height: 60px;
   height: 6rem;
   vertical-align: top;
 }
-/* line 103, ../sass/content/_mobile.scss */
+/* line 109, ../sass/content/_mobile.scss */
 .content__table--intelligence th {
   font-size: 16px;
-  font-size: 1.56735rem;
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 1.2;
   width: 30%;
 }
-/* line 109, ../sass/content/_mobile.scss */
+/* line 116, ../sass/content/_mobile.scss */
 .content__table--intelligence th:nth-child(2) {
   color: #787583;
   width: 40%;
 }
-/* line 113, ../sass/content/_mobile.scss */
+/* line 120, ../sass/content/_mobile.scss */
 .content__table--intelligence tbody tr {
   height: 94px;
   height: 9.4rem;
   vertical-align: top;
 }
-/* line 118, ../sass/content/_mobile.scss */
+/* line 125, ../sass/content/_mobile.scss */
 .content__table--intelligence tbody tr + tr {
   height: auto;
 }
-/* line 121, ../sass/content/_mobile.scss */
+/* line 128, ../sass/content/_mobile.scss */
 .content__table--intelligence td:first-child {
   border-right: 1px solid #787583;
   font-size: 12px;
-  font-size: 1.17551rem;
+  font-size: 1.2rem;
   padding-right: 20px;
   padding-right: 2rem;
 }
-/* line 128, ../sass/content/_mobile.scss */
+/* line 135, ../sass/content/_mobile.scss */
 .content__table--intelligence td:nth-child(2) {
   border-right: 1px solid #787583;
   color: #787583;
 }
-/* line 132, ../sass/content/_mobile.scss */
+/* line 139, ../sass/content/_mobile.scss */
 .content__table--intelligence td:nth-child(n + 2) {
   font-size: 16px;
-  font-size: 1.56735rem;
+  font-size: 1.6rem;
   padding-top: 16px;
   padding-top: 1.6rem;
   text-align: center;
 }
 
-/* line 140, ../sass/content/_mobile.scss */
+/* line 147, ../sass/content/_mobile.scss */
 .content__table--zero {
   color: #372772;
   margin-top: 59px;
   margin-top: 5.9rem;
 }
-/* line 145, ../sass/content/_mobile.scss */
+/* line 152, ../sass/content/_mobile.scss */
 .content__table--zero thead {
   display: none;
 }
-/* line 148, ../sass/content/_mobile.scss */
+/* line 155, ../sass/content/_mobile.scss */
+.content__table--zero th {
+  font-weight: 400;
+}
+/* line 158, ../sass/content/_mobile.scss */
 .content__table--zero tbody tr {
   border-bottom: 1px solid #e4e4e7;
   display: block;
@@ -1155,14 +1177,14 @@ button {
   padding-bottom: 5rem;
   position: relative;
 }
-/* line 157, ../sass/content/_mobile.scss */
+/* line 167, ../sass/content/_mobile.scss */
 .content__table--zero tbody tr:last-of-type {
   border-bottom: none;
   margin-bottom: 5px;
   margin-bottom: .5rem;
   padding-bottom: 0;
 }
-/* line 163, ../sass/content/_mobile.scss */
+/* line 173, ../sass/content/_mobile.scss */
 .content__table--zero tbody tr::after {
   content: 'The Rule';
   color: #372772;
@@ -1171,68 +1193,80 @@ button {
   top: -26px;
   top: -2.6rem;
 }
-/* line 171, ../sass/content/_mobile.scss */
+/* line 181, ../sass/content/_mobile.scss */
 .content__table--zero td {
   display: block;
 }
-/* line 174, ../sass/content/_mobile.scss */
+/* line 184, ../sass/content/_mobile.scss */
 .content__table--zero td:first-child {
   color: #787583;
 }
 
-/* line 178, ../sass/content/_mobile.scss */
+/* line 188, ../sass/content/_mobile.scss */
+.content__table--logo {
+  display: none;
+}
+
+/* line 191, ../sass/content/_mobile.scss */
 .content__table--small-print {
   display: block;
   font-size: 12px;
-  font-size: 1.17551rem;
+  font-size: 1.2rem;
   margin-top: -10px;
   margin-top: -1rem;
 }
 
-/* line 185, ../sass/content/_mobile.scss */
+/* line 198, ../sass/content/_mobile.scss */
 .content__footer {
   color: #787583;
   font-family: "Trade Gothic Com", Arial, sans-serif;
   font-size: 8px;
-  font-size: 0.78367rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   line-height: 1.7;
 }
-/* line 193, ../sass/content/_mobile.scss */
+/* line 206, ../sass/content/_mobile.scss */
 .content__footer sup {
   font-size: 8px;
 }
 
-/* line 197, ../sass/content/_mobile.scss */
+/* line 210, ../sass/content/_mobile.scss */
 .content__list {
   list-style: none;
 }
-/* line 200, ../sass/content/_mobile.scss */
+/* line 213, ../sass/content/_mobile.scss */
 .content__list .standard--p {
   margin-bottom: 7px;
   margin-bottom: .7rem;
 }
 
-/* line 209, ../sass/content/_mobile.scss */
+/* line 223, ../sass/content/_mobile.scss */
+.intelligence .content__problem,
+.zero .content__problem {
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+}
+
+/* line 229, ../sass/content/_mobile.scss */
 .zero .content__container {
   padding-bottom: 0;
 }
-/* line 212, ../sass/content/_mobile.scss */
+/* line 232, ../sass/content/_mobile.scss */
 .zero .content__article:last-of-type {
   margin-bottom: 36px;
   margin-bottom: 3.6rem;
 }
-/* line 216, ../sass/content/_mobile.scss */
+/* line 236, ../sass/content/_mobile.scss */
 .zero .content__list--section {
   float: left;
 }
-/* line 219, ../sass/content/_mobile.scss */
+/* line 239, ../sass/content/_mobile.scss */
 .zero .content__list--section:last-of-type {
   float: right;
   margin-bottom: 55px;
   margin-bottom: 5.5rem;
 }
-/* line 224, ../sass/content/_mobile.scss */
+/* line 244, ../sass/content/_mobile.scss */
 .zero .content__footer {
   clear: both;
 }
@@ -1489,14 +1523,17 @@ button {
   }
   /* line 29, ../sass/hero/_desktop.scss */
   .hero {
-    height: calc(100vh - 200px);
-    height: calc(100vh - 20rem);
+    background-size: cover;
+    height: 585px;
+    height: 58.5rem;
+    padding-bottom: 60px;
+    padding-bottom: 6rem;
     padding-top: 36px;
     padding-top: 3.6rem;
     text-align: left;
   }
 
-  /* line 36, ../sass/hero/_desktop.scss */
+  /* line 39, ../sass/hero/_desktop.scss */
   .hero__container {
     padding-left: 0;
     padding-right: 0;
@@ -1505,13 +1542,13 @@ button {
     max-width: 101rem;
   }
 
-  /* line 43, ../sass/hero/_desktop.scss */
+  /* line 46, ../sass/hero/_desktop.scss */
   .hero__header {
     margin: 0 0 28px;
     margin: 0 0 2.8rem;
   }
 
-  /* line 47, ../sass/hero/_desktop.scss */
+  /* line 50, ../sass/hero/_desktop.scss */
   .hero__headline {
     font-size: 60px;
     font-size: 6rem;
@@ -1520,7 +1557,7 @@ button {
     line-height: 7.2rem;
   }
 
-  /* line 53, ../sass/hero/_desktop.scss */
+  /* line 56, ../sass/hero/_desktop.scss */
   .hero__p {
     font-size: 18px;
     font-size: 1.8rem;
@@ -1533,14 +1570,14 @@ button {
     width: 100%;
   }
 
-  /* line 64, ../sass/hero/_desktop.scss */
+  /* line 67, ../sass/hero/_desktop.scss */
   .hero__p--sup {
     font-size: 12px;
     font-size: 1.2rem;
     line-height: 1.8;
   }
 
-  /* line 69, ../sass/hero/_desktop.scss */
+  /* line 72, ../sass/hero/_desktop.scss */
   .hero__list--item {
     font-size: 18px;
     font-size: 1.8rem;
@@ -1548,11 +1585,11 @@ button {
     margin-bottom: .7rem;
   }
 
-  /* line 75, ../sass/hero/_desktop.scss */
+  /* line 78, ../sass/hero/_desktop.scss */
   .hero__jump-btn {
     background: transparent;
-    bottom: 41px;
-    bottom: 4.1rem;
+    bottom: -19px;
+    bottom: -1.9rem;
     color: #fff;
     cursor: pointer;
     display: block;
@@ -1566,12 +1603,12 @@ button {
     width: 16rem;
   }
 
-  /* line 91, ../sass/hero/_desktop.scss */
+  /* line 94, ../sass/hero/_desktop.scss */
   .hero__jump-btn--header {
     display: block;
   }
 
-  /* line 94, ../sass/hero/_desktop.scss */
+  /* line 97, ../sass/hero/_desktop.scss */
   .hero__jump-btn svg {
     display: block;
     margin: 19px auto 0;
@@ -1580,38 +1617,38 @@ button {
     width: 4.1rem;
   }
 
-  /* line 101, ../sass/hero/_desktop.scss */
+  /* line 104, ../sass/hero/_desktop.scss */
   .hero__jump-btn:hover {
     background: transparent;
   }
 
-  /* line 104, ../sass/hero/_desktop.scss */
+  /* line 107, ../sass/hero/_desktop.scss */
   .hero__jump-btn:hover .hero__jump-btn--header {
     -webkit-animation: hover-jump 1s cubic-bezier(0, 0, 0.58, 1);
     animation: hover-jump 1s cubic-bezier(0, 0, 0.58, 1);
   }
 
-  /* line 113, ../sass/hero/_desktop.scss */
+  /* line 116, ../sass/hero/_desktop.scss */
   .intelligence .hero,
   .zero .hero {
-    height: calc(100vh - 200px);
-    height: calc(100vh - 20rem);
+    background-position: 50% 50%;
+    background-size: cover;
     padding-top: 60px;
     padding-top: 6rem;
     text-align: left;
   }
-  /* line 120, ../sass/hero/_desktop.scss */
+  /* line 123, ../sass/hero/_desktop.scss */
   .intelligence .hero__container,
   .zero .hero__container {
     padding-right: 0;
   }
-  /* line 123, ../sass/hero/_desktop.scss */
+  /* line 126, ../sass/hero/_desktop.scss */
   .intelligence .hero__header,
   .zero .hero__header {
     margin-bottom: 24px;
     margin-bottom: 2.4rem;
   }
-  /* line 127, ../sass/hero/_desktop.scss */
+  /* line 130, ../sass/hero/_desktop.scss */
   .intelligence .hero__headline,
   .zero .hero__headline {
     line-height: 73px;
@@ -1619,19 +1656,20 @@ button {
     margin-bottom: 25px;
     margin-bottom: 2.5rem;
   }
-  /* line 133, ../sass/hero/_desktop.scss */
+  /* line 136, ../sass/hero/_desktop.scss */
   .intelligence .hero__headline--sup,
   .zero .hero__headline--sup {
     font-size: 20px;
     font-size: 2rem;
   }
-  /* line 137, ../sass/hero/_desktop.scss */
+  /* line 140, ../sass/hero/_desktop.scss */
   .intelligence .hero__subhead,
   .zero .hero__subhead {
     font-size: 30px;
     font-size: 3rem;
+    letter-spacing: 0.3em;
   }
-  /* line 141, ../sass/hero/_desktop.scss */
+  /* line 145, ../sass/hero/_desktop.scss */
   .intelligence .hero__list,
   .zero .hero__list {
     padding-left: 0;
@@ -1778,7 +1816,7 @@ button {
   .solutions__type::after {
     background: #e4e4e7;
     content: '';
-    height: 120%;
+    height: 134%;
     position: absolute;
     right: 0;
     top: -64px;
@@ -1814,8 +1852,8 @@ button {
 
   /* line 77, ../sass/solutions/_desktop.scss */
   .solutions__list {
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 26px;
     line-height: 2.6rem;
     margin-bottom: 40px;
@@ -1885,8 +1923,8 @@ button {
 
   /* line 137, ../sass/solutions/_desktop.scss */
   .zero .solutions {
-    padding-bottom: 45px;
-    padding-bottom: 4.5rem;
+    padding-bottom: 73px;
+    padding-bottom: 7.3rem;
   }
 
   /* line 3, ../sass/footer/_desktop.scss */
@@ -2007,10 +2045,11 @@ button {
   .splash__subhead {
     font-size: 30px;
     font-size: 3rem;
+    letter-spacing: 0.3em;
     line-height: 1.65;
   }
 
-  /* line 31, ../sass/splash/_desktop.scss */
+  /* line 32, ../sass/splash/_desktop.scss */
   .splash__p {
     font-size: 18px;
     font-size: 1.8rem;
@@ -2020,14 +2059,14 @@ button {
     max-width: 850px;
     max-width: 85rem;
   }
-  /* line 40, ../sass/splash/_desktop.scss */
+  /* line 41, ../sass/splash/_desktop.scss */
   .splash__p a::after {
     bottom: -5px;
     bottom: -.5rem;
     -webkit-transition: bottom .2s ease-in;
     transition: bottom .2s ease-in;
   }
-  /* line 47, ../sass/splash/_desktop.scss */
+  /* line 48, ../sass/splash/_desktop.scss */
   .splash__p a:hover::after {
     bottom: 0;
   }
@@ -2044,8 +2083,8 @@ button {
     height: 4.3rem;
     margin: 56px auto 96px;
     margin: 5.6rem auto 9.6rem;
-    width: 240px;
-    width: 24rem;
+    width: 210px;
+    width: 21rem;
   }
   /* line 16, ../sass/content/_desktop.scss */
   .content .standard-button:hover {
@@ -2101,8 +2140,8 @@ button {
   /* line 57, ../sass/content/_desktop.scss */
   .content__problem {
     display: inline-block;
-    padding-right: 23px;
-    padding-right: 2.3rem;
+    padding-right: 30px;
+    padding-right: 3rem;
     position: relative;
     vertical-align: top;
     width: 49%;
@@ -2110,37 +2149,45 @@ button {
 
   /* line 65, ../sass/content/_desktop.scss */
   .content__problem:last-of-type {
+    padding-left: 30px;
+    padding-left: 3rem;
     padding-right: 0;
   }
 
-  /* line 68, ../sass/content/_desktop.scss */
+  /* line 70, ../sass/content/_desktop.scss */
   .content__table--intelligence {
     font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
     margin-bottom: 54px;
     margin-bottom: 5.4rem;
     width: 100%;
   }
-  /* line 74, ../sass/content/_desktop.scss */
+  /* line 76, ../sass/content/_desktop.scss */
   .content__table--intelligence th {
     font-size: 22px;
     font-size: 2.2rem;
-    width: 32%;
+    width: 29.5%;
   }
-  /* line 79, ../sass/content/_desktop.scss */
+  /* line 81, ../sass/content/_desktop.scss */
   .content__table--intelligence th:nth-child(2),
   .content__table--intelligence th:last-child {
     line-height: 1.7;
     padding: 0 50px 30px 8.5%;
     padding: 0 5rem 3rem 8.5%;
     text-align: left;
-    width: 25%;
+    width: 26%;
   }
-  /* line 87, ../sass/content/_desktop.scss */
+  /* line 89, ../sass/content/_desktop.scss */
+  .content__table--intelligence th:last-child {
+    padding-top: 8px;
+    padding-top: .8rem;
+    width: 44.5%;
+  }
+  /* line 94, ../sass/content/_desktop.scss */
   .content__table--intelligence td:first-child {
     font-size: 22px;
     font-size: 2.2rem;
   }
-  /* line 91, ../sass/content/_desktop.scss */
+  /* line 98, ../sass/content/_desktop.scss */
   .content__table--intelligence td:nth-child(n + 2) {
     font-size: 36px;
     font-size: 3.6rem;
@@ -2148,12 +2195,12 @@ button {
     padding-left: 8.5%;
     text-align: left;
   }
-  /* line 98, ../sass/content/_desktop.scss */
+  /* line 105, ../sass/content/_desktop.scss */
   .content__table--intelligence td:nth-child(2) {
     font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   }
 
-  /* line 103, ../sass/content/_desktop.scss */
+  /* line 109, ../sass/content/_desktop.scss */
   .content__table--zero {
     color: #372772;
     margin-bottom: 89px;
@@ -2162,12 +2209,12 @@ button {
     margin-top: 5.9rem;
     width: 100%;
   }
-  /* line 111, ../sass/content/_desktop.scss */
+  /* line 117, ../sass/content/_desktop.scss */
   .content__table--zero thead {
     border-bottom: 1px solid #372772;
     display: table-header-group;
   }
-  /* line 115, ../sass/content/_desktop.scss */
+  /* line 121, ../sass/content/_desktop.scss */
   .content__table--zero th {
     display: table-cell;
     font-family: "Trade Gothic Com Bold", Arial, sans-serif;
@@ -2178,54 +2225,80 @@ button {
     padding-bottom: 1rem;
     text-align: left;
   }
-  /* line 125, ../sass/content/_desktop.scss */
+  /* line 131, ../sass/content/_desktop.scss */
   .content__table--zero tbody {
     display: table-row-group;
   }
-  /* line 128, ../sass/content/_desktop.scss */
+  /* line 134, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr {
     border-bottom: none;
     display: table-row;
   }
-  /* line 132, ../sass/content/_desktop.scss */
+  /* line 138, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr:last-of-type {
     border-bottom: none;
   }
-  /* line 135, ../sass/content/_desktop.scss */
+  /* line 141, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr::after {
     display: none;
   }
-  /* line 138, ../sass/content/_desktop.scss */
+  /* line 144, ../sass/content/_desktop.scss */
   .content__table--zero td {
     display: table-cell;
     padding-top: 37px;
     padding-top: 3.7rem;
-    vertical-align: top;
+    vertical-align: baseline;
   }
-  /* line 144, ../sass/content/_desktop.scss */
+  /* line 150, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr:first-of-type td {
     padding-top: 47px;
     padding-top: 4.7rem;
   }
-  /* line 148, ../sass/content/_desktop.scss */
+  /* line 154, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr:first-of-type td:first-child {
     padding-right: 125px;
     padding-right: 12.5rem;
   }
-  /* line 152, ../sass/content/_desktop.scss */
+  /* line 158, ../sass/content/_desktop.scss */
   .content__table--zero tr td:first-child {
     padding-right: 23px;
     padding-right: 2.3rem;
     width: 490px;
     width: 49rem;
   }
-  /* line 158, ../sass/content/_desktop.scss */
+  /* line 164, ../sass/content/_desktop.scss */
   .content__table--zero th + th,
   .content__table--zero td + td {
     padding-left: 2.3rem;
   }
+  /* line 168, ../sass/content/_desktop.scss */
+  .content__table--zero td + td {
+    font-family: "Trade Gothic Com Bold", Arial, sans-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
 
-  /* line 163, ../sass/content/_desktop.scss */
+  /* line 174, ../sass/content/_desktop.scss */
+  .content__table--logo {
+    display: block;
+    float: left;
+    width: 88px;
+    width: 8.8rem;
+  }
+
+  /* line 180, ../sass/content/_desktop.scss */
+  .content__table--logo-span {
+    display: inline-block;
+    letter-spacing: 0.3em;
+    line-height: 1.3;
+    padding-left: 15px;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+    vertical-align: top;
+    width: 60%;
+  }
+
+  /* line 190, ../sass/content/_desktop.scss */
   .content__table--small-print {
     display: inline;
     font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
@@ -2235,7 +2308,7 @@ button {
     padding-right: 1rem;
   }
 
-  /* line 171, ../sass/content/_desktop.scss */
+  /* line 198, ../sass/content/_desktop.scss */
   .content__footer {
     font-size: 11px;
     font-size: 1.1rem;
@@ -2245,35 +2318,35 @@ button {
     max-width: 40rem;
   }
 
-  /* line 183, ../sass/content/_desktop.scss */
+  /* line 210, ../sass/content/_desktop.scss */
   .zero .content__subhead,
   .zero .standard--p {
     max-width: 715px;
     max-width: 71.5rem;
   }
-  /* line 188, ../sass/content/_desktop.scss */
+  /* line 215, ../sass/content/_desktop.scss */
   .zero .solutions__type:last-child .solutions__list {
     margin-bottom: 0;
     margin-left: 3px;
     margin-left: .3rem;
     width: 120%;
   }
-  /* line 194, ../sass/content/_desktop.scss */
+  /* line 221, ../sass/content/_desktop.scss */
   .zero .content__list--section {
     width: 49.5%;
   }
-  /* line 197, ../sass/content/_desktop.scss */
+  /* line 224, ../sass/content/_desktop.scss */
   .zero .content__list--section:last-of-type {
     float: left;
     margin-bottom: 98px;
     margin-bottom: 9.8rem;
   }
-  /* line 202, ../sass/content/_desktop.scss */
+  /* line 229, ../sass/content/_desktop.scss */
   .zero .content__list {
     float: left;
     width: 49.5%;
   }
-  /* line 206, ../sass/content/_desktop.scss */
+  /* line 233, ../sass/content/_desktop.scss */
   .zero .content__footer {
     max-width: 745px;
     max-width: 74.5rem;

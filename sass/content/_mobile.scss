@@ -60,12 +60,16 @@
   font-family: $bold-condensed;
   font-size: m-px(56);
   font-size: m-rem(56);
+  font-weight: 400;
   @include tracking(300);
   text-transform: uppercase;
 }
 .content__headline {
   margin-bottom: 33px;
   margin-bottom: 3.3rem;
+}
+.content__subhead {
+  font-family: $bold;
 }
 .content__outro {
   background: $light-gray;
@@ -76,6 +80,8 @@
   .content__headline {
     line-height: 1.8;
     margin-bottom: 0;
+    margin-top: -5px;
+    margin-top: -.5rem;
   }
 }
 .content__subhead,
@@ -103,6 +109,7 @@
   th {
     font-size: m-px(48);
     font-size: m-rem(48);
+    font-weight: 400;
     line-height: 1.2;
     width: 30%;
   }
@@ -145,6 +152,9 @@
   thead {
     display: none;
   }
+  th {
+    font-weight: 400;
+  }
   tbody tr {
     border-bottom: 1px solid $light-gray;
     display: block;
@@ -174,6 +184,9 @@
   td:first-child {
     color: $cool-gray;
   }
+}
+.content__table--logo {
+  display: none;
 }
 .content__table--small-print {
   display: block;
@@ -205,6 +218,13 @@
 
 // Section-specific styles
 
+.intelligence,
+.zero {
+  .content__problem {
+    padding-bottom: 10px;
+    padding-bottom: 1rem;
+  }
+}
 .zero {
   .content__container {
     padding-bottom: 0;

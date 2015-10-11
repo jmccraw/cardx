@@ -207,6 +207,7 @@
    * @type {Function}
    */
   function loadDesktopFunctionality(firstTime) {
+    var h = 570;
     var scrollBy;
     if (firstTime) {
       scrollHeight = _body.scrollHeight;
@@ -215,8 +216,7 @@
         // add click to hero image Learn More
         _heroJump.addEventListener('click', function() {
           scrollBy = _w.setInterval(function() {
-            var h = _w.innerHeight;
-            if (_w.scrollY + 10 <= h - 30 && _w.scrollY + 230 + _w.innerHeight < scrollHeight) {
+            if (_w.scrollY + 10 <= h - 30 && _w.scrollY + 200 + _w.innerHeight < scrollHeight) {
               _w.scrollBy(0, 10);
             } else {
               _w.clearInterval(scrollBy);
