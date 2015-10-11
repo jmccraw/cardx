@@ -35,6 +35,17 @@
       width: 100%;
     }
   }
+  .splash__p--contact {
+    color: $purple;
+    font-family: $bold;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: .5;
+  }
+  .splash__p--contact + .splash__p--contact {
+    margin-bottom: 45px;
+    margin-bottom: 4.5rem;
+  }
 }
 .splash__container {
   height: 100%;
@@ -73,5 +84,16 @@
   .splash__header {
     margin-bottom: 38px;
     margin-bottom: 3.8rem;
+  }
+}
+.contact {
+  .splash {
+    padding-bottom: 6px;
+    padding-bottom: .6rem;
+
+    .splash__p {
+      margin-bottom: 11px;
+      margin-bottom: 1.1rem;
+    }
   }
 }

@@ -80,3 +80,27 @@
     max-width: 71.5rem;
   }
 }
+.contact {
+  .splash {
+    padding-bottom: 205px;
+    padding-bottom: 20.5rem;
+
+    p,
+    .splash__p {
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 1.9;
+      max-width: 500px;
+      max-width: 50rem;
+    }
+    .splash__p {
+      margin-bottom: 17px;
+      margin-bottom: 1.7rem;
+    }
+    .splash__p--contact {
+      font-size: 22px;
+      font-size: 2.2rem;
+      line-height: 1.3;
+    }
+  }
+}
