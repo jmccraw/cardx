@@ -52,6 +52,7 @@
 
 // Site-specific styles
 
+@import "newsroom/desktop";
 .news {
   .splash {
     padding-bottom: 165px;
@@ -73,4 +74,9 @@
     line-height: 2;
   }
 }
-@import "newsroom/desktop";
+.news-article {
+  .splash__article {
+    max-width: 715px;
+    max-width: 71.5rem;
+  }
+}

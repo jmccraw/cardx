@@ -987,12 +987,6 @@ button {
   text-transform: uppercase;
 }
 
-/* line 72, ../sass/splash/_mobile.scss */
-.news .splash__header {
-  margin-bottom: 38px;
-  margin-bottom: 3.8rem;
-}
-
 /* line 3, ../sass/splash/newsroom/_mobile.scss */
 .splash__article {
   border-top: 1px solid #787583;
@@ -1065,8 +1059,53 @@ button {
 }
 
 /* line 65, ../sass/splash/newsroom/_mobile.scss */
-.splash__article--nav {
+.splash__article--body-container {
+  margin-bottom: 46px;
+  margin-bottom: 4.6rem;
+  position: relative;
+}
+
+/* line 70, ../sass/splash/newsroom/_mobile.scss */
+.splash__article--nav,
+.standard-button--arrow--article {
   display: none;
+}
+
+/* line 78, ../sass/splash/newsroom/_mobile.scss */
+.news-article .splash {
+  padding-bottom: 27px;
+  padding-bottom: 2.7rem;
+}
+/* line 82, ../sass/splash/newsroom/_mobile.scss */
+.news-article .splash__article {
+  border-top: none;
+  padding-top: 2px;
+  padding-top: .2rem;
+}
+/* line 88, ../sass/splash/newsroom/_mobile.scss */
+.news-article .splash__article--header img {
+  margin: -34px 0 37px -43px;
+  margin: -3.4rem 0 3.7rem -4.3rem;
+  max-height: 215px;
+  max-height: 21.5rem;
+  max-width: 100vw;
+  object-fit: cover;
+  width: 150%;
+}
+/* line 98, ../sass/splash/newsroom/_mobile.scss */
+.news-article .splash__article--headline {
+  margin-bottom: 33px;
+  margin-bottom: 3.3rem;
+}
+/* line 102, ../sass/splash/newsroom/_mobile.scss */
+.news-article .standard-button + .standard-button {
+  float: right;
+}
+
+/* line 73, ../sass/splash/_mobile.scss */
+.news .splash__header {
+  margin-bottom: 38px;
+  margin-bottom: 3.8rem;
 }
 
 /* line 3, ../sass/content/_mobile.scss */
@@ -2161,30 +2200,6 @@ button {
     bottom: 0;
   }
 
-  /* line 56, ../sass/splash/_desktop.scss */
-  .news .splash {
-    padding-bottom: 165px;
-    padding-bottom: 16.5rem;
-  }
-  /* line 60, ../sass/splash/_desktop.scss */
-  .news .splash__article--container {
-    display: inline-block;
-    max-width: 770px;
-    max-width: 77rem;
-  }
-  /* line 65, ../sass/splash/_desktop.scss */
-  .news .splash__header {
-    margin-bottom: 69px;
-    margin-bottom: 6.9rem;
-  }
-  /* line 69, ../sass/splash/_desktop.scss */
-  .news p,
-  .news .splash__p {
-    font-size: 18px;
-    font-size: 1.8rem;
-    line-height: 2;
-  }
-
   /* line 3, ../sass/splash/newsroom/_desktop.scss */
   .splash__article {
     border-top: 2px solid #372772;
@@ -2265,6 +2280,78 @@ button {
     color: #787583;
     display: block;
     line-height: 1.9;
+  }
+
+  /* line 70, ../sass/splash/newsroom/_desktop.scss */
+  .splash__article--body-container {
+    margin-bottom: 148px;
+    margin-bottom: 14.8rem;
+  }
+
+  /* line 74, ../sass/splash/newsroom/_desktop.scss */
+  .standard-button--arrow--article {
+    display: inline;
+  }
+
+  /* line 81, ../sass/splash/newsroom/_desktop.scss */
+  .news.news-article .splash {
+    padding-bottom: 10px;
+    padding-bottom: 1rem;
+  }
+  /* line 86, ../sass/splash/newsroom/_desktop.scss */
+  .news.news-article .splash__article .standard-button:first-of-type {
+    margin-left: -18px;
+    margin-left: -1.8rem;
+  }
+  /* line 92, ../sass/splash/newsroom/_desktop.scss */
+  .news.news-article .splash__article--header img {
+    margin: 3px auto 62px;
+    margin: .3rem auto 6.2rem;
+    max-height: 100%;
+    max-width: 1010px;
+    max-width: 101rem;
+  }
+  /* line 100, ../sass/splash/newsroom/_desktop.scss */
+  .news.news-article .splash__article--timestamp {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-top: 55px;
+    margin-top: 5.5rem;
+  }
+  /* line 106, ../sass/splash/newsroom/_desktop.scss */
+  .news.news-article .splash__article--headline {
+    margin-bottom: 46px;
+    margin-bottom: 4.6rem;
+  }
+
+  /* line 57, ../sass/splash/_desktop.scss */
+  .news .splash {
+    padding-bottom: 165px;
+    padding-bottom: 16.5rem;
+  }
+  /* line 61, ../sass/splash/_desktop.scss */
+  .news .splash__article--container {
+    display: inline-block;
+    max-width: 770px;
+    max-width: 77rem;
+  }
+  /* line 66, ../sass/splash/_desktop.scss */
+  .news .splash__header {
+    margin-bottom: 69px;
+    margin-bottom: 6.9rem;
+  }
+  /* line 70, ../sass/splash/_desktop.scss */
+  .news p,
+  .news .splash__p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+
+  /* line 78, ../sass/splash/_desktop.scss */
+  .news-article .splash__article {
+    max-width: 715px;
+    max-width: 71.5rem;
   }
 
   /* line 3, ../sass/content/_desktop.scss */
@@ -2667,6 +2754,13 @@ button {
   /* line 11, ../sass/content/_tablet.scss */
   .content__table--zero tr td:first-child {
     width: 50%;
+  }
+
+  /* line 5, ../sass/splash/newsroom/_tablet.scss */
+  .news.news-article .splash__article--header img {
+    margin-bottom: 0;
+    max-width: 100%;
+    width: 100%;
   }
 
   /* line 3, ../sass/footer/_tablet.scss */

@@ -67,3 +67,44 @@
     line-height: 1.9;
   }
 }
+.splash__article--body-container {
+  margin-bottom: 148px;
+  margin-bottom: 14.8rem;
+}
+.standard-button--arrow--article {
+  display: inline;
+}
+
+// Article-specific styles
+
+.news.news-article {
+  .splash {
+    padding-bottom: 10px;
+    padding-bottom: 1rem;
+  }
+  .splash__article {
+    .standard-button:first-of-type {
+      margin-left: -18px;
+      margin-left: -1.8rem;
+    }
+  }
+  .splash__article--header {
+    img {
+      margin: 3px auto 62px;
+      margin: .3rem auto 6.2rem;
+      max-height: 100%;
+      max-width: 1010px;
+      max-width: 101rem;
+    }
+  }
+  .splash__article--timestamp {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-top: 55px;
+    margin-top: 5.5rem;
+  }
+  .splash__article--headline {
+    margin-bottom: 46px;
+    margin-bottom: 4.6rem;
+  }
+}
