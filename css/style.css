@@ -486,27 +486,33 @@ button {
   height: auto;
   padding-bottom: 30px;
   padding-bottom: 3rem;
-  padding-top: 60px;
-  padding-top: 6rem;
+  padding-top: 58px;
+  padding-top: 5.8rem;
   position: relative;
   text-align: center;
 }
-
 /* line 17, ../sass/hero/_mobile.scss */
+.hero .standard-button {
+  height: 43px;
+  height: 4.3rem;
+  line-height: 0;
+}
+
+/* line 23, ../sass/hero/_mobile.scss */
 .hero__container {
   height: 100%;
   position: relative;
   width: 100%;
 }
 
-/* line 22, ../sass/hero/_mobile.scss */
+/* line 28, ../sass/hero/_mobile.scss */
 .hero__header {
   margin: 35px 40px 18px;
   margin: 3.5rem 4rem 1.8rem;
   position: relative;
 }
 
-/* line 27, ../sass/hero/_mobile.scss */
+/* line 33, ../sass/hero/_mobile.scss */
 .hero__headline {
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   font-size: 32px;
@@ -518,13 +524,13 @@ button {
   margin-bottom: 1rem;
 }
 
-/* line 37, ../sass/hero/_mobile.scss */
+/* line 43, ../sass/hero/_mobile.scss */
 .hero__headline--subhead {
   display: block;
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
 }
 
-/* line 41, ../sass/hero/_mobile.scss */
+/* line 47, ../sass/hero/_mobile.scss */
 .hero__p,
 .hero__list {
   font-family: "Trade Gothic Com", Arial, sans-serif;
@@ -541,33 +547,33 @@ button {
   margin-bottom: 5.2rem;
 }
 
-/* line 56, ../sass/hero/_mobile.scss */
+/* line 62, ../sass/hero/_mobile.scss */
 .hero__p--sup {
   font-size: .5rem;
   line-height: 2.2;
   vertical-align: top;
 }
 
-/* line 61, ../sass/hero/_mobile.scss */
+/* line 67, ../sass/hero/_mobile.scss */
 .hero__list {
   list-style: none;
   margin-bottom: 37px;
   margin-bottom: 3.7rem;
 }
 
-/* line 66, ../sass/hero/_mobile.scss */
+/* line 72, ../sass/hero/_mobile.scss */
 .hero__list--item {
   margin-bottom: 18px;
   margin-bottom: 1.8rem;
   position: relative;
 }
 
-/* line 71, ../sass/hero/_mobile.scss */
+/* line 77, ../sass/hero/_mobile.scss */
 .hero__list--dot {
   position: relative;
 }
 
-/* line 74, ../sass/hero/_mobile.scss */
+/* line 80, ../sass/hero/_mobile.scss */
 .hero__list--dot::after {
   content: '\2022';
   left: -18px;
@@ -576,18 +582,18 @@ button {
   top: -.5rem;
 }
 
-/* line 81, ../sass/hero/_mobile.scss */
+/* line 87, ../sass/hero/_mobile.scss */
 .hero__jump-btn {
   display: none;
 }
 
-/* line 88, ../sass/hero/_mobile.scss */
+/* line 94, ../sass/hero/_mobile.scss */
 .index .hero {
   padding-bottom: 60px;
   padding-bottom: 6rem;
 }
 
-/* line 95, ../sass/hero/_mobile.scss */
+/* line 101, ../sass/hero/_mobile.scss */
 .intelligence .hero,
 .zero .hero {
   background-image: url(..//media/hero-intelligence-2.jpg);
@@ -595,13 +601,13 @@ button {
   height: 100%;
   text-align: center;
 }
-/* line 101, ../sass/hero/_mobile.scss */
+/* line 107, ../sass/hero/_mobile.scss */
 .intelligence .hero__headline--sup,
 .zero .hero__headline--sup {
   font-size: 10px;
   font-size: 1rem;
 }
-/* line 105, ../sass/hero/_mobile.scss */
+/* line 111, ../sass/hero/_mobile.scss */
 .intelligence .hero__subhead,
 .zero .hero__subhead {
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
@@ -612,7 +618,7 @@ button {
   line-height: 1.8;
   text-transform: uppercase;
 }
-/* line 114, ../sass/hero/_mobile.scss */
+/* line 120, ../sass/hero/_mobile.scss */
 .intelligence .standard-button,
 .zero .standard-button {
   display: inline-block;
@@ -623,18 +629,18 @@ button {
   margin-bottom: 4.6rem;
 }
 
-/* line 124, ../sass/hero/_mobile.scss */
+/* line 130, ../sass/hero/_mobile.scss */
 .intelligence .standard-button {
   margin-bottom: 100px;
   margin-bottom: 10rem;
 }
-/* line 128, ../sass/hero/_mobile.scss */
+/* line 134, ../sass/hero/_mobile.scss */
 .intelligence .hero {
   margin-bottom: -56px;
   margin-bottom: -5.6rem;
 }
 
-/* line 134, ../sass/hero/_mobile.scss */
+/* line 140, ../sass/hero/_mobile.scss */
 .zero .hero {
   background-image: url(../media/hero-zero-2.jpg);
   background-position: 37% 80%;
@@ -1537,6 +1543,7 @@ button {
   /* line 35, ../sass/nav/_desktop.scss */
   .top-nav__links {
     display: inline-block;
+    height: auto;
     padding-top: 56px;
     padding-top: 5.6rem;
     -webkit-transform: translateY(0);
@@ -1547,7 +1554,7 @@ button {
     z-index: 11;
   }
 
-  /* line 46, ../sass/nav/_desktop.scss */
+  /* line 47, ../sass/nav/_desktop.scss */
   .top-nav__link,
   .top-nav__header,
   .top-nav__link-container {
@@ -1562,21 +1569,21 @@ button {
     position: relative;
   }
 
-  /* line 59, ../sass/nav/_desktop.scss */
+  /* line 60, ../sass/nav/_desktop.scss */
   .top-nav__header {
     cursor: pointer;
     margin-left: 0;
     z-index: 3;
   }
 
-  /* line 64, ../sass/nav/_desktop.scss */
+  /* line 65, ../sass/nav/_desktop.scss */
   .top-nav__link:first-of-type {
     padding: 0;
     margin-left: 64px;
     margin-left: 6.4rem;
   }
 
-  /* line 69, ../sass/nav/_desktop.scss */
+  /* line 70, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink {
     background: #372772;
     border-bottom: none;
@@ -1596,7 +1603,7 @@ button {
     z-index: 2;
   }
 
-  /* line 87, ../sass/nav/_desktop.scss */
+  /* line 88, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3) {
     padding-bottom: 36px;
     padding-bottom: 3.6rem;
@@ -1607,7 +1614,7 @@ button {
     z-index: 1;
   }
 
-  /* line 96, ../sass/nav/_desktop.scss */
+  /* line 97, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:focus,
   .top-nav__link-container:focus .top-nav__link--sublink,
   .top-nav__link-container:hover .top-nav__link--sublink {
@@ -1615,14 +1622,14 @@ button {
     left: -1.4rem;
   }
 
-  /* line 102, ../sass/nav/_desktop.scss */
+  /* line 103, ../sass/nav/_desktop.scss */
   .top-nav__header,
   .top-nav__link,
   .top-nav__link--sublink {
     outline: none;
   }
 
-  /* line 107, ../sass/nav/_desktop.scss */
+  /* line 108, ../sass/nav/_desktop.scss */
   .about .top-nav__link:first-child::after,
   .intelligence .top-nav__header::after,
   .zero .top-nav__header::after,
@@ -1642,7 +1649,7 @@ button {
     width: 95%;
   }
 
-  /* line 125, ../sass/nav/_desktop.scss */
+  /* line 126, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:hover::after {
     bottom: 13px;
     bottom: 1.3rem;
@@ -1651,14 +1658,14 @@ button {
     width: 53%;
   }
 
-  /* line 132, ../sass/nav/_desktop.scss */
+  /* line 133, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3):hover::after {
     bottom: 29px;
     bottom: 2.9rem;
     width: 56%;
   }
 
-  /* line 137, ../sass/nav/_desktop.scss */
+  /* line 138, ../sass/nav/_desktop.scss */
   .top-nav__login-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -1680,7 +1687,7 @@ button {
     transition: background .1s ease-in, color .1s ease-in;
   }
 
-  /* line 159, ../sass/nav/_desktop.scss */
+  /* line 160, ../sass/nav/_desktop.scss */
   .top-nav__login-btn:hover {
     background: #fff;
     color: #372772;

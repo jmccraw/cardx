@@ -9,10 +9,16 @@
   height: auto;
   padding-bottom: 30px;
   padding-bottom: 3rem;
-  padding-top: 60px;
-  padding-top: 6rem;
+  padding-top: 58px;
+  padding-top: 5.8rem;
   position: relative;
   text-align: center;
+  
+  .standard-button {
+    height: 43px;
+    height: 4.3rem;
+    line-height: 0;
+  }
 }
 .hero__container {
   height: 100%;
