@@ -1,7 +1,7 @@
 // Mobile Hero Section
 
 .hero {
-  background: transparent url(/media/hero-index-2.jpg) no-repeat 50% 50%;
+  background: transparent url(..//media/hero-index-3.jpg) no-repeat 50% 50%;
   background-size: cover;
   color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -85,7 +85,7 @@
 .intelligence,
 .zero {
   .hero {
-    background-image: url(/media/hero-intelligence.jpg);
+    background-image: url(..//media/hero-intelligence-2.jpg);
     height: 100%;
     text-align: center;
   }
@@ -112,6 +112,6 @@
 }
 .zero {
   .hero {
-    background-image: url(/media/hero-zero.jpg);
+    background-image: url(../media/hero-zero-2.jpg);
   }
 }

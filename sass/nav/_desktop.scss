@@ -99,6 +99,11 @@
   left: -14px;
   left: -1.4rem;
 }
+.top-nav__header,
+.top-nav__link,
+.top-nav__link--sublink {
+  outline: none;
+}
 .about .top-nav__link:first-child::after,
 .intelligence .top-nav__header::after,
 .zero .top-nav__header::after,
