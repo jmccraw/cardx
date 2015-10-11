@@ -216,7 +216,7 @@
         // add click to hero image Learn More
         _heroJump.addEventListener('click', function() {
           scrollBy = _w.setInterval(function() {
-            if (_w.scrollY + 10 <= h - 30 && _w.scrollY + 200 + _w.innerHeight < scrollHeight) {
+            if (_w.scrollY + 10 <= h - 30 && _w.scrollY + 200 + _w.innerHeight < scrollHeight && scrollHeight - h >= _w.scrollY + 10) {
               _w.scrollBy(0, 10);
             } else {
               _w.clearInterval(scrollBy);
