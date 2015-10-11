@@ -6,7 +6,9 @@
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 30px;
+  padding-bottom: 3rem;
   padding-top: 60px;
   padding-top: 6rem;
   position: relative;
@@ -82,6 +84,12 @@
 
 // Section-specific styles
 
+.index {
+  .hero {
+    padding-bottom: 60px;
+    padding-bottom: 6rem;
+  }
+}
 .intelligence,
 .zero {
   .hero {

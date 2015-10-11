@@ -470,28 +470,30 @@ button {
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 30px;
+  padding-bottom: 3rem;
   padding-top: 60px;
   padding-top: 6rem;
   position: relative;
   text-align: center;
 }
 
-/* line 15, ../sass/hero/_mobile.scss */
+/* line 17, ../sass/hero/_mobile.scss */
 .hero__container {
   height: 100%;
   position: relative;
   width: 100%;
 }
 
-/* line 20, ../sass/hero/_mobile.scss */
+/* line 22, ../sass/hero/_mobile.scss */
 .hero__header {
   margin: 35px 40px 18px;
   margin: 3.5rem 4rem 1.8rem;
   position: relative;
 }
 
-/* line 25, ../sass/hero/_mobile.scss */
+/* line 27, ../sass/hero/_mobile.scss */
 .hero__headline {
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   font-size: 32px;
@@ -503,13 +505,13 @@ button {
   margin-bottom: 1rem;
 }
 
-/* line 35, ../sass/hero/_mobile.scss */
+/* line 37, ../sass/hero/_mobile.scss */
 .hero__headline--subhead {
   display: block;
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
 }
 
-/* line 39, ../sass/hero/_mobile.scss */
+/* line 41, ../sass/hero/_mobile.scss */
 .hero__p,
 .hero__list {
   font-family: "Trade Gothic Com", Arial, sans-serif;
@@ -526,33 +528,33 @@ button {
   margin-bottom: 5.2rem;
 }
 
-/* line 54, ../sass/hero/_mobile.scss */
+/* line 56, ../sass/hero/_mobile.scss */
 .hero__p--sup {
   font-size: .5rem;
   line-height: 2.2;
   vertical-align: top;
 }
 
-/* line 59, ../sass/hero/_mobile.scss */
+/* line 61, ../sass/hero/_mobile.scss */
 .hero__list {
   list-style: none;
   margin-bottom: 37px;
   margin-bottom: 3.7rem;
 }
 
-/* line 64, ../sass/hero/_mobile.scss */
+/* line 66, ../sass/hero/_mobile.scss */
 .hero__list--item {
   margin-bottom: 18px;
   margin-bottom: 1.8rem;
   position: relative;
 }
 
-/* line 69, ../sass/hero/_mobile.scss */
+/* line 71, ../sass/hero/_mobile.scss */
 .hero__list--dot {
   position: relative;
 }
 
-/* line 72, ../sass/hero/_mobile.scss */
+/* line 74, ../sass/hero/_mobile.scss */
 .hero__list--dot::after {
   content: '\2022';
   left: -18px;
@@ -561,25 +563,31 @@ button {
   top: -.5rem;
 }
 
-/* line 79, ../sass/hero/_mobile.scss */
+/* line 81, ../sass/hero/_mobile.scss */
 .hero__jump-btn {
   display: none;
 }
 
-/* line 87, ../sass/hero/_mobile.scss */
+/* line 88, ../sass/hero/_mobile.scss */
+.index .hero {
+  padding-bottom: 60px;
+  padding-bottom: 6rem;
+}
+
+/* line 95, ../sass/hero/_mobile.scss */
 .intelligence .hero,
 .zero .hero {
   background-image: url(..//media/hero-intelligence-2.jpg);
   height: 100%;
   text-align: center;
 }
-/* line 92, ../sass/hero/_mobile.scss */
+/* line 100, ../sass/hero/_mobile.scss */
 .intelligence .hero__headline--sup,
 .zero .hero__headline--sup {
   font-size: 10px;
   font-size: 1rem;
 }
-/* line 96, ../sass/hero/_mobile.scss */
+/* line 104, ../sass/hero/_mobile.scss */
 .intelligence .hero__subhead,
 .zero .hero__subhead {
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
@@ -589,7 +597,7 @@ button {
   line-height: 1.8;
   text-transform: uppercase;
 }
-/* line 104, ../sass/hero/_mobile.scss */
+/* line 112, ../sass/hero/_mobile.scss */
 .intelligence .standard-button,
 .zero .standard-button {
   display: inline-block;
@@ -600,7 +608,7 @@ button {
   margin-bottom: 4.6rem;
 }
 
-/* line 114, ../sass/hero/_mobile.scss */
+/* line 122, ../sass/hero/_mobile.scss */
 .zero .hero {
   background-image: url(../media/hero-zero-2.jpg);
 }
@@ -1427,11 +1435,7 @@ button {
     width: 56%;
   }
 
-<<<<<<< HEAD
-  /* line 135, ../sass/nav/_desktop.scss */
-=======
-  /* line 132, ../sass/nav/_desktop.scss */
->>>>>>> c8829e303e618d70f5694204071d683d0680cffd
+  /* line 137, ../sass/nav/_desktop.scss */
   .top-nav__login-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -1453,11 +1457,7 @@ button {
     transition: background .1s ease-in, color .1s ease-in;
   }
 
-<<<<<<< HEAD
-  /* line 157, ../sass/nav/_desktop.scss */
-=======
-  /* line 154, ../sass/nav/_desktop.scss */
->>>>>>> c8829e303e618d70f5694204071d683d0680cffd
+  /* line 159, ../sass/nav/_desktop.scss */
   .top-nav__login-btn:hover {
     background: #fff;
     color: #372772;
