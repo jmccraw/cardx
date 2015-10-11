@@ -1,0 +1,67 @@
+// Mobile Newsroom
+
+.splash__article {
+  border-top: 1px solid $cool-gray;
+  padding: 30px 0 44px;
+  padding: 3rem 0 4.4rem;
+
+  .standard-button {
+    display: inline-block;
+    font-family: $bold-condensed;
+    font-size: m-px(44);
+    font-size: m-rem(44);
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: .25em;
+    padding: 0;
+    text-align: left;
+  }
+  .standard-button--arrow {
+    font-size: 120%;
+  }
+}
+.splash__article--header {
+  img {
+    height: auto;
+    margin: 3px auto 30px;
+    margin: .3rem auto 3rem;
+    width: 100%;
+  }
+}
+.splash__article--timestamp {
+  color: $cool-gray;
+  display: block;
+  font-family: $bold;
+  font-size: m-px(30);
+  font-size: m-rem(30);
+  font-weight: 400;
+  letter-spacing: .3em;
+  margin-bottom: 7px;
+  margin-bottom: .7rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.splash__article--headline {
+  color: $purple;
+  font-family: $bold-condensed;
+  font-size: m-px(72);
+  font-size: m-rem(72);
+  font-weight: 400;
+  @include tracking(50);
+  line-height: 1.4;
+  margin-bottom: 17px;
+  margin-bottom: 1.7rem;
+}
+.splash__article--load-more-btn {
+  background: $purple;
+  color: #fff;
+  display: block;
+  margin: 1.1rem auto 0;
+
+  .standard-button--arrow {
+    font-size: 100%;
+  }
+}
+.splash__article--nav {
+  display: none;
+}

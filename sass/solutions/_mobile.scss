@@ -36,8 +36,8 @@
   font-weight: 400;
   @include tracking(50);
   line-height: 1.2;
-  margin-bottom: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 23px;
+  margin-bottom: 2.3rem;
   padding-left: 20px;
   padding-left: 2rem;
 }
@@ -61,9 +61,13 @@
   font-size: m-rem(44);
   font-weight: 400;
   @include tracking(50);
-  @include leading(32);
+  line-height: 1.8;
   margin: 0 20px 54px;
   margin: 0 2rem 5.4rem;
+}
+.solutions__list--item {
+  margin-bottom: 17px;
+  margin-bottom: 1.7rem;
 }
 
 // Section-specific styles

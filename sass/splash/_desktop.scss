@@ -49,3 +49,28 @@
     bottom: 0;
   }
 }
+
+// Site-specific styles
+
+.news {
+  .splash {
+    padding-bottom: 165px;
+    padding-bottom: 16.5rem;
+  }
+  .splash__article--container {
+    display: inline-block;
+    max-width: 770px;
+    max-width: 77rem;
+  }
+  .splash__header {
+    margin-bottom: 69px;
+    margin-bottom: 6.9rem;
+  }
+  p,
+  .splash__p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+}
+@import "newsroom/desktop";

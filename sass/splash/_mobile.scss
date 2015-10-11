@@ -7,6 +7,34 @@
   padding: 36px 43px 70px;
   padding: 3.6rem 4.3rem 7rem;
   position: relative;
+
+  p,
+  .splash__p {
+    color: $cool-gray;
+    font-family: $medium;
+    font-size: m-px(44);
+    font-size: m-rem(44);
+    @include tracking(50);
+    line-height: 1.8;
+    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
+
+    a {
+      color: $purple;
+      position: relative;
+    }
+    a::after {
+      background: $purple;
+      bottom: -2px;
+      bottom: -.2rem;
+      content: '';
+      height: 1px;
+      height: .1rem;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
 }
 .splash__container {
   height: 100%;
@@ -37,29 +65,13 @@
   line-height: 1.6;
   text-transform: uppercase;
 }
-.splash__p {
-  color: $cool-gray;
-  font-family: $medium;
-  font-size: m-px(44);
-  font-size: m-rem(44);
-  @include tracking(50);
-  line-height: 1.8;
-  margin-bottom: 16px;
-  margin-bottom: 1.6rem;
 
-  a {
-    color: $purple;
-    position: relative;
-  }
-  a::after {
-    background: $purple;
-    bottom: -2px;
-    bottom: -.2rem;
-    content: '';
-    height: 1px;
-    height: .1rem;
-    left: 0;
-    position: absolute;
-    width: 100%;
+// Site-specific styles
+
+.news {
+  .splash__header {
+    margin-bottom: 38px;
+    margin-bottom: 3.8rem;
   }
 }
+@import "newsroom/mobile";
