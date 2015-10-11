@@ -75,8 +75,8 @@
   left: -99999em;
   @include tracking(50);
   margin: 0;
-  padding: 47px 36px 36px;
-  padding: 4.7rem 3.6rem 3.6rem;
+  padding: 47px 36px 20px;
+  padding: 4.7rem 3.6rem 2rem;
   position: absolute;
   top: 16px;
   top: 1.6rem;
@@ -87,10 +87,10 @@
 .top-nav__link--sublink:nth-child(3) {
   padding-bottom: 36px;
   padding-bottom: 3.6rem;
-  padding-top: 9px;
-  padding-top: .9rem;
-  top: 104px;
-  top: 10.4rem;
+  padding-top: 29px;
+  padding-top: 2.9rem;
+  top: 84px;
+  top: 8.4rem;
   z-index: 1;
 }
 .top-nav__link--sublink:focus,
@@ -123,13 +123,15 @@
   width: 95%;
 }
 .top-nav__link--sublink:hover::after {
-  bottom: 29px;
-  bottom: 2.9rem;
+  bottom: 13px;
+  bottom: 1.3rem;
   left: 36px;
   left: 3.6rem;
   width: 53%;
 }
 .top-nav__link--sublink:nth-child(3):hover::after {
+  bottom: 29px;
+  bottom: 2.9rem;
   width: 56%;
 }
 .top-nav__login-btn {
