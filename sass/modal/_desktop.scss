@@ -1,2 +1,140 @@
 // Desktop Modal Form
 
+.modal {
+  background: transparent;
+
+  .top-nav__close-btn {
+    display: block;
+  }
+  input {
+    font-size: 18px;
+    font-size: 1.8rem;
+    height: 43px;
+    height: 4.3rem;
+    line-height: 2.6;
+    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
+    padding: 0 17px;
+    padding: 0 1.7rem;
+  }
+  .modal__form--submit-btn {
+    display: block;
+    line-height: 4.3;
+    margin: 45px auto 0;
+    margin: 4.5rem auto 0;
+    width: 197px;
+    width: 19.7rem;
+  }
+  .top-nav__close-btn {
+    height: 22px;
+    height: 2.2rem;
+    right: 39px;
+    right: 3.9rem;
+    top: 36px;
+    top: 3.6rem;
+  }
+  .top-nav__close-btn svg {
+    height: 100%;
+  }
+  .modal__form--submit-btn {
+    line-height: 4;
+  }
+}
+.modal__container {
+  bottom: auto;
+  left: 50%;
+  margin-left: calc(84.5rem / -2);
+  max-height: 700px;
+  max-height: 70rem;
+  max-width: 845px;
+  max-width: 84.5rem;
+  padding: 104px 108px 69px 115px;
+  position: fixed;
+  right: auto;
+  top: 72px;
+  top: 7.2rem;
+  width: 100%;
+}
+.modal__header {
+  .standard--p {
+    line-height: 1.7;
+    margin: 12px auto;
+    margin: 1.2rem auto;
+    text-align: center;
+    width: 73%;
+  }
+  .standard-button {
+    letter-spacing: .25em;
+    margin: 55px auto 0;
+    margin: 5.5rem auto 0;
+    width: 197px;
+    width: 19.7rem;
+  }
+}
+.modal__header.is-successful {
+  padding-top: 122px;
+  padding-top: 12.2rem;
+
+  .standard--p {
+    margin: 16px auto 50px;
+    margin: 1.6rem auto 5rem;
+  }
+}
+.modal__header.is-successful .standard-button + .standard--p {
+  display: none;
+}
+.modal__headline {
+  font-size: 36px;
+  font-size: 3.6rem;
+  margin-top: -9px;
+  margin-top: -.9rem;
+  padding-top: 0;
+}
+.modal__form--required {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+.modal__form--input-container:first-child,
+.modal__form--input-container:nth-child(2) {
+  display: inline-block;
+  margin-right: 19px;
+  margin-right: 1.9rem;
+  width: 300px;
+  max-width: 30rem;
+}
+.modal__form--input-container:nth-child(2) {
+  margin-right: 0;
+}
+.modal__form--input-container:first-of-type {
+  .modal__form--required {
+    right: 25px;
+    right: 2.5rem;
+  }
+}
+.modal__form--input-container:nth-of-type(2) {
+  .modal__form--required {
+    right: 38px;
+    right: 3.8rem;
+  }
+}
+.modal__form--input-container:nth-of-type(4) {
+  .modal__form--required {
+    right: 149px;
+    right: 14.9rem;
+  }
+}
+.modal__form--input-container:last-of-type {
+  .modal__form--required {
+    right: 49px;
+    right: 4.9rem;
+  }
+}
+.modal__form--required {
+  right: 319px;
+  right: 31.9rem;
+  top: 23px;
+  top: 2.3rem;
+}
+.modal__form--optional {
+  display: inline;
+}

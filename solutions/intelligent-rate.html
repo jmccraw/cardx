@@ -134,7 +134,7 @@
       <li class="hero__list--item"><span class="hero__list--dot"></span>Pass on the actual cost of card acceptance to consumers</li>
       <li class="hero__list--item"><span class="hero__list--dot"></span>Reduce your institution’s processing costs to zero</li>
     </ul>
-    <a class="standard-button" href="" title="Request a demo"><span class="standard-button--arrow">&raquo;</span> Request a Demo</a>
+    <button class="standard-button modal-launch-btn" type="button" title="Request a demo"><span class="standard-button--arrow">&raquo;</span> Request a Demo</button>
   </section>
 </main>
 <!-- END HERO CONTENT -->
@@ -175,7 +175,7 @@
         <p class="standard--p">Recent regulatory activity underscores the need for transparency and fairness in consumer financial transactions. Intelligent Rate’s transparent service fee pricing helps institutions get ahead of these important trends. Intelligent Rate gives the consumer real-time information about savings, enabling her to reduce her service fee by choosing a lower-cost form of payment.</p>
         <p class="standard--p">The conventional, flat-rate service fee model can be good for the institution—but it is not always good for its consumers. Through technological innovation, Intelligent Rate meets the interests of both parties.</p>
       </section>
-      <a class="standard-button" href="" title="Request a Demo"><span class="standard-button--arrow">&raquo;</span> Request a Demo</a>
+      <button class="standard-button modal-launch-btn" type="button" title="Request a Demo"><span class="standard-button--arrow">&raquo;</span> Request a Demo</button>
     </article>
 
     <article class="content__article">
@@ -338,6 +338,52 @@
   </section>
 </footer>
 <!-- END FOOTER -->
+
+
+
+<!-- MODAL FORM -->
+<aside class="modal">
+  <div class="modal__overlay"></div>
+  <section class="modal__container">
+    <header class="modal__header">
+      <button id="modal-close-btn" class="top-nav__close-btn" type="button" title="Close">
+        <svg version="1.1" id="modal-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 183.4 183" style="enable-background:new 0 0 183.4 183;" xml:space="preserve">
+            <polygon class="st2" points="183.4,17.4 165.6,-0.4 91.7,73.5 17.8,-0.4 0,17.4 73.9,91.3 0,165.2 17.8,183 91.7,109.1 165.6,183
+              183.4,165.2 109.5,91.3 "/>
+          </svg>
+      </button>
+      <h4 class="modal__headline">Request a Free CardX Demo</h4>
+      <p class="modal__text standard--p" data-prev-msg="Request a Free CardX Demo">A member of our team will be in touch soon.</p>
+      <button id="modal-success-close-btn" class="standard-button" type="button" title="Return to the site"><span class="standard-button--arrow">&raquo;</span> Return to Site</button>
+      <p class="standard--p">Please complete the form below, and a member of our team will reach out to schedule a demo.</p>
+    </header>
+    <form id="modal-form" class="modal__form" method="post">
+      <div class="modal__form--input-container">
+        <input type="text" placeholder="First Name" name="firstname">
+        <span class="modal__form--required">required</span>
+      </div>
+      <div class="modal__form--input-container">
+        <input type="text" placeholder="Last Name" name="lastname">
+        <span class="modal__form--required">required</span>
+      </div>
+      <div class="modal__form--input-container">
+        <input type="text" placeholder="Organization" name="organization">
+        <span class="modal__form--required">required</span>
+      </div>
+      <div class="modal__form--input-container">
+        <input type="email" placeholder="Email" name="email">
+        <span class="modal__form--required"><span class="modal__form--optional">one form of </span>contact required</span>
+      </div>
+      <div class="modal__form--input-container">
+        <input class="modal__form--tel" type="tel" placeholder="Phone Number" name="phone">
+        <span class="modal__form--required"><span class="modal__form--optional">one form of </span>contact required</span>
+      </div>
+      <input class="modal__form--submit-btn standard-button" type="submit" title="Submit" value="» Submit">
+    </form>
+  </section>
+</aside>
+<!-- END MODAL FORM -->
 
 
 

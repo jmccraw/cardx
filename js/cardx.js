@@ -33,6 +33,16 @@
     'previous': 0
   };
 
+  // modal vars
+  var _modalBtns = document.querySelectorAll('.modal-launch-btn');
+  var _modal = document.querySelector('.modal');
+  var _modalForm;
+  var _tel = _modal.querySelector('.modal__form--tel');
+  var _modalInputs;
+  var _modalRequirements;
+  var _modalSuccess;
+  var firstModal = true;
+
   /**
    * Checks to see if on the index page
    * @type {Function}
@@ -154,6 +164,110 @@
   }
 
   /**
+   * Displays the required error message for the given field for 3 seconds
+   * @param {Object} el The required element
+   * @type {Function}
+   */
+  function setRequiredField(el) {
+    el.classList.add('is-erroring');
+    _w.setTimeout(function() {
+      el.classList.remove('is-erroring');
+    }, 3000);
+  }
+
+  /**
+   * Displays the form success page and resets fields on close
+   * @type {Function}
+   */
+  function showFormSuccessPage() {
+    _modalForm.classList.add('is-hidden');
+    _modalSuccess.parentElement.classList.add('is-successful');
+    _modalSuccess.setAttribute('data-prev-msg', _modalSuccess.previousElementSibling.innerHTML);
+    _modalSuccess.previousElementSibling.innerHTML = "Thank You for Your Interest in CardX";
+  }
+
+  /**
+   * Submit the valid form data
+   * @type {Function}
+   */
+  function submitDemoRequestForm() {
+    // TODO FIXME Submit form data some place
+
+    // load the final modal overlay
+    showFormSuccessPage();
+  }
+
+  /**
+   * Validates our form data
+   * @type {Function}
+   */
+  function validateFormData() {
+    var mi = _modalInputs.length - 2;
+    for (; mi >= 0; --mi) {
+      var m = _modalInputs[mi];
+      if (m.value.length === 0 || m.value === '') {
+        m.setAttribute('data-good', 'false');
+        setRequiredField(m.nextElementSibling);
+      } else if (m.type === 'email' && !/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(m.value)) {
+        m.setAttribute('data-good', 'false');
+        setRequiredField(m.nextElementSibling);
+      } else if (m.type === 'tel' && m.value.length < 10) {
+        m.setAttribute('data-good', 'false');
+        setRequiredField(m.nextElementSibling);
+      } else {
+        m.setAttribute('data-good', 'true');
+      }
+    }
+    if (_modal.querySelectorAll('[data-good="true"]').length === _modalInputs.length - 1) {
+      submitDemoRequestForm();
+    }
+  }
+
+  /**
+   * Closes the open demo request modal
+   * @param {Event} e The click event
+   * @type {Function}
+   */
+  function closeOpenModal(e) {
+    var mi = _modalInputs.length - 2;
+    if (e.preventDefault) {
+      e.preventDefault();
+    }
+    // close the modal
+    _modal.classList.remove('is-open');
+    // reset all the form data
+    _modalForm.classList.remove('is-hidden');
+    _modalSuccess.parentElement.classList.remove('is-successful');
+    _modalSuccess.previousElementSibling.innerHTML = _modalSuccess.getAttribute('data-prev-msg');
+    for (; mi >= 0; --mi) {
+      _modalInputs[mi].value = '';
+      _modalInputs[mi].setAttribute('data-good', 'false');
+    }
+  }
+
+  /**
+   * Loads modal query selectors and form functions
+   * @type {Function}
+   */
+  function loadModalForm() {
+    _modalForm = document.getElementById('modal-form');
+    _modalInputs = _modal.querySelectorAll('input');
+    _modalRequirements = _modal.querySelectorAll('.modal__form--required');
+    _modalSuccess = _modal.querySelector('.modal__text');
+
+    document.getElementById('modal-close-btn').addEventListener('click', closeOpenModal, false);
+    document.getElementById('modal-success-close-btn').addEventListener('click', closeOpenModal, false);
+    document.querySelector('.modal__overlay').addEventListener('click', closeOpenModal, false);
+
+    _modalInputs[_modalInputs.length - 1].addEventListener('click', function(e) {
+      if (e.preventDefault) {
+        e.preventDefault();
+      }
+      validateFormData();
+    }, false);
+  }
+
+  /**
    * Add or remove the mobile menu visibility toggle class
    * @type {Function}
    */
@@ -199,6 +313,8 @@
         }
       }, false);
     }
+
+    _tel.placeholder = 'Phone';
   }
 
   /**
@@ -225,6 +341,8 @@
         }, false);
       }
     }
+
+    _tel.placeholder = 'Phone Number';
   }
 
   /**
@@ -264,6 +382,7 @@
   function init() {
     var mobileLoaded = false;
     var desktopLoaded = false;
+    var mb = _modalBtns.length - 1;
     // if the homepage, start the testimonials carousel
     if (isHomepage()) {
       loadTestimonials();
@@ -287,6 +406,20 @@
 
     // load mobile functions if mobile
     testBreakpoints();
+
+    // load modal functionality
+    for (; mb >= 0; --mb) {
+      _modalBtns[mb].addEventListener('click', function () {
+        if (firstModal) {
+          firstModal = false;
+          loadModalForm();
+        }
+        _modal.classList.add('is-open');
+        if (_w.innerWidth < 768) {
+          _w.scrollTo(0, 0);
+        }
+      }, false);
+    }
   }
 
   init();
