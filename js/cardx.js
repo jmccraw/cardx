@@ -10,6 +10,7 @@
   var _topNav = document.querySelector('.top-nav');
   var _mobileMenu = _topNav.querySelector('.top-nav__banner');
   var _hamburger = _mobileMenu.querySelector('.top-nav__close-btn');
+  var _solutions = _topNav.querySelector('.top-nav__header');
   var testMobileNav;
   var scroll = {
     'current': 0,
@@ -44,6 +45,7 @@
   var firstModal = true;
 
   // newsroom vars
+  var _archiveBtn = document.querySelectorAll('.splash__article--nav > button');
   var _loadMore = document.getElementById('load-more-news-btn');
 
   /**
@@ -187,6 +189,9 @@
     _modalSuccess.parentElement.classList.add('is-successful');
     _modalSuccess.setAttribute('data-prev-msg', _modalSuccess.previousElementSibling.innerHTML);
     _modalSuccess.previousElementSibling.innerHTML = "Thank You for Your Interest in CardX";
+    if (_w.innerWidth < 768) {
+      _w.scrollTo(0, 0);
+    }
   }
 
   /**
@@ -208,13 +213,15 @@
     var mi = _modalInputs.length - 2;
     for (; mi >= 0; --mi) {
       var m = _modalInputs[mi];
-      if (m.value.length === 0 || m.value === '') {
+      if ((m.value.length === 0 || m.value === '') && m.name !== 'email' && m.name !== 'phone') {
         m.setAttribute('data-good', 'false');
         setRequiredField(m.nextElementSibling);
-      } else if (m.type === 'email' && !/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(m.value)) {
+      } else if (m.type === 'email' && m.value.length > 0 && !/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(m.value)) {
+        m.value = '';
         m.setAttribute('data-good', 'false');
         setRequiredField(m.nextElementSibling);
-      } else if (m.type === 'tel' && m.value.length < 10) {
+      } else if (m.type === 'tel' && m.value.length < 10 && m.value.length > 0) {
+        m.value = '';
         m.setAttribute('data-good', 'false');
         setRequiredField(m.nextElementSibling);
       } else {
@@ -272,17 +279,31 @@
   }
 
   /**
-   * Loads the newsroom section Load More button functionality
+   * Loads the newsroom section button functionality
    * @type {Function}
    */
   function loadNewsroomFunctionality() {
-    _loadMore.addEventListener('click', function(e) {
-      if (e.preventDefault) {
-        e.preventDefault();
+    if (_loadMore) {
+      _loadMore.addEventListener('click', function (e) {
+        if (e.preventDefault) {
+          e.preventDefault();
+        }
+        _loadMore.previousElementSibling.classList.add('is-loaded');
+        _loadMore.classList.add('is-hidden');
+      }, false);
+    }
+    if (_archiveBtn) {
+      var ab = _archiveBtn.length - 1;
+      for (; ab >= 0; --ab) {
+        _archiveBtn[ab].addEventListener('click', function() {
+          if (!this.classList.contains('is-active')) {
+            this.classList.add('is-active');
+          } else {
+            this.classList.remove('is-active');
+          }
+        }, false);
       }
-      _loadMore.previousElementSibling.classList.add('is-loaded');
-      _loadMore.classList.add('is-hidden');
-    }, false);
+    }
   }
 
   /**
@@ -360,6 +381,17 @@
           }, 2);
         }, false);
       }
+
+      _solutions.addEventListener('click', function(e) {
+        if (e.preventDefault) {
+          e.preventDefault();
+        }
+        if (!this.classList.contains('is-open')) {
+          this.classList.add('is-open');
+        } else {
+          this.classList.remove('is-open');
+        }
+      }, false);
     }
 
     if (_tel) {
@@ -446,7 +478,7 @@
     }
 
     // load newsroom functionality
-    if (_loadMore) {
+    if (_loadMore || _archiveBtn) {
       loadNewsroomFunctionality();
     }
   }
