@@ -1545,32 +1545,34 @@ button {
   font-size: 11px;
   font-size: 1.1rem;
   font-weight: 900;
-  line-height: 4;
+  height: 43px;
+  height: 4.3rem;
+  line-height: 0;
   margin-top: 20px;
   margin-top: 2rem;
 }
-/* line 62, ../sass/modal/_mobile.scss */
+/* line 64, ../sass/modal/_mobile.scss */
 .modal input::-webkit-input-placeholder {
   color: #fff;
 }
-/* line 65, ../sass/modal/_mobile.scss */
+/* line 67, ../sass/modal/_mobile.scss */
 .modal input::-moz-input-placeholder {
   color: #fff;
 }
-/* line 68, ../sass/modal/_mobile.scss */
+/* line 70, ../sass/modal/_mobile.scss */
 .modal input:-moz-input-placeholder {
   color: #fff;
 }
-/* line 71, ../sass/modal/_mobile.scss */
+/* line 73, ../sass/modal/_mobile.scss */
 .modal input::-ms-input-placeholder {
   color: #fff;
 }
-/* line 74, ../sass/modal/_mobile.scss */
+/* line 76, ../sass/modal/_mobile.scss */
 .modal input::input-placeholder {
   color: #fff;
 }
 
-/* line 78, ../sass/modal/_mobile.scss */
+/* line 80, ../sass/modal/_mobile.scss */
 .modal__overlay {
   background: #787583;
   bottom: 0;
@@ -1582,12 +1584,12 @@ button {
   top: -7rem;
 }
 
-/* line 88, ../sass/modal/_mobile.scss */
+/* line 90, ../sass/modal/_mobile.scss */
 .modal.is-open {
   display: block;
 }
 
-/* line 91, ../sass/modal/_mobile.scss */
+/* line 93, ../sass/modal/_mobile.scss */
 .modal__container {
   background: #fff;
   height: 200%;
@@ -1597,12 +1599,12 @@ button {
   width: 100%;
 }
 
-/* line 99, ../sass/modal/_mobile.scss */
+/* line 101, ../sass/modal/_mobile.scss */
 .modal__header {
   margin-bottom: 43px;
   margin-bottom: 4.3rem;
 }
-/* line 103, ../sass/modal/_mobile.scss */
+/* line 105, ../sass/modal/_mobile.scss */
 .modal__header .standard-button {
   background: #372772;
   border: 1px solid #372772;
@@ -1613,13 +1615,13 @@ button {
   width: 100%;
 }
 
-/* line 113, ../sass/modal/_mobile.scss */
+/* line 115, ../sass/modal/_mobile.scss */
 .modal__header.is-successful {
   padding-top: 60px;
   padding-top: 6rem;
 }
 
-/* line 117, ../sass/modal/_mobile.scss */
+/* line 119, ../sass/modal/_mobile.scss */
 .modal__headline {
   color: #372772;
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
@@ -1633,7 +1635,7 @@ button {
   text-align: center;
 }
 
-/* line 129, ../sass/modal/_mobile.scss */
+/* line 131, ../sass/modal/_mobile.scss */
 .modal__text,
 .modal__text + .standard-button,
 .modal__form.is-hidden,
@@ -1642,13 +1644,13 @@ button {
   display: none;
 }
 
-/* line 136, ../sass/modal/_mobile.scss */
+/* line 138, ../sass/modal/_mobile.scss */
 .modal__header.is-successful .modal__text,
 .modal__header.is-successful .modal__text + .standard-button {
   display: block;
 }
 
-/* line 140, ../sass/modal/_mobile.scss */
+/* line 142, ../sass/modal/_mobile.scss */
 .modal__text {
   margin: 17px auto 52px;
   margin: 1.7rem auto 5.2rem;
@@ -1657,36 +1659,36 @@ button {
   width: 80%;
 }
 
-/* line 147, ../sass/modal/_mobile.scss */
+/* line 149, ../sass/modal/_mobile.scss */
 .modal__form--input-container {
   position: relative;
 }
 
-/* line 151, ../sass/modal/_mobile.scss */
+/* line 153, ../sass/modal/_mobile.scss */
 .modal__form--input-container:first-of-type .modal__form--required {
   right: 55px;
   right: 5.5rem;
 }
 
-/* line 157, ../sass/modal/_mobile.scss */
+/* line 159, ../sass/modal/_mobile.scss */
 .modal__form--input-container:nth-of-type(2) .modal__form--required {
   right: 65px;
   right: 6.5rem;
 }
 
-/* line 163, ../sass/modal/_mobile.scss */
+/* line 165, ../sass/modal/_mobile.scss */
 .modal__form--input-container:nth-of-type(4) .modal__form--required {
   right: 46px;
   right: 4.6rem;
 }
 
-/* line 169, ../sass/modal/_mobile.scss */
+/* line 171, ../sass/modal/_mobile.scss */
 .modal__form--input-container:last-of-type .modal__form--required {
   right: 42px;
   right: 4.2rem;
 }
 
-/* line 174, ../sass/modal/_mobile.scss */
+/* line 176, ../sass/modal/_mobile.scss */
 .modal__form--required {
   background: #787583;
   color: #e03434;
@@ -1705,12 +1707,12 @@ button {
   top: 2.2rem;
 }
 
-/* line 191, ../sass/modal/_mobile.scss */
+/* line 193, ../sass/modal/_mobile.scss */
 .modal__form--required.is-erroring {
   display: block;
 }
 
-/* line 194, ../sass/modal/_mobile.scss */
+/* line 196, ../sass/modal/_mobile.scss */
 .modal__form--required::after {
   content: '\002A';
   color: #e03434;
@@ -3082,7 +3084,6 @@ button {
   .modal .modal__form--submit-btn {
     border: 1px solid #372772;
     display: block;
-    line-height: 3.7;
     margin: 45px auto 0;
     margin: 4.5rem auto 0;
     -webkit-transition: background .25s ease-in, color .25s ease-in;
@@ -3090,12 +3091,12 @@ button {
     width: 197px;
     width: 19.7rem;
   }
-  /* line 33, ../sass/modal/_desktop.scss */
+  /* line 32, ../sass/modal/_desktop.scss */
   .modal .modal__form--submit-btn:hover {
     background: #fff;
     color: #372772;
   }
-  /* line 37, ../sass/modal/_desktop.scss */
+  /* line 36, ../sass/modal/_desktop.scss */
   .modal .top-nav__close-btn {
     height: 22px;
     height: 2.2rem;
@@ -3104,12 +3105,12 @@ button {
     top: 36px;
     top: 3.6rem;
   }
-  /* line 45, ../sass/modal/_desktop.scss */
+  /* line 44, ../sass/modal/_desktop.scss */
   .modal .top-nav__close-btn svg {
     height: 100%;
   }
 
-  /* line 49, ../sass/modal/_desktop.scss */
+  /* line 48, ../sass/modal/_desktop.scss */
   .modal__container {
     bottom: auto;
     left: 50%;
@@ -3126,7 +3127,7 @@ button {
     width: 100%;
   }
 
-  /* line 65, ../sass/modal/_desktop.scss */
+  /* line 64, ../sass/modal/_desktop.scss */
   .modal__header .standard--p {
     line-height: 1.7;
     margin: 12px auto;
@@ -3134,7 +3135,7 @@ button {
     text-align: center;
     width: 73%;
   }
-  /* line 72, ../sass/modal/_desktop.scss */
+  /* line 71, ../sass/modal/_desktop.scss */
   .modal__header .standard-button {
     border: 1px solid #372772;
     letter-spacing: .25em;
@@ -3145,29 +3146,29 @@ button {
     width: 197px;
     width: 19.7rem;
   }
-  /* line 84, ../sass/modal/_desktop.scss */
+  /* line 83, ../sass/modal/_desktop.scss */
   .modal__header .standard-button:hover {
     background: #fff;
     color: #372772;
   }
 
-  /* line 89, ../sass/modal/_desktop.scss */
+  /* line 88, ../sass/modal/_desktop.scss */
   .modal__header.is-successful {
     padding-top: 122px;
     padding-top: 12.2rem;
   }
-  /* line 93, ../sass/modal/_desktop.scss */
+  /* line 92, ../sass/modal/_desktop.scss */
   .modal__header.is-successful .standard--p {
     margin: 16px auto 50px;
     margin: 1.6rem auto 5rem;
   }
 
-  /* line 98, ../sass/modal/_desktop.scss */
+  /* line 97, ../sass/modal/_desktop.scss */
   .modal__header.is-successful .standard-button + .standard--p {
     display: none;
   }
 
-  /* line 101, ../sass/modal/_desktop.scss */
+  /* line 100, ../sass/modal/_desktop.scss */
   .modal__headline {
     font-size: 36px;
     font-size: 3.6rem;
@@ -3176,13 +3177,13 @@ button {
     padding-top: 0;
   }
 
-  /* line 108, ../sass/modal/_desktop.scss */
+  /* line 107, ../sass/modal/_desktop.scss */
   .modal__form--required {
     font-size: 18px;
     font-size: 1.8rem;
   }
 
-  /* line 112, ../sass/modal/_desktop.scss */
+  /* line 111, ../sass/modal/_desktop.scss */
   .modal__form--input-container:first-child,
   .modal__form--input-container:nth-child(2) {
     display: inline-block;
@@ -3192,36 +3193,36 @@ button {
     max-width: 30rem;
   }
 
-  /* line 120, ../sass/modal/_desktop.scss */
+  /* line 119, ../sass/modal/_desktop.scss */
   .modal__form--input-container:nth-child(2) {
     margin-right: 0;
   }
 
-  /* line 124, ../sass/modal/_desktop.scss */
+  /* line 123, ../sass/modal/_desktop.scss */
   .modal__form--input-container:first-of-type .modal__form--required {
     right: 25px;
     right: 2.5rem;
   }
 
-  /* line 130, ../sass/modal/_desktop.scss */
+  /* line 129, ../sass/modal/_desktop.scss */
   .modal__form--input-container:nth-of-type(2) .modal__form--required {
     right: 38px;
     right: 3.8rem;
   }
 
-  /* line 136, ../sass/modal/_desktop.scss */
+  /* line 135, ../sass/modal/_desktop.scss */
   .modal__form--input-container:nth-of-type(4) .modal__form--required {
     right: 149px;
     right: 14.9rem;
   }
 
-  /* line 142, ../sass/modal/_desktop.scss */
+  /* line 141, ../sass/modal/_desktop.scss */
   .modal__form--input-container:last-of-type .modal__form--required {
     right: 49px;
     right: 4.9rem;
   }
 
-  /* line 147, ../sass/modal/_desktop.scss */
+  /* line 146, ../sass/modal/_desktop.scss */
   .modal__form--required {
     right: 319px;
     right: 31.9rem;
@@ -3229,7 +3230,7 @@ button {
     top: 2.3rem;
   }
 
-  /* line 153, ../sass/modal/_desktop.scss */
+  /* line 152, ../sass/modal/_desktop.scss */
   .modal__form--optional {
     display: inline;
   }

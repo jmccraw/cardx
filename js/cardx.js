@@ -210,7 +210,8 @@
    * @type {Function}
    */
   function validateFormData() {
-    var mi = _modalInputs.length - 2;
+    var mi = _modalInputs.length - 1;
+    var p = _modalInputs[_modalInputs.length - 1];
     for (; mi >= 0; --mi) {
       var m = _modalInputs[mi];
       if ((m.value.length === 0 || m.value === '') && m.name !== 'email' && m.name !== 'phone') {
@@ -224,11 +225,16 @@
         m.value = '';
         m.setAttribute('data-good', 'false');
         setRequiredField(m.nextElementSibling);
+      } else if (p.value.length === 0 && m.type === 'email') {
+        m.setAttribute('data-good', 'false');
+        p.setAttribute('data-good', 'false');
+        setRequiredField(m.nextElementSibling);
+        setRequiredField(p.nextElementSibling);
       } else {
         m.setAttribute('data-good', 'true');
       }
     }
-    if (_modal.querySelectorAll('[data-good="true"]').length === _modalInputs.length - 1) {
+    if (_modal.querySelectorAll('[data-good="true"]').length === _modalInputs.length) {
       submitDemoRequestForm();
     }
   }
@@ -270,7 +276,7 @@
     document.getElementById('modal-success-close-btn').addEventListener('click', closeOpenModal, false);
     document.querySelector('.modal__overlay').addEventListener('click', closeOpenModal, false);
 
-    _modalInputs[_modalInputs.length - 1].addEventListener('click', function(e) {
+    document.querySelector('.modal__form--submit-btn').addEventListener('click', function(e) {
       if (e.preventDefault) {
         e.preventDefault();
       }
