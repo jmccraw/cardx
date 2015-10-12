@@ -127,13 +127,14 @@
   }
 }
 .intelligence {
-  .standard-button {
-    margin-bottom: 100px;
-    margin-bottom: 10rem;
-  }
   .hero {
     margin-bottom: -56px;
     margin-bottom: -5.6rem;
+
+    .standard-button {
+      margin-bottom: 100px;
+      margin-bottom: 10rem;
+    }
   }
 }
 .zero {

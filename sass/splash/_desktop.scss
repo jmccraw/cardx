@@ -52,6 +52,13 @@
 
 // Site-specific styles
 
+.about {
+  .splash__p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.9;
+  }
+}
 @import "newsroom/desktop";
 .news {
   .splash {

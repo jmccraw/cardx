@@ -49,7 +49,7 @@
   top: 4.1rem;
 
   h3,
-  a {
+  button {
     color: $purple;
     font-family: $bold;
     font-size: 18px;
@@ -61,11 +61,44 @@
     margin-bottom: 19px;
     margin-bottom: 1.9rem;
   }
-  a {
+  button {
+    background: transparent;
+    border: none;
     color: $cool-gray;
+    cursor: pointer;
     display: block;
     line-height: 1.9;
   }
+  button.is-active .splash__article--arrow {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+  button.is-active + .splash__article--archive {
+    display: block;
+  }
+}
+.splash__article--archive {
+  display: none;
+  padding-left: 20px;
+  padding-left: 2rem;
+
+  .standard--p {
+    font-size: 15px;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+  .standard--p::before {
+    content: '\2013';
+    padding-right: 5px;
+    padding-right: .5rem;
+  }
+}
+.splash__article--arrow {
+  display: inline-block;
+  -webkit-transform: rotateZ(0);
+  transform: rotateZ(0);
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
 }
 .splash__article--body-container {
   margin-bottom: 148px;

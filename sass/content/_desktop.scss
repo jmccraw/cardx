@@ -28,6 +28,10 @@
   margin-bottom: 71px;
   margin-bottom: 7.1rem;
 }
+.content__article:last-of-type {
+  margin-bottom: -19px;
+  margin-bottom: -1.9rem;
+}
 .content__header {
   padding-top: 51px;
   padding-top: 5.1rem;
@@ -207,6 +211,10 @@
 // Site-specific styles
 
 .zero {
+  .content__container {
+    padding: 47px 0 0;
+    padding: 4.7rem 0 0;
+  }
   .content__subhead,
   .standard--p {
     max-width: 715px;

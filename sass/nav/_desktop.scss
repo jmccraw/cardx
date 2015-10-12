@@ -100,7 +100,8 @@
 }
 .top-nav__link--sublink:focus,
 .top-nav__link-container:focus .top-nav__link--sublink,
-.top-nav__link-container:hover .top-nav__link--sublink {
+.top-nav__link-container:hover .top-nav__link--sublink,
+.top-nav__link-container.is-open .top-nav__link--sublink{
   left: -14px;
   left: -1.4rem;
 }

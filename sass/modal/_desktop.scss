@@ -18,12 +18,21 @@
     padding: 0 1.7rem;
   }
   .modal__form--submit-btn {
+    border: 1px solid $purple;
     display: block;
-    line-height: 4.3;
+    line-height: 3.7;
     margin: 45px auto 0;
     margin: 4.5rem auto 0;
+    -webkit-transition: background .25s ease-in,
+      color .25s ease-in;
+    transition: background .25s ease-in,
+      color .25s ease-in;
     width: 197px;
     width: 19.7rem;
+  }
+  .modal__form--submit-btn:hover {
+    background: #fff;
+    color: $purple;
   }
   .top-nav__close-btn {
     height: 22px;
@@ -35,9 +44,6 @@
   }
   .top-nav__close-btn svg {
     height: 100%;
-  }
-  .modal__form--submit-btn {
-    line-height: 4;
   }
 }
 .modal__container {
@@ -64,11 +70,20 @@
     width: 73%;
   }
   .standard-button {
+    border: 1px solid $purple;
     letter-spacing: .25em;
     margin: 55px auto 0;
     margin: 5.5rem auto 0;
+    -webkit-transition: background .25s ease-in,
+      color .25s ease-in;
+    transition: background .25s ease-in,
+      color .25s ease-in;
     width: 197px;
     width: 19.7rem;
+  }
+  .standard-button:hover {
+    background: #fff;
+    color: $purple;
   }
 }
 .modal__header.is-successful {
