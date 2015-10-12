@@ -37,11 +37,14 @@
   var _modalBtns = document.querySelectorAll('.modal-launch-btn');
   var _modal = document.querySelector('.modal');
   var _modalForm;
-  var _tel = _modal.querySelector('.modal__form--tel');
+  var _tel;
   var _modalInputs;
   var _modalRequirements;
   var _modalSuccess;
   var firstModal = true;
+
+  // newsroom vars
+  var _loadMore = document.getElementById('load-more-news-btn');
 
   /**
    * Checks to see if on the index page
@@ -250,6 +253,7 @@
    * @type {Function}
    */
   function loadModalForm() {
+    _tel = _modal.querySelector('.modal__form--tel');
     _modalForm = document.getElementById('modal-form');
     _modalInputs = _modal.querySelectorAll('input');
     _modalRequirements = _modal.querySelectorAll('.modal__form--required');
@@ -264,6 +268,20 @@
         e.preventDefault();
       }
       validateFormData();
+    }, false);
+  }
+
+  /**
+   * Loads the newsroom section Load More button functionality
+   * @type {Function}
+   */
+  function loadNewsroomFunctionality() {
+    _loadMore.addEventListener('click', function(e) {
+      if (e.preventDefault) {
+        e.preventDefault();
+      }
+      _loadMore.previousElementSibling.classList.add('is-loaded');
+      _loadMore.classList.add('is-hidden');
     }, false);
   }
 
@@ -314,7 +332,9 @@
       }, false);
     }
 
-    _tel.placeholder = 'Phone';
+    if (_tel) {
+      _tel.placeholder = 'Phone';
+    }
   }
 
   /**
@@ -342,7 +362,9 @@
       }
     }
 
-    _tel.placeholder = 'Phone Number';
+    if (_tel) {
+      _tel.placeholder = 'Phone Number';
+    }
   }
 
   /**
@@ -408,17 +430,24 @@
     testBreakpoints();
 
     // load modal functionality
-    for (; mb >= 0; --mb) {
-      _modalBtns[mb].addEventListener('click', function () {
-        if (firstModal) {
-          firstModal = false;
-          loadModalForm();
-        }
-        _modal.classList.add('is-open');
-        if (_w.innerWidth < 768) {
-          _w.scrollTo(0, 0);
-        }
-      }, false);
+    if (_modal) {
+      for (; mb >= 0; --mb) {
+        _modalBtns[mb].addEventListener('click', function () {
+          if (firstModal) {
+            firstModal = false;
+            loadModalForm();
+          }
+          _modal.classList.add('is-open');
+          if (_w.innerWidth < 768) {
+            _w.scrollTo(0, 0);
+          }
+        }, false);
+      }
+    }
+
+    // load newsroom functionality
+    if (_loadMore) {
+      loadNewsroomFunctionality();
     }
   }
 

@@ -48,6 +48,9 @@
     vertical-align: top;
   }
 }
+.content__article:last-of-type {
+  margin-bottom: 0;
+}
 .content__header {
   border-top: 2px solid $purple;
   padding-top: 27px;

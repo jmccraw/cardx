@@ -1123,22 +1123,29 @@ button {
 
 /* line 70, ../sass/splash/newsroom/_mobile.scss */
 .splash__article--nav,
-.standard-button--arrow--article {
+.standard-button--arrow--article,
+.splash__article--load-more-section,
+.splash__article--load-more-btn.is-hidden {
   display: none;
 }
 
-/* line 78, ../sass/splash/newsroom/_mobile.scss */
+/* line 76, ../sass/splash/newsroom/_mobile.scss */
+.splash__article--load-more-section.is-loaded {
+  display: block;
+}
+
+/* line 83, ../sass/splash/newsroom/_mobile.scss */
 .news-article .splash {
   padding-bottom: 27px;
   padding-bottom: 2.7rem;
 }
-/* line 82, ../sass/splash/newsroom/_mobile.scss */
+/* line 87, ../sass/splash/newsroom/_mobile.scss */
 .news-article .splash__article {
   border-top: none;
   padding-top: 2px;
   padding-top: .2rem;
 }
-/* line 88, ../sass/splash/newsroom/_mobile.scss */
+/* line 93, ../sass/splash/newsroom/_mobile.scss */
 .news-article .splash__article--header img {
   margin: -34px 0 37px -43px;
   margin: -3.4rem 0 3.7rem -4.3rem;
@@ -1148,12 +1155,12 @@ button {
   object-fit: cover;
   width: 150%;
 }
-/* line 98, ../sass/splash/newsroom/_mobile.scss */
+/* line 103, ../sass/splash/newsroom/_mobile.scss */
 .news-article .splash__article--headline {
   margin-bottom: 33px;
   margin-bottom: 3.3rem;
 }
-/* line 102, ../sass/splash/newsroom/_mobile.scss */
+/* line 107, ../sass/splash/newsroom/_mobile.scss */
 .news-article .standard-button + .standard-button {
   float: right;
 }
@@ -1233,13 +1240,18 @@ button {
 }
 
 /* line 51, ../sass/content/_mobile.scss */
+.content__article:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 54, ../sass/content/_mobile.scss */
 .content__header {
   border-top: 2px solid #372772;
   padding-top: 27px;
   padding-top: 2.7rem;
 }
 
-/* line 56, ../sass/content/_mobile.scss */
+/* line 59, ../sass/content/_mobile.scss */
 .content__headline,
 .content__subhead,
 .content__table--zero tbody tr {
@@ -1252,25 +1264,25 @@ button {
   text-transform: uppercase;
 }
 
-/* line 67, ../sass/content/_mobile.scss */
+/* line 70, ../sass/content/_mobile.scss */
 .content__headline {
   margin-bottom: 33px;
   margin-bottom: 3.3rem;
 }
 
-/* line 71, ../sass/content/_mobile.scss */
+/* line 74, ../sass/content/_mobile.scss */
 .content__subhead {
   font-family: "Trade Gothic Com Bold", Arial, sans-serif;
 }
 
-/* line 74, ../sass/content/_mobile.scss */
+/* line 77, ../sass/content/_mobile.scss */
 .content__outro {
   background: #e4e4e7;
   padding: 15px 25px 1px;
   padding: 1.5rem 2.5rem .1rem;
   margin-bottom: 0;
 }
-/* line 80, ../sass/content/_mobile.scss */
+/* line 83, ../sass/content/_mobile.scss */
 .content__outro .content__headline {
   line-height: 1.8;
   margin-bottom: 0;
@@ -1278,7 +1290,7 @@ button {
   margin-top: -.5rem;
 }
 
-/* line 87, ../sass/content/_mobile.scss */
+/* line 90, ../sass/content/_mobile.scss */
 .content__subhead,
 .content__table--zero tbody tr {
   font-size: 16px;
@@ -1290,7 +1302,7 @@ button {
   text-transform: none;
 }
 
-/* line 97, ../sass/content/_mobile.scss */
+/* line 100, ../sass/content/_mobile.scss */
 .content__table--intelligence {
   color: #372772;
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
@@ -1298,13 +1310,13 @@ button {
   margin-bottom: 48px;
   margin-bottom: 4.8rem;
 }
-/* line 104, ../sass/content/_mobile.scss */
+/* line 107, ../sass/content/_mobile.scss */
 .content__table--intelligence thead tr {
   height: 60px;
   height: 6rem;
   vertical-align: top;
 }
-/* line 109, ../sass/content/_mobile.scss */
+/* line 112, ../sass/content/_mobile.scss */
 .content__table--intelligence th {
   font-size: 16px;
   font-size: 1.6rem;
@@ -1312,22 +1324,22 @@ button {
   line-height: 1.2;
   width: 30%;
 }
-/* line 116, ../sass/content/_mobile.scss */
+/* line 119, ../sass/content/_mobile.scss */
 .content__table--intelligence th:nth-child(2) {
   color: #787583;
   width: 40%;
 }
-/* line 120, ../sass/content/_mobile.scss */
+/* line 123, ../sass/content/_mobile.scss */
 .content__table--intelligence tbody tr {
   height: 94px;
   height: 9.4rem;
   vertical-align: top;
 }
-/* line 125, ../sass/content/_mobile.scss */
+/* line 128, ../sass/content/_mobile.scss */
 .content__table--intelligence tbody tr + tr {
   height: auto;
 }
-/* line 128, ../sass/content/_mobile.scss */
+/* line 131, ../sass/content/_mobile.scss */
 .content__table--intelligence td:first-child {
   border-right: 1px solid #787583;
   font-size: 12px;
@@ -1335,12 +1347,12 @@ button {
   padding-right: 20px;
   padding-right: 2rem;
 }
-/* line 135, ../sass/content/_mobile.scss */
+/* line 138, ../sass/content/_mobile.scss */
 .content__table--intelligence td:nth-child(2) {
   border-right: 1px solid #787583;
   color: #787583;
 }
-/* line 139, ../sass/content/_mobile.scss */
+/* line 142, ../sass/content/_mobile.scss */
 .content__table--intelligence td:nth-child(n + 2) {
   font-size: 16px;
   font-size: 1.6rem;
@@ -1349,21 +1361,21 @@ button {
   text-align: center;
 }
 
-/* line 147, ../sass/content/_mobile.scss */
+/* line 150, ../sass/content/_mobile.scss */
 .content__table--zero {
   color: #372772;
   margin-top: 59px;
   margin-top: 5.9rem;
 }
-/* line 152, ../sass/content/_mobile.scss */
+/* line 155, ../sass/content/_mobile.scss */
 .content__table--zero thead {
   display: none;
 }
-/* line 155, ../sass/content/_mobile.scss */
+/* line 158, ../sass/content/_mobile.scss */
 .content__table--zero th {
   font-weight: 400;
 }
-/* line 158, ../sass/content/_mobile.scss */
+/* line 161, ../sass/content/_mobile.scss */
 .content__table--zero tbody tr {
   border-bottom: 1px solid #e4e4e7;
   display: block;
@@ -1373,14 +1385,14 @@ button {
   padding-bottom: 5rem;
   position: relative;
 }
-/* line 167, ../sass/content/_mobile.scss */
+/* line 170, ../sass/content/_mobile.scss */
 .content__table--zero tbody tr:last-of-type {
   border-bottom: none;
   margin-bottom: 5px;
   margin-bottom: .5rem;
   padding-bottom: 0;
 }
-/* line 173, ../sass/content/_mobile.scss */
+/* line 176, ../sass/content/_mobile.scss */
 .content__table--zero tbody tr::after {
   content: 'The Rule';
   color: #372772;
@@ -1389,21 +1401,21 @@ button {
   top: -26px;
   top: -2.6rem;
 }
-/* line 181, ../sass/content/_mobile.scss */
+/* line 184, ../sass/content/_mobile.scss */
 .content__table--zero td {
   display: block;
 }
-/* line 184, ../sass/content/_mobile.scss */
+/* line 187, ../sass/content/_mobile.scss */
 .content__table--zero td:first-child {
   color: #787583;
 }
 
-/* line 188, ../sass/content/_mobile.scss */
+/* line 191, ../sass/content/_mobile.scss */
 .content__table--logo {
   display: none;
 }
 
-/* line 191, ../sass/content/_mobile.scss */
+/* line 194, ../sass/content/_mobile.scss */
 .content__table--small-print {
   display: block;
   font-size: 12px;
@@ -1412,7 +1424,7 @@ button {
   margin-top: -1rem;
 }
 
-/* line 198, ../sass/content/_mobile.scss */
+/* line 201, ../sass/content/_mobile.scss */
 .content__footer {
   color: #787583;
   font-family: "Trade Gothic Com", Arial, sans-serif;
@@ -1420,48 +1432,48 @@ button {
   font-size: 0.8rem;
   line-height: 1.7;
 }
-/* line 205, ../sass/content/_mobile.scss */
+/* line 208, ../sass/content/_mobile.scss */
 .content__footer sup {
   font-size: 8px;
 }
 
-/* line 209, ../sass/content/_mobile.scss */
+/* line 212, ../sass/content/_mobile.scss */
 .content__list {
   list-style: none;
 }
-/* line 212, ../sass/content/_mobile.scss */
+/* line 215, ../sass/content/_mobile.scss */
 .content__list .standard--p {
   margin-bottom: 7px;
   margin-bottom: .7rem;
 }
 
-/* line 222, ../sass/content/_mobile.scss */
+/* line 225, ../sass/content/_mobile.scss */
 .intelligence .content__problem,
 .zero .content__problem {
   padding-bottom: 10px;
   padding-bottom: 1rem;
 }
 
-/* line 228, ../sass/content/_mobile.scss */
+/* line 231, ../sass/content/_mobile.scss */
 .zero .content__container {
   padding-bottom: 0;
 }
-/* line 231, ../sass/content/_mobile.scss */
+/* line 234, ../sass/content/_mobile.scss */
 .zero .content__article:last-of-type {
   margin-bottom: 36px;
   margin-bottom: 3.6rem;
 }
-/* line 235, ../sass/content/_mobile.scss */
+/* line 238, ../sass/content/_mobile.scss */
 .zero .content__list--section {
   float: left;
 }
-/* line 238, ../sass/content/_mobile.scss */
+/* line 241, ../sass/content/_mobile.scss */
 .zero .content__list--section:last-of-type {
   float: right;
   margin-bottom: 55px;
   margin-bottom: 5.5rem;
 }
-/* line 243, ../sass/content/_mobile.scss */
+/* line 246, ../sass/content/_mobile.scss */
 .zero .content__footer {
   clear: both;
 }
@@ -1616,17 +1628,18 @@ button {
 .modal__text,
 .modal__text + .standard-button,
 .modal__form.is-hidden,
-.modal__form--optional {
+.modal__form--optional,
+.modal__header .standard-button + .standard--p {
   display: none;
 }
 
-/* line 135, ../sass/modal/_mobile.scss */
+/* line 136, ../sass/modal/_mobile.scss */
 .modal__header.is-successful .modal__text,
 .modal__header.is-successful .modal__text + .standard-button {
   display: block;
 }
 
-/* line 139, ../sass/modal/_mobile.scss */
+/* line 140, ../sass/modal/_mobile.scss */
 .modal__text {
   margin: 17px auto 52px;
   margin: 1.7rem auto 5.2rem;
@@ -1635,36 +1648,36 @@ button {
   width: 80%;
 }
 
-/* line 146, ../sass/modal/_mobile.scss */
+/* line 147, ../sass/modal/_mobile.scss */
 .modal__form--input-container {
   position: relative;
 }
 
-/* line 150, ../sass/modal/_mobile.scss */
+/* line 151, ../sass/modal/_mobile.scss */
 .modal__form--input-container:first-of-type .modal__form--required {
   right: 55px;
   right: 5.5rem;
 }
 
-/* line 156, ../sass/modal/_mobile.scss */
+/* line 157, ../sass/modal/_mobile.scss */
 .modal__form--input-container:nth-of-type(2) .modal__form--required {
   right: 65px;
   right: 6.5rem;
 }
 
-/* line 162, ../sass/modal/_mobile.scss */
+/* line 163, ../sass/modal/_mobile.scss */
 .modal__form--input-container:nth-of-type(4) .modal__form--required {
   right: 46px;
   right: 4.6rem;
 }
 
-/* line 168, ../sass/modal/_mobile.scss */
+/* line 169, ../sass/modal/_mobile.scss */
 .modal__form--input-container:last-of-type .modal__form--required {
   right: 42px;
   right: 4.2rem;
 }
 
-/* line 173, ../sass/modal/_mobile.scss */
+/* line 174, ../sass/modal/_mobile.scss */
 .modal__form--required {
   background: #787583;
   color: #e03434;
@@ -1683,12 +1696,12 @@ button {
   top: 2.2rem;
 }
 
-/* line 190, ../sass/modal/_mobile.scss */
+/* line 191, ../sass/modal/_mobile.scss */
 .modal__form--required.is-erroring {
   display: block;
 }
 
-/* line 193, ../sass/modal/_mobile.scss */
+/* line 194, ../sass/modal/_mobile.scss */
 .modal__form--required::after {
   content: '\002A';
   color: #e03434;
@@ -3270,8 +3283,17 @@ button {
   }
 
   /* line 38, ../sass/solutions/_tablet.scss */
+  .intelligence .solutions__headline--subhead {
+    line-height: 1.6;
+  }
+
+  /* line 43, ../sass/solutions/_tablet.scss */
   .zero .solutions__type:last-child .solutions__list {
     width: 100%;
+  }
+  /* line 46, ../sass/solutions/_tablet.scss */
+  .zero .solutions__headline--subhead {
+    line-height: 1.6;
   }
 
   /* line 4, ../sass/content/_tablet.scss */
@@ -3307,13 +3329,16 @@ button {
     padding-left: 0;
   }
 
-  /* line 30, ../sass/content/_tablet.scss */
-  .intelligence .content__problem {
-    width: 100%;
+  /* line 31, ../sass/content/_tablet.scss */
+  .intelligence .content__problem,
+  .zero .content__problem {
+    width: 50%;
   }
-  /* line 33, ../sass/content/_tablet.scss */
-  .intelligence .content__problem:last-of-type {
+  /* line 34, ../sass/content/_tablet.scss */
+  .intelligence .content__problem:last-of-type,
+  .zero .content__problem:last-of-type {
     padding-left: 0;
+    width: 49%;
   }
 
   /* line 3, ../sass/splash/newsroom/_tablet.scss */

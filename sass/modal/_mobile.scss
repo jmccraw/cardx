@@ -129,7 +129,8 @@
 .modal__text,
 .modal__text + .standard-button,
 .modal__form.is-hidden,
-.modal__form--optional {
+.modal__form--optional,
+.modal__header .standard-button + .standard--p {
   display: none;
 }
 .modal__header.is-successful .modal__text,

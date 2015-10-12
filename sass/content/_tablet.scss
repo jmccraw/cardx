@@ -26,11 +26,13 @@
 
 // Site-specific styles
 
-.intelligence {
+.intelligence,
+.zero {
   .content__problem {
-    width: 100%;
+    width: 50%;
   }
   .content__problem:last-of-type {
     padding-left: 0;
+    width: 49%;
   }
 }

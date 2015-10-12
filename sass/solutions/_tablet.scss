@@ -34,8 +34,16 @@
 
 // Site-specific styles
 
+.intelligence {
+  .solutions__headline--subhead {
+    line-height: 1.6;
+  }
+}
 .zero {
   .solutions__type:last-child .solutions__list {
     width: 100%;
+  }
+  .solutions__headline--subhead {
+    line-height: 1.6;
   }
 }

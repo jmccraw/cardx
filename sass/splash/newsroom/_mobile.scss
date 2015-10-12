@@ -68,8 +68,13 @@
   position: relative;
 }
 .splash__article--nav,
-.standard-button--arrow--article {
+.standard-button--arrow--article,
+.splash__article--load-more-section,
+.splash__article--load-more-btn.is-hidden {
   display: none;
+}
+.splash__article--load-more-section.is-loaded {
+  display: block;
 }
 
 // Article-specific styles
