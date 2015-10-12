@@ -1,2 +1,45 @@
 // Tablet Modal Form
 
+.modal__container {
+  bottom: 0;
+  left: 0;
+  margin-left: 0;
+  max-height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modal__form--input-container:first-child,
+.modal__form--input-container:nth-child(2) {
+  width: 48%;
+}
+.modal__form--input-container:first-of-type {
+  .modal__form--required {
+    right: 0;
+  }
+}
+.modal__form--input-container:nth-of-type(2) {
+  .modal__form--required {
+    right: 9px;
+    right: .9rem;
+  }
+}
+.modal__form--input-container:nth-of-type(4) {
+  .modal__form--required {
+    right: 228px;
+    right: 22.8rem;
+  }
+}
+.modal__form--input-container:last-of-type {
+  .modal__form--required {
+    right: 129px;
+    right: 12.9rem;
+  }
+}
+.modal__form--required {
+  right: 241px;
+  right: 24.1rem;
+}
+.modal__form--optional {
+  display: none;
+}
