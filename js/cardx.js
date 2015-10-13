@@ -217,7 +217,8 @@
       if ((m.value.length === 0 || m.value === '') && m.name !== 'email' && m.name !== 'phone') {
         m.setAttribute('data-good', 'false');
         setRequiredField(m.nextElementSibling);
-      } else if (m.type === 'email' && m.value.length > 0 && !/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(m.value)) {
+      } else if (m.type === 'email' && m.value.length > 0
+          && !/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(m.value)) {
         m.value = '';
         m.setAttribute('data-good', 'false');
         setRequiredField(m.nextElementSibling);
@@ -225,7 +226,7 @@
         m.value = '';
         m.setAttribute('data-good', 'false');
         setRequiredField(m.nextElementSibling);
-      } else if (p.value.length === 0 && m.type === 'email') {
+      } else if (p.value.length === 0 && m.type === 'email' && m.value.length === 0) {
         m.setAttribute('data-good', 'false');
         p.setAttribute('data-good', 'false');
         setRequiredField(m.nextElementSibling);
@@ -245,7 +246,7 @@
    * @type {Function}
    */
   function closeOpenModal(e) {
-    var mi = _modalInputs.length - 2;
+    var mi = _modalInputs.length - 1;
     if (e.preventDefault) {
       e.preventDefault();
     }
