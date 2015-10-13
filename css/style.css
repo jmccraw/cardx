@@ -1794,6 +1794,7 @@ button {
 
   /* line 15, ../sass/nav/_desktop.scss */
   .top-nav__banner {
+    background: transparent;
     border-bottom: 0;
     display: inline-block;
     margin-left: -145px;
@@ -1802,7 +1803,7 @@ button {
     width: 8rem;
   }
 
-  /* line 23, ../sass/nav/_desktop.scss */
+  /* line 24, ../sass/nav/_desktop.scss */
   .top-nav__banner--link > svg {
     height: 50px;
     height: 5rem;
@@ -1813,12 +1814,12 @@ button {
     width: 7.8rem;
   }
 
-  /* line 32, ../sass/nav/_desktop.scss */
+  /* line 33, ../sass/nav/_desktop.scss */
   .top-nav__close-btn {
     display: none;
   }
 
-  /* line 35, ../sass/nav/_desktop.scss */
+  /* line 36, ../sass/nav/_desktop.scss */
   .top-nav__links {
     display: inline-block;
     height: auto;
@@ -1832,7 +1833,7 @@ button {
     z-index: 11;
   }
 
-  /* line 47, ../sass/nav/_desktop.scss */
+  /* line 48, ../sass/nav/_desktop.scss */
   .top-nav__link,
   .top-nav__header,
   .top-nav__link-container {
@@ -1847,21 +1848,21 @@ button {
     position: relative;
   }
 
-  /* line 60, ../sass/nav/_desktop.scss */
+  /* line 61, ../sass/nav/_desktop.scss */
   .top-nav__header {
     cursor: pointer;
     margin-left: 0;
     z-index: 3;
   }
 
-  /* line 65, ../sass/nav/_desktop.scss */
+  /* line 66, ../sass/nav/_desktop.scss */
   .top-nav__link:first-of-type {
     padding: 0;
     margin-left: 64px;
     margin-left: 6.4rem;
   }
 
-  /* line 70, ../sass/nav/_desktop.scss */
+  /* line 71, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink {
     background: #372772;
     border-bottom: none;
@@ -1881,13 +1882,13 @@ button {
     z-index: 2;
   }
 
-  /* line 88, ../sass/nav/_desktop.scss */
+  /* line 89, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:first-of-type {
     padding-top: 47px;
     padding-top: 4.7rem;
   }
 
-  /* line 92, ../sass/nav/_desktop.scss */
+  /* line 93, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3) {
     padding-bottom: 36px;
     padding-bottom: 3.6rem;
@@ -1898,7 +1899,7 @@ button {
     z-index: 1;
   }
 
-  /* line 101, ../sass/nav/_desktop.scss */
+  /* line 102, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:focus,
   .top-nav__link-container:focus .top-nav__link--sublink,
   .top-nav__link-container:hover .top-nav__link--sublink,
@@ -1907,14 +1908,14 @@ button {
     left: -1.4rem;
   }
 
-  /* line 108, ../sass/nav/_desktop.scss */
+  /* line 109, ../sass/nav/_desktop.scss */
   .top-nav__header,
   .top-nav__link,
   .top-nav__link--sublink {
     outline: none;
   }
 
-  /* line 113, ../sass/nav/_desktop.scss */
+  /* line 114, ../sass/nav/_desktop.scss */
   .about .top-nav__link:first-child::after,
   .intelligence .top-nav__header::after,
   .zero .top-nav__header::after,
@@ -1934,7 +1935,7 @@ button {
     width: 95%;
   }
 
-  /* line 131, ../sass/nav/_desktop.scss */
+  /* line 132, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:hover::after {
     bottom: 13px;
     bottom: 1.3rem;
@@ -1943,14 +1944,14 @@ button {
     width: 53%;
   }
 
-  /* line 138, ../sass/nav/_desktop.scss */
+  /* line 139, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3):hover::after {
     bottom: 29px;
     bottom: 2.9rem;
     width: 56%;
   }
 
-  /* line 143, ../sass/nav/_desktop.scss */
+  /* line 144, ../sass/nav/_desktop.scss */
   .top-nav__login-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -1972,7 +1973,7 @@ button {
     transition: background .1s ease-in, color .1s ease-in;
   }
 
-  /* line 165, ../sass/nav/_desktop.scss */
+  /* line 166, ../sass/nav/_desktop.scss */
   .top-nav__login-btn:hover {
     background: #fff;
     color: #372772;
