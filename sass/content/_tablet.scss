@@ -26,7 +26,22 @@
 
 // Site-specific styles
 
-.intelligence,
+.intelligence {
+  .content__problem,
+  .content__problem:last-of-type {
+    padding-left: 0;
+    width: 100%;
+  }
+  .solutions {
+    .content__problem {
+      width: 50%;
+    }
+    .content__problem:last-of-type {
+      padding-left: 0;
+      width: 49%;
+    }
+  }
+}
 .zero {
   .content__problem {
     width: 50%;

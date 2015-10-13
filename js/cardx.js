@@ -75,17 +75,17 @@
 
     for (; i >= 0; --i) {
       var _tl = _testimonialList[i];
-      if (_tl.classList.contains('is-visible') && i !== tag) {
-        _tl.classList.remove('is-visible');
+      if (_tl.classList.contains('is-opaque') && i !== tag) {
+        _tl.classList.remove('is-opaque');
         _testimonialCrumbs[i].classList.remove('is-active');
         if (_tl.nextElementSibling && !_tl.nextElementSibling.classList.contains('testimonials__breadcrumb')) {
           tag = i + 1;
           _testimonialCrumbs[i].nextElementSibling.classList.add('is-active');
-          _tl.nextElementSibling.classList.add('is-visible');
+          _tl.nextElementSibling.classList.add('is-opaque');
         } else {
           tag = 0;
           _testimonialCrumbs[0].classList.add('is-active');
-          _testimonialList[0].classList.add('is-visible');
+          _testimonialList[0].classList.add('is-opaque');
         }
       }
     }
@@ -105,17 +105,17 @@
 
     for (; i >= 0; --i) {
       var _tl = _testimonialList[i];
-      if (_tl.classList.contains('is-visible') && i !== tag) {
-        _tl.classList.remove('is-visible');
+      if (_tl.classList.contains('is-opaque') && i !== tag) {
+        _tl.classList.remove('is-opaque');
         _testimonialCrumbs[i].classList.remove('is-active');
         if (_tl.previousElementSibling && !_tl.previousElementSibling.classList.contains('testimonials__breadcrumb')) {
           tag = i - 1;
           _testimonialCrumbs[i].previousElementSibling.classList.add('is-active');
-          _tl.previousElementSibling.classList.add('is-visible');
+          _tl.previousElementSibling.classList.add('is-opaque');
         } else {
           tag = _testimonialList.length - 1;
           _testimonialCrumbs[tag].classList.add('is-active');
-          _testimonialList[tag].classList.add('is-visible');
+          _testimonialList[tag].classList.add('is-opaque');
         }
       }
     }
@@ -189,7 +189,7 @@
     _modalSuccess.parentElement.classList.add('is-successful');
     _modalSuccess.setAttribute('data-prev-msg', _modalSuccess.previousElementSibling.innerHTML);
     _modalSuccess.previousElementSibling.innerHTML = "Thank You for Your Interest in CardX";
-    if (_w.innerWidth < 768) {
+    if (_w.innerWidth < 850) {
       _w.scrollTo(0, 0);
     }
   }
@@ -477,7 +477,7 @@
             loadModalForm();
           }
           _modal.classList.add('is-open');
-          if (_w.innerWidth < 768) {
+          if (_w.innerWidth < 850) {
             _w.scrollTo(0, 0);
           }
         }, false);

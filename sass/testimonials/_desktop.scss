@@ -3,8 +3,8 @@
 .testimonials,
 .testimonials__container {
   height: 100%;
-  min-height: 275px;
-  min-height: 27.5rem;
+  min-height: 313px;
+  min-height: 31.3rem;
 }
 .testimonials__container {
   margin: 0 auto;
@@ -16,6 +16,7 @@
 .testimonials__testimonial {
   margin-top: 33px;
   margin-top: 3.3rem;
+  top: 0;
 }
 .testimonials__quote {
   font-size: 48px;

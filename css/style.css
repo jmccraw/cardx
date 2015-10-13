@@ -335,8 +335,8 @@ button {
 .top-nav {
   background: #372772;
   border-bottom: 1px solid #59507b;
-  height: 68px;
-  height: 6.8rem;
+  height: 58px;
+  height: 5.8rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   left: 0;
@@ -379,8 +379,8 @@ button {
   left: 23px;
   left: 2.3rem;
   position: absolute;
-  top: 17px;
-  top: 1.7rem;
+  top: 12px;
+  top: 1.2rem;
 }
 
 /* line 45, ../sass/nav/_mobile.scss */
@@ -390,8 +390,8 @@ button {
   position: absolute;
   right: 26px;
   right: 2.6rem;
-  top: 24px;
-  top: 2.4rem;
+  top: 20px;
+  top: 2rem;
 }
 
 /* line 54, ../sass/nav/_mobile.scss */
@@ -415,11 +415,11 @@ button {
 /* line 67, ../sass/nav/_mobile.scss */
 .top-nav__links {
   background: #372772;
-  height: calc(100vh - 64px);
-  height: calc(100vh - 6.4rem);
+  height: calc(100vh - 54px);
+  height: calc(100vh - 5.4rem);
   position: relative;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-120%);
+  transform: translateY(-120%);
   -webkit-transition: -webkit-transform .25s ease-in;
   transition: transform .25s ease-in;
   z-index: 9;
@@ -597,7 +597,7 @@ button {
 .intelligence .hero,
 .zero .hero {
   background-image: url(..//media/hero-intelligence-2.jpg);
-  background-size: 266%;
+  background-size: 278%;
   height: 100%;
   text-align: center;
 }
@@ -630,17 +630,6 @@ button {
 }
 
 /* line 130, ../sass/hero/_mobile.scss */
-.intelligence .hero {
-  margin-bottom: -56px;
-  margin-bottom: -5.6rem;
-}
-/* line 134, ../sass/hero/_mobile.scss */
-.intelligence .hero .standard-button {
-  margin-bottom: 100px;
-  margin-bottom: 10rem;
-}
-
-/* line 141, ../sass/hero/_mobile.scss */
 .zero .hero {
   background-image: url(../media/hero-zero-2.jpg);
   background-position: 37% 80%;
@@ -664,16 +653,40 @@ button {
 .testimonials__testimonial,
 .testimonials__arrow--left,
 .testimonials__arrow--right {
-  display: none;
   position: relative;
 }
 
-/* line 20, ../sass/testimonials/_mobile.scss */
+/* line 19, ../sass/testimonials/_mobile.scss */
+.testimonials__arrow--left,
+.testimonials__arrow--right {
+  display: none;
+}
+
+/* line 23, ../sass/testimonials/_mobile.scss */
+.testimonials__testimonial {
+  opacity: 0;
+  left: 50%;
+  margin-left: -50%;
+  padding: 0 35px;
+  padding: 0 3.5rem;
+  position: absolute;
+  top: 45px;
+  top: 4.5rem;
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+}
+
+/* line 35, ../sass/testimonials/_mobile.scss */
 .testimonials__testimonial.is-visible {
   display: block;
 }
 
-/* line 23, ../sass/testimonials/_mobile.scss */
+/* line 38, ../sass/testimonials/_mobile.scss */
+.testimonials__testimonial.is-opaque {
+  opacity: 1;
+}
+
+/* line 41, ../sass/testimonials/_mobile.scss */
 .testimonials__quote {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-weight: 400;
@@ -688,7 +701,7 @@ button {
   position: relative;
 }
 
-/* line 36, ../sass/testimonials/_mobile.scss */
+/* line 54, ../sass/testimonials/_mobile.scss */
 .testimonials__quote::after {
   border-bottom: 2px solid #372772;
   bottom: 0;
@@ -701,7 +714,7 @@ button {
   width: 1.3rem;
 }
 
-/* line 47, ../sass/testimonials/_mobile.scss */
+/* line 65, ../sass/testimonials/_mobile.scss */
 .testimonials__footer {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 12px;
@@ -714,14 +727,14 @@ button {
   text-transform: uppercase;
 }
 
-/* line 58, ../sass/testimonials/_mobile.scss */
+/* line 76, ../sass/testimonials/_mobile.scss */
 .testimonials__byline {
   display: block;
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   font-style: normal;
 }
 
-/* line 63, ../sass/testimonials/_mobile.scss */
+/* line 81, ../sass/testimonials/_mobile.scss */
 .testimonials__breadcrumb {
   bottom: 35px;
   bottom: 3.5rem;
@@ -734,7 +747,7 @@ button {
   width: 8.6rem;
 }
 
-/* line 74, ../sass/testimonials/_mobile.scss */
+/* line 92, ../sass/testimonials/_mobile.scss */
 .testimonials__crumb {
   background: #787583;
   border-radius: 50%;
@@ -747,12 +760,12 @@ button {
   width: .5rem;
 }
 
-/* line 85, ../sass/testimonials/_mobile.scss */
+/* line 103, ../sass/testimonials/_mobile.scss */
 .testimonials__crumb:last-child {
   margin-right: 0;
 }
 
-/* line 88, ../sass/testimonials/_mobile.scss */
+/* line 106, ../sass/testimonials/_mobile.scss */
 .testimonials__crumb.is-active {
   background: #372772;
 }
@@ -1550,29 +1563,30 @@ button {
   line-height: 0;
   margin-top: 20px;
   margin-top: 2rem;
+  width: 100%;
 }
-/* line 64, ../sass/modal/_mobile.scss */
+/* line 65, ../sass/modal/_mobile.scss */
 .modal input::-webkit-input-placeholder {
   color: #fff;
 }
-/* line 67, ../sass/modal/_mobile.scss */
+/* line 68, ../sass/modal/_mobile.scss */
 .modal input::-moz-input-placeholder {
   color: #fff;
 }
-/* line 70, ../sass/modal/_mobile.scss */
+/* line 71, ../sass/modal/_mobile.scss */
 .modal input:-moz-input-placeholder {
   color: #fff;
 }
-/* line 73, ../sass/modal/_mobile.scss */
+/* line 74, ../sass/modal/_mobile.scss */
 .modal input::-ms-input-placeholder {
   color: #fff;
 }
-/* line 76, ../sass/modal/_mobile.scss */
+/* line 77, ../sass/modal/_mobile.scss */
 .modal input::input-placeholder {
   color: #fff;
 }
 
-/* line 80, ../sass/modal/_mobile.scss */
+/* line 81, ../sass/modal/_mobile.scss */
 .modal__overlay {
   background: #787583;
   bottom: 0;
@@ -1584,12 +1598,12 @@ button {
   top: -7rem;
 }
 
-/* line 90, ../sass/modal/_mobile.scss */
+/* line 91, ../sass/modal/_mobile.scss */
 .modal.is-open {
   display: block;
 }
 
-/* line 93, ../sass/modal/_mobile.scss */
+/* line 94, ../sass/modal/_mobile.scss */
 .modal__container {
   background: #fff;
   height: 200%;
@@ -1599,12 +1613,12 @@ button {
   width: 100%;
 }
 
-/* line 101, ../sass/modal/_mobile.scss */
+/* line 102, ../sass/modal/_mobile.scss */
 .modal__header {
   margin-bottom: 43px;
   margin-bottom: 4.3rem;
 }
-/* line 105, ../sass/modal/_mobile.scss */
+/* line 106, ../sass/modal/_mobile.scss */
 .modal__header .standard-button {
   background: #372772;
   border: 1px solid #372772;
@@ -1615,13 +1629,21 @@ button {
   width: 100%;
 }
 
-/* line 115, ../sass/modal/_mobile.scss */
+/* line 116, ../sass/modal/_mobile.scss */
 .modal__header.is-successful {
   padding-top: 60px;
   padding-top: 6rem;
 }
+/* line 120, ../sass/modal/_mobile.scss */
+.modal__header.is-successful .modal__headline {
+  padding-left: 20px;
+  padding-left: 2rem;
+  padding-right: 20px;
+  padding-right: 2rem;
+  text-transform: uppercase;
+}
 
-/* line 119, ../sass/modal/_mobile.scss */
+/* line 128, ../sass/modal/_mobile.scss */
 .modal__headline {
   color: #372772;
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
@@ -1635,7 +1657,7 @@ button {
   text-align: center;
 }
 
-/* line 131, ../sass/modal/_mobile.scss */
+/* line 140, ../sass/modal/_mobile.scss */
 .modal__text,
 .modal__text + .standard-button,
 .modal__form.is-hidden,
@@ -1644,13 +1666,13 @@ button {
   display: none;
 }
 
-/* line 138, ../sass/modal/_mobile.scss */
+/* line 147, ../sass/modal/_mobile.scss */
 .modal__header.is-successful .modal__text,
 .modal__header.is-successful .modal__text + .standard-button {
   display: block;
 }
 
-/* line 142, ../sass/modal/_mobile.scss */
+/* line 151, ../sass/modal/_mobile.scss */
 .modal__text {
   margin: 17px auto 52px;
   margin: 1.7rem auto 5.2rem;
@@ -1659,36 +1681,36 @@ button {
   width: 80%;
 }
 
-/* line 149, ../sass/modal/_mobile.scss */
+/* line 158, ../sass/modal/_mobile.scss */
 .modal__form--input-container {
   position: relative;
 }
 
-/* line 153, ../sass/modal/_mobile.scss */
+/* line 162, ../sass/modal/_mobile.scss */
 .modal__form--input-container:first-of-type .modal__form--required {
   right: 55px;
   right: 5.5rem;
 }
 
-/* line 159, ../sass/modal/_mobile.scss */
+/* line 168, ../sass/modal/_mobile.scss */
 .modal__form--input-container:nth-of-type(2) .modal__form--required {
   right: 65px;
   right: 6.5rem;
 }
 
-/* line 165, ../sass/modal/_mobile.scss */
+/* line 174, ../sass/modal/_mobile.scss */
 .modal__form--input-container:nth-of-type(4) .modal__form--required {
   right: 46px;
   right: 4.6rem;
 }
 
-/* line 171, ../sass/modal/_mobile.scss */
+/* line 180, ../sass/modal/_mobile.scss */
 .modal__form--input-container:last-of-type .modal__form--required {
   right: 42px;
   right: 4.2rem;
 }
 
-/* line 176, ../sass/modal/_mobile.scss */
+/* line 185, ../sass/modal/_mobile.scss */
 .modal__form--required {
   background: #787583;
   color: #e03434;
@@ -1707,12 +1729,12 @@ button {
   top: 2.2rem;
 }
 
-/* line 193, ../sass/modal/_mobile.scss */
+/* line 202, ../sass/modal/_mobile.scss */
 .modal__form--required.is-erroring {
   display: block;
 }
 
-/* line 196, ../sass/modal/_mobile.scss */
+/* line 205, ../sass/modal/_mobile.scss */
 .modal__form--required::after {
   content: '\002A';
   color: #e03434;
@@ -2138,8 +2160,8 @@ button {
   .testimonials,
   .testimonials__container {
     height: 100%;
-    min-height: 275px;
-    min-height: 27.5rem;
+    min-height: 313px;
+    min-height: 31.3rem;
   }
 
   /* line 9, ../sass/testimonials/_desktop.scss */
@@ -2155,9 +2177,10 @@ button {
   .testimonials__testimonial {
     margin-top: 33px;
     margin-top: 3.3rem;
+    top: 0;
   }
 
-  /* line 20, ../sass/testimonials/_desktop.scss */
+  /* line 21, ../sass/testimonials/_desktop.scss */
   .testimonials__quote {
     font-size: 48px;
     font-size: 4.8rem;
@@ -2168,25 +2191,25 @@ button {
     padding-bottom: 2.9rem;
   }
 
-  /* line 29, ../sass/testimonials/_desktop.scss */
+  /* line 30, ../sass/testimonials/_desktop.scss */
   .testimonials__footer,
   .testimonials__byline {
     font-size: 14px;
     font-size: 1.4rem;
   }
 
-  /* line 34, ../sass/testimonials/_desktop.scss */
+  /* line 35, ../sass/testimonials/_desktop.scss */
   .testimonials__byline {
     margin-bottom: 10px;
     margin-bottom: 1rem;
   }
 
-  /* line 38, ../sass/testimonials/_desktop.scss */
+  /* line 39, ../sass/testimonials/_desktop.scss */
   .testimonials__breadcrumb {
     display: none;
   }
 
-  /* line 41, ../sass/testimonials/_desktop.scss */
+  /* line 42, ../sass/testimonials/_desktop.scss */
   .testimonials__arrow--left,
   .testimonials__arrow--right {
     background: transparent;
@@ -2203,14 +2226,14 @@ button {
     width: 1.5rem;
   }
 
-  /* line 56, ../sass/testimonials/_desktop.scss */
+  /* line 57, ../sass/testimonials/_desktop.scss */
   .testimonials__arrow--left svg,
   .testimonials__arrow--right svg {
     height: 40px;
     height: 4rem;
   }
 
-  /* line 61, ../sass/testimonials/_desktop.scss */
+  /* line 62, ../sass/testimonials/_desktop.scss */
   .testimonials__arrow--right {
     left: auto;
     right: 0;
@@ -2645,8 +2668,8 @@ button {
   /* line 80, ../sass/splash/newsroom/_desktop.scss */
   .splash__article--archive {
     display: none;
-    padding-left: 20px;
-    padding-left: 2rem;
+    padding-left: 10px;
+    padding-left: 1rem;
   }
   /* line 85, ../sass/splash/newsroom/_desktop.scss */
   .splash__article--archive .standard--p {
@@ -2729,26 +2752,24 @@ button {
     margin-bottom: 6.9rem;
   }
   /* line 77, ../sass/splash/_desktop.scss */
-  .news p,
   .news .splash__p {
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 2;
   }
 
-  /* line 85, ../sass/splash/_desktop.scss */
+  /* line 84, ../sass/splash/_desktop.scss */
   .news-article .splash__article {
     max-width: 715px;
     max-width: 71.5rem;
   }
 
-  /* line 91, ../sass/splash/_desktop.scss */
+  /* line 90, ../sass/splash/_desktop.scss */
   .contact .splash {
     padding-bottom: 205px;
     padding-bottom: 20.5rem;
   }
-  /* line 95, ../sass/splash/_desktop.scss */
-  .contact .splash p,
+  /* line 94, ../sass/splash/_desktop.scss */
   .contact .splash .splash__p {
     font-size: 18px;
     font-size: 1.8rem;
@@ -2756,12 +2777,12 @@ button {
     max-width: 500px;
     max-width: 50rem;
   }
-  /* line 103, ../sass/splash/_desktop.scss */
+  /* line 101, ../sass/splash/_desktop.scss */
   .contact .splash .splash__p {
     margin-bottom: 17px;
     margin-bottom: 1.7rem;
   }
-  /* line 107, ../sass/splash/_desktop.scss */
+  /* line 105, ../sass/splash/_desktop.scss */
   .contact .splash .splash__p--contact {
     font-size: 22px;
     font-size: 2.2rem;
@@ -3158,17 +3179,21 @@ button {
     padding-top: 12.2rem;
   }
   /* line 92, ../sass/modal/_desktop.scss */
+  .modal__header.is-successful .modal__headline {
+    padding: 0;
+  }
+  /* line 95, ../sass/modal/_desktop.scss */
   .modal__header.is-successful .standard--p {
     margin: 16px auto 50px;
     margin: 1.6rem auto 5rem;
   }
 
-  /* line 97, ../sass/modal/_desktop.scss */
+  /* line 100, ../sass/modal/_desktop.scss */
   .modal__header.is-successful .standard-button + .standard--p {
     display: none;
   }
 
-  /* line 100, ../sass/modal/_desktop.scss */
+  /* line 103, ../sass/modal/_desktop.scss */
   .modal__headline {
     font-size: 36px;
     font-size: 3.6rem;
@@ -3177,13 +3202,13 @@ button {
     padding-top: 0;
   }
 
-  /* line 107, ../sass/modal/_desktop.scss */
+  /* line 110, ../sass/modal/_desktop.scss */
   .modal__form--required {
     font-size: 18px;
     font-size: 1.8rem;
   }
 
-  /* line 111, ../sass/modal/_desktop.scss */
+  /* line 114, ../sass/modal/_desktop.scss */
   .modal__form--input-container:first-child,
   .modal__form--input-container:nth-child(2) {
     display: inline-block;
@@ -3193,36 +3218,36 @@ button {
     max-width: 30rem;
   }
 
-  /* line 119, ../sass/modal/_desktop.scss */
+  /* line 122, ../sass/modal/_desktop.scss */
   .modal__form--input-container:nth-child(2) {
     margin-right: 0;
   }
 
-  /* line 123, ../sass/modal/_desktop.scss */
+  /* line 126, ../sass/modal/_desktop.scss */
   .modal__form--input-container:first-of-type .modal__form--required {
     right: 25px;
     right: 2.5rem;
   }
 
-  /* line 129, ../sass/modal/_desktop.scss */
+  /* line 132, ../sass/modal/_desktop.scss */
   .modal__form--input-container:nth-of-type(2) .modal__form--required {
     right: 38px;
     right: 3.8rem;
   }
 
-  /* line 135, ../sass/modal/_desktop.scss */
+  /* line 138, ../sass/modal/_desktop.scss */
   .modal__form--input-container:nth-of-type(4) .modal__form--required {
     right: 149px;
     right: 14.9rem;
   }
 
-  /* line 141, ../sass/modal/_desktop.scss */
+  /* line 144, ../sass/modal/_desktop.scss */
   .modal__form--input-container:last-of-type .modal__form--required {
     right: 49px;
     right: 4.9rem;
   }
 
-  /* line 146, ../sass/modal/_desktop.scss */
+  /* line 149, ../sass/modal/_desktop.scss */
   .modal__form--required {
     right: 319px;
     right: 31.9rem;
@@ -3230,7 +3255,7 @@ button {
     top: 2.3rem;
   }
 
-  /* line 152, ../sass/modal/_desktop.scss */
+  /* line 155, ../sass/modal/_desktop.scss */
   .modal__form--optional {
     display: inline;
   }
@@ -3309,17 +3334,17 @@ button {
 
   /* line 11, ../sass/testimonials/_tablet.scss */
   .testimonials__testimonial {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    left: 50%;
+    margin-left: -45%;
+    width: 90%;
   }
 
   /* line 16, ../sass/testimonials/_tablet.scss */
   .testimonials__quote {
     font-size: 38px;
     font-size: 3.8rem;
-    margin-left: 6.5%;
-    width: 87%;
+    margin-left: 7%;
+    width: 86%;
   }
 
   /* line 3, ../sass/solutions/_tablet.scss */
@@ -3352,27 +3377,27 @@ button {
   }
   /* line 24, ../sass/solutions/_tablet.scss */
   .solutions__type:last-child .solutions__list {
-    margin-bottom: 105px;
-    margin-bottom: 10.5rem;
+    margin-bottom: 49px;
+    margin-bottom: 4.9rem;
   }
 
-  /* line 29, ../sass/solutions/_tablet.scss */
+  /* line 30, ../sass/solutions/_tablet.scss */
   .solutions__type:after {
     height: 121.6%;
     right: -18px;
     right: -1.8rem;
   }
 
-  /* line 38, ../sass/solutions/_tablet.scss */
+  /* line 39, ../sass/solutions/_tablet.scss */
   .intelligence .solutions__headline--subhead {
     line-height: 1.6;
   }
 
-  /* line 43, ../sass/solutions/_tablet.scss */
+  /* line 44, ../sass/solutions/_tablet.scss */
   .zero .solutions__type:last-child .solutions__list {
     width: 100%;
   }
-  /* line 46, ../sass/solutions/_tablet.scss */
+  /* line 47, ../sass/solutions/_tablet.scss */
   .zero .solutions__headline--subhead {
     line-height: 1.6;
   }
@@ -3410,19 +3435,33 @@ button {
     padding-left: 0;
   }
 
-  /* line 31, ../sass/content/_tablet.scss */
+  /* line 30, ../sass/content/_tablet.scss */
   .intelligence .content__problem,
+  .intelligence .content__problem:last-of-type {
+    padding-left: 0;
+    width: 100%;
+  }
+  /* line 36, ../sass/content/_tablet.scss */
+  .intelligence .solutions .content__problem {
+    width: 50%;
+  }
+  /* line 39, ../sass/content/_tablet.scss */
+  .intelligence .solutions .content__problem:last-of-type {
+    padding-left: 0;
+    width: 49%;
+  }
+
+  /* line 46, ../sass/content/_tablet.scss */
   .zero .content__problem {
     width: 50%;
   }
-  /* line 34, ../sass/content/_tablet.scss */
-  .intelligence .content__problem:last-of-type,
+  /* line 49, ../sass/content/_tablet.scss */
   .zero .content__problem:last-of-type {
     padding-left: 0;
     width: 49%;
   }
 
-  /* line 40, ../sass/content/_tablet.scss */
+  /* line 55, ../sass/content/_tablet.scss */
   .zero .content__container {
     padding: 47px 43px 0;
     padding: 4.7rem 4.3rem 0;
@@ -3529,5 +3568,22 @@ button {
   /* line 43, ../sass/modal/_tablet.scss */
   .modal__form--optional {
     display: none;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  /* line 4, ../sass/ancillary/_tablet.scss */
+  .footer__logo svg {
+    display: none;
+  }
+
+  /* line 10, ../sass/ancillary/_tablet.scss */
+  .modal__header.is-successful .modal__headline {
+    padding: 0 50px;
+    padding: 0 5rem;
+  }
+  /* line 14, ../sass/ancillary/_tablet.scss */
+  .modal__header.is-successful .standard-button {
+    width: 250px;
+    width: 25rem;
   }
 }

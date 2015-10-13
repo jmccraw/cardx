@@ -60,6 +60,7 @@
     line-height: 0;
     margin-top: 20px;
     margin-top: 2rem;
+    width: 100%;
   }
   input::-webkit-input-placeholder {
     color: #fff;
@@ -115,6 +116,14 @@
 .modal__header.is-successful {
   padding-top: 60px;
   padding-top: 6rem;
+
+  .modal__headline {
+    padding-left: 20px;
+    padding-left: 2rem;
+    padding-right: 20px;
+    padding-right: 2rem;
+    text-transform: uppercase;
+  }
 }
 .modal__headline {
   color: $purple;

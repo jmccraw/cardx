@@ -45,6 +45,10 @@
   @import "modal/tablet";
 }
 
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  @import "ancillary/tablet";
+}
+
 // Desktop-only Styles
 @media screen and (min-width: 71em) {
 

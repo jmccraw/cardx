@@ -14,11 +14,29 @@
 .testimonials__testimonial,
 .testimonials__arrow--left,
 .testimonials__arrow--right {
-  display: none;
   position: relative;
+}
+.testimonials__arrow--left,
+.testimonials__arrow--right {
+  display: none;
+}
+.testimonials__testimonial {
+  opacity: 0;
+  left: 50%;
+  margin-left: -50%;
+  padding: 0 35px;
+  padding: 0 3.5rem;
+  position: absolute;
+  top: 45px;
+  top: 4.5rem;
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
 }
 .testimonials__testimonial.is-visible {
   display: block;
+}
+.testimonials__testimonial.is-opaque {
+  opacity: 1;
 }
 .testimonials__quote {
   font-family: $condensed;
