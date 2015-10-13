@@ -1712,7 +1712,6 @@ button {
 
 /* line 185, ../sass/modal/_mobile.scss */
 .modal__form--required {
-  background: #787583;
   color: #e03434;
   display: none;
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
@@ -1729,12 +1728,12 @@ button {
   top: 2.2rem;
 }
 
-/* line 202, ../sass/modal/_mobile.scss */
+/* line 201, ../sass/modal/_mobile.scss */
 .modal__form--required.is-erroring {
   display: block;
 }
 
-/* line 205, ../sass/modal/_mobile.scss */
+/* line 204, ../sass/modal/_mobile.scss */
 .modal__form--required::after {
   content: '\002A';
   color: #e03434;
@@ -2801,8 +2800,8 @@ button {
     height: 4.3rem;
     margin: 56px auto 96px;
     margin: 5.6rem auto 9.6rem;
-    width: 210px;
-    width: 21rem;
+    width: 230px;
+    width: 23rem;
   }
   /* line 16, ../sass/content/_desktop.scss */
   .content .standard-button:hover {
@@ -3109,8 +3108,8 @@ button {
     margin: 4.5rem auto 0;
     -webkit-transition: background .25s ease-in, color .25s ease-in;
     transition: background .25s ease-in, color .25s ease-in;
-    width: 197px;
-    width: 19.7rem;
+    width: 220px;
+    width: 22rem;
   }
   /* line 32, ../sass/modal/_desktop.scss */
   .modal .modal__form--submit-btn:hover {
@@ -3164,8 +3163,8 @@ button {
     margin: 5.5rem auto 0;
     -webkit-transition: background .25s ease-in, color .25s ease-in;
     transition: background .25s ease-in, color .25s ease-in;
-    width: 197px;
-    width: 19.7rem;
+    width: 220px;
+    width: 22rem;
   }
   /* line 83, ../sass/modal/_desktop.scss */
   .modal__header .standard-button:hover {
