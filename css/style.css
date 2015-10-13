@@ -374,6 +374,7 @@ button {
 
 /* line 36, ../sass/nav/_mobile.scss */
 .top-nav__banner--link > svg {
+  background: transparent;
   height: 32px;
   height: 3.2rem;
   left: 23px;
@@ -383,7 +384,7 @@ button {
   top: 1.2rem;
 }
 
-/* line 45, ../sass/nav/_mobile.scss */
+/* line 46, ../sass/nav/_mobile.scss */
 .top-nav__close-btn svg {
   height: 18px;
   height: 1.8rem;
@@ -394,25 +395,25 @@ button {
   top: 2rem;
 }
 
-/* line 54, ../sass/nav/_mobile.scss */
+/* line 55, ../sass/nav/_mobile.scss */
 #mobile-close {
   right: 30px;
   right: 3rem;
 }
 
-/* line 58, ../sass/nav/_mobile.scss */
+/* line 59, ../sass/nav/_mobile.scss */
 #mobile-close,
 .top-nav__banner.is-open #mobile-hamburger,
 .top-nav__login-btn {
   display: none;
 }
 
-/* line 63, ../sass/nav/_mobile.scss */
+/* line 64, ../sass/nav/_mobile.scss */
 .top-nav__banner.is-open #mobile-close {
   display: block;
 }
 
-/* line 67, ../sass/nav/_mobile.scss */
+/* line 68, ../sass/nav/_mobile.scss */
 .top-nav__links {
   background: #372772;
   height: calc(100vh - 54px);
@@ -425,13 +426,13 @@ button {
   z-index: 9;
 }
 
-/* line 78, ../sass/nav/_mobile.scss */
+/* line 79, ../sass/nav/_mobile.scss */
 .top-nav__banner.is-open + .top-nav__links {
   -webkit-transform: translate3D(0, 0, 0);
   transform: translate3D(0, 0, 0);
 }
 
-/* line 83, ../sass/nav/_mobile.scss */
+/* line 84, ../sass/nav/_mobile.scss */
 .top-nav__link,
 .top-nav__link--sublink,
 .top-nav__header {
@@ -451,12 +452,12 @@ button {
   text-transform: uppercase;
 }
 
-/* line 101, ../sass/nav/_mobile.scss */
+/* line 102, ../sass/nav/_mobile.scss */
 .top-nav__header {
   border-bottom: none;
 }
 
-/* line 104, ../sass/nav/_mobile.scss */
+/* line 105, ../sass/nav/_mobile.scss */
 .top-nav__link--sublink {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 20px;
@@ -471,7 +472,7 @@ button {
   text-transform: none;
 }
 
-/* line 117, ../sass/nav/_mobile.scss */
+/* line 118, ../sass/nav/_mobile.scss */
 .top-nav__link--sublink:first-of-type {
   padding-top: 0;
 }
