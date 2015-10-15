@@ -351,7 +351,7 @@
           toggleMobileMenu();
         }
         scroll.previous = scroll.current;
-      }, 500);
+      }, 300);
       document.addEventListener('scroll', testMobileNav, false);
 
       // Add hamburger menu toggle to show/hide menu

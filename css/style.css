@@ -340,8 +340,8 @@ body.is-constrained {
 /* line 3, ../sass/nav/_mobile.scss */
 .top-nav {
   background: #372772;
-  height: 58px;
-  height: 5.8rem;
+  height: 68px;
+  height: 6.8rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   left: 0;
@@ -384,8 +384,8 @@ body.is-constrained {
   left: 23px;
   left: 2.3rem;
   position: absolute;
-  top: 12px;
-  top: 1.2rem;
+  top: 19px;
+  top: 1.9rem;
 }
 
 /* line 44, ../sass/nav/_mobile.scss */
@@ -395,8 +395,8 @@ body.is-constrained {
   position: absolute;
   right: 26px;
   right: 2.6rem;
-  top: 20px;
-  top: 2rem;
+  top: 26px;
+  top: 2.6rem;
 }
 
 /* line 53, ../sass/nav/_mobile.scss */
@@ -420,11 +420,11 @@ body.is-constrained {
 /* line 66, ../sass/nav/_mobile.scss */
 .top-nav__links {
   background: #372772;
-  height: calc(100vh - 54px);
-  height: calc(100vh - 5.4rem);
+  height: calc(100vh - 64px);
+  height: calc(100vh - 6.4rem);
   position: relative;
-  -webkit-transform: translateY(-120%);
-  transform: translateY(-120%);
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
   -webkit-transition: -webkit-transform .25s ease-in;
   transition: transform .25s ease-in;
   z-index: 9;
@@ -1361,21 +1361,26 @@ a.footer__p,
   width: 30%;
 }
 /* line 119, ../sass/content/_mobile.scss */
+.content__table--intelligence th:last-child,
+.content__table--intelligence td:last-child {
+  font-weight: 700;
+}
+/* line 123, ../sass/content/_mobile.scss */
 .content__table--intelligence th:nth-child(2) {
   color: #787583;
   width: 40%;
 }
-/* line 123, ../sass/content/_mobile.scss */
+/* line 127, ../sass/content/_mobile.scss */
 .content__table--intelligence tbody tr {
   height: 94px;
   height: 9.4rem;
   vertical-align: top;
 }
-/* line 128, ../sass/content/_mobile.scss */
+/* line 132, ../sass/content/_mobile.scss */
 .content__table--intelligence tbody tr + tr {
   height: auto;
 }
-/* line 131, ../sass/content/_mobile.scss */
+/* line 135, ../sass/content/_mobile.scss */
 .content__table--intelligence td:first-child {
   border-right: 1px solid #787583;
   font-size: 12px;
@@ -1383,12 +1388,12 @@ a.footer__p,
   padding-right: 20px;
   padding-right: 2rem;
 }
-/* line 138, ../sass/content/_mobile.scss */
+/* line 142, ../sass/content/_mobile.scss */
 .content__table--intelligence td:nth-child(2) {
   border-right: 1px solid #787583;
   color: #787583;
 }
-/* line 142, ../sass/content/_mobile.scss */
+/* line 146, ../sass/content/_mobile.scss */
 .content__table--intelligence td:nth-child(n + 2) {
   font-size: 16px;
   font-size: 1.6rem;
@@ -1397,21 +1402,21 @@ a.footer__p,
   text-align: center;
 }
 
-/* line 150, ../sass/content/_mobile.scss */
+/* line 154, ../sass/content/_mobile.scss */
 .content__table--zero {
   color: #372772;
   margin-top: 59px;
   margin-top: 5.9rem;
 }
-/* line 155, ../sass/content/_mobile.scss */
+/* line 159, ../sass/content/_mobile.scss */
 .content__table--zero thead {
   display: none;
 }
-/* line 158, ../sass/content/_mobile.scss */
+/* line 162, ../sass/content/_mobile.scss */
 .content__table--zero th {
   font-weight: 400;
 }
-/* line 161, ../sass/content/_mobile.scss */
+/* line 165, ../sass/content/_mobile.scss */
 .content__table--zero tbody tr {
   border-bottom: 1px solid #e4e4e7;
   display: block;
@@ -1421,14 +1426,14 @@ a.footer__p,
   padding-bottom: 5rem;
   position: relative;
 }
-/* line 170, ../sass/content/_mobile.scss */
+/* line 174, ../sass/content/_mobile.scss */
 .content__table--zero tbody tr:last-of-type {
   border-bottom: none;
   margin-bottom: 5px;
   margin-bottom: .5rem;
   padding-bottom: 0;
 }
-/* line 176, ../sass/content/_mobile.scss */
+/* line 180, ../sass/content/_mobile.scss */
 .content__table--zero tbody tr::after {
   content: 'The Rule';
   color: #372772;
@@ -1437,21 +1442,21 @@ a.footer__p,
   top: -26px;
   top: -2.6rem;
 }
-/* line 184, ../sass/content/_mobile.scss */
+/* line 188, ../sass/content/_mobile.scss */
 .content__table--zero td {
   display: block;
 }
-/* line 187, ../sass/content/_mobile.scss */
+/* line 191, ../sass/content/_mobile.scss */
 .content__table--zero td:first-child {
   color: #787583;
 }
 
-/* line 191, ../sass/content/_mobile.scss */
+/* line 195, ../sass/content/_mobile.scss */
 .content__table--logo {
   display: none;
 }
 
-/* line 194, ../sass/content/_mobile.scss */
+/* line 198, ../sass/content/_mobile.scss */
 .content__table--small-print {
   display: block;
   font-size: 12px;
@@ -1460,7 +1465,7 @@ a.footer__p,
   margin-top: -1rem;
 }
 
-/* line 201, ../sass/content/_mobile.scss */
+/* line 205, ../sass/content/_mobile.scss */
 .content__footer {
   color: #787583;
   font-family: "Trade Gothic Com", Arial, sans-serif;
@@ -1468,54 +1473,54 @@ a.footer__p,
   font-size: 0.8rem;
   line-height: 1.7;
 }
-/* line 208, ../sass/content/_mobile.scss */
+/* line 212, ../sass/content/_mobile.scss */
 .content__footer sup {
   font-size: 8px;
 }
 
-/* line 212, ../sass/content/_mobile.scss */
+/* line 216, ../sass/content/_mobile.scss */
 .content__list {
   list-style: none;
 }
-/* line 215, ../sass/content/_mobile.scss */
+/* line 219, ../sass/content/_mobile.scss */
 .content__list .standard--p {
   margin-bottom: 7px;
   margin-bottom: .7rem;
 }
 
-/* line 225, ../sass/content/_mobile.scss */
+/* line 229, ../sass/content/_mobile.scss */
 .intelligence .content__problem,
 .zero .content__problem {
   padding-bottom: 10px;
   padding-bottom: 1rem;
 }
 
-/* line 231, ../sass/content/_mobile.scss */
+/* line 235, ../sass/content/_mobile.scss */
 .intelligence .standard-button {
   margin-bottom: 36px;
   margin-bottom: 3.6rem;
 }
 
-/* line 237, ../sass/content/_mobile.scss */
+/* line 241, ../sass/content/_mobile.scss */
 .zero .content__container {
   padding-bottom: 0;
 }
-/* line 240, ../sass/content/_mobile.scss */
+/* line 244, ../sass/content/_mobile.scss */
 .zero .content__article:last-of-type {
   margin-bottom: 36px;
   margin-bottom: 3.6rem;
 }
-/* line 244, ../sass/content/_mobile.scss */
+/* line 248, ../sass/content/_mobile.scss */
 .zero .content__list--section {
   float: left;
 }
-/* line 247, ../sass/content/_mobile.scss */
+/* line 251, ../sass/content/_mobile.scss */
 .zero .content__list--section:last-of-type {
   float: right;
   margin-bottom: 55px;
   margin-bottom: 5.5rem;
 }
-/* line 252, ../sass/content/_mobile.scss */
+/* line 256, ../sass/content/_mobile.scss */
 .zero .content__footer {
   clear: both;
 }
@@ -1539,10 +1544,10 @@ a.footer__p,
   height: 20px;
   height: 2rem;
   position: absolute;
-  right: 27px;
-  right: 2.7rem;
-  top: 25px;
-  top: 2.5rem;
+  right: 30px;
+  right: 3rem;
+  top: 26px;
+  top: 2.6rem;
   width: 20px;
   width: 2rem;
 }

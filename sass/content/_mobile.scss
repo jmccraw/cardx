@@ -116,6 +116,10 @@
     line-height: 1.2;
     width: 30%;
   }
+  th:last-child,
+  td:last-child {
+    font-weight: 700;
+  }
   th:nth-child(2) {
     color: $cool-gray;
     width: 40%;

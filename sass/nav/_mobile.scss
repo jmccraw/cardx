@@ -2,8 +2,8 @@
 
 .top-nav {
   background: $purple;
-  height: 58px;
-  height: 5.8rem;
+  height: 68px;
+  height: 6.8rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   left: 0;
@@ -38,8 +38,8 @@
   left: 23px;
   left: 2.3rem;
   position: absolute;
-  top: 12px;
-  top: 1.2rem;
+  top: 19px;
+  top: 1.9rem;
 }
 .top-nav__close-btn svg {
   height: 18px;
@@ -47,8 +47,8 @@
   position: absolute;
   right: 26px;
   right: 2.6rem;
-  top: 20px;
-  top: 2rem;
+  top: 26px;
+  top: 2.6rem;
 }
 #mobile-close {
   right: 30px;
@@ -65,11 +65,11 @@
 
 .top-nav__links {
   background: $purple;
-  height: calc(100vh - 54px);
-  height: calc(100vh - 5.4rem);
+  height: calc(100vh - 64px);
+  height: calc(100vh - 6.4rem);
   position: relative;
-  -webkit-transform: translateY(-120%);
-  transform: translateY(-120%);
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
   -webkit-transition: -webkit-transform .25s ease-in;
   transition: transform .25s ease-in;
   z-index: 9;
