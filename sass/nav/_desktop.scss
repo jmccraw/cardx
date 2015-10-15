@@ -2,7 +2,6 @@
 
 .top-nav {
   background: $purple;
-  border-bottom: 1px solid #59507b;
   height: 100px;
   height: 10rem;
   position: relative;
@@ -64,6 +63,7 @@
   z-index: 3;
 }
 .top-nav__link:first-of-type {
+  border-top: none;
   padding: 0;
   margin-left: 64px;
   margin-left: 6.4rem;
@@ -123,8 +123,8 @@
   bottom: -6px;
   bottom: -.6rem;
   content: '';
-  height: 2px;
-  height: .2rem;
+  height: 1px;
+  height: .1rem;
   left: 0;
   position: absolute;
   width: 95%;

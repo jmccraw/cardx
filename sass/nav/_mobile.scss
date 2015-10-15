@@ -2,7 +2,6 @@
 
 .top-nav {
   background: $purple;
-  border-bottom: 1px solid #59507b;
   height: 58px;
   height: 5.8rem;
   -webkit-font-smoothing: antialiased;
@@ -28,7 +27,6 @@
 }
 .top-nav__banner {
   background: $purple;
-  border-bottom: 1px solid #59507b;
   height: 100%;
   position: relative;
   z-index: 10;
@@ -75,6 +73,9 @@
   -webkit-transition: -webkit-transform .25s ease-in;
   transition: transform .25s ease-in;
   z-index: 9;
+}
+.top-nav__link:first-of-type {
+  border-top: 1px solid #59507b;
 }
 .top-nav__banner.is-open + .top-nav__links {
   -webkit-transform: translate3D(0, 0, 0);

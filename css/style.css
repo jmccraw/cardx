@@ -334,7 +334,6 @@ button {
 /* line 3, ../sass/nav/_mobile.scss */
 .top-nav {
   background: #372772;
-  border-bottom: 1px solid #59507b;
   height: 58px;
   height: 5.8rem;
   -webkit-font-smoothing: antialiased;
@@ -351,28 +350,27 @@ button {
   z-index: 10;
 }
 
-/* line 21, ../sass/nav/_mobile.scss */
+/* line 20, ../sass/nav/_mobile.scss */
 .top-nav.is-hidden {
   -webkit-transform: translate3D(0, -100%, 0);
   transform: translate3D(0, -100%, 0);
 }
 
-/* line 25, ../sass/nav/_mobile.scss */
+/* line 24, ../sass/nav/_mobile.scss */
 .top-nav__container {
   height: 100%;
   position: relative;
 }
 
-/* line 29, ../sass/nav/_mobile.scss */
+/* line 28, ../sass/nav/_mobile.scss */
 .top-nav__banner {
   background: #372772;
-  border-bottom: 1px solid #59507b;
   height: 100%;
   position: relative;
   z-index: 10;
 }
 
-/* line 36, ../sass/nav/_mobile.scss */
+/* line 34, ../sass/nav/_mobile.scss */
 .top-nav__banner--link > svg {
   background: transparent;
   height: 32px;
@@ -384,7 +382,7 @@ button {
   top: 1.2rem;
 }
 
-/* line 46, ../sass/nav/_mobile.scss */
+/* line 44, ../sass/nav/_mobile.scss */
 .top-nav__close-btn svg {
   height: 18px;
   height: 1.8rem;
@@ -395,25 +393,25 @@ button {
   top: 2rem;
 }
 
-/* line 55, ../sass/nav/_mobile.scss */
+/* line 53, ../sass/nav/_mobile.scss */
 #mobile-close {
   right: 30px;
   right: 3rem;
 }
 
-/* line 59, ../sass/nav/_mobile.scss */
+/* line 57, ../sass/nav/_mobile.scss */
 #mobile-close,
 .top-nav__banner.is-open #mobile-hamburger,
 .top-nav__login-btn {
   display: none;
 }
 
-/* line 64, ../sass/nav/_mobile.scss */
+/* line 62, ../sass/nav/_mobile.scss */
 .top-nav__banner.is-open #mobile-close {
   display: block;
 }
 
-/* line 68, ../sass/nav/_mobile.scss */
+/* line 66, ../sass/nav/_mobile.scss */
 .top-nav__links {
   background: #372772;
   height: calc(100vh - 54px);
@@ -426,13 +424,18 @@ button {
   z-index: 9;
 }
 
-/* line 79, ../sass/nav/_mobile.scss */
+/* line 77, ../sass/nav/_mobile.scss */
+.top-nav__link:first-of-type {
+  border-top: 1px solid #59507b;
+}
+
+/* line 80, ../sass/nav/_mobile.scss */
 .top-nav__banner.is-open + .top-nav__links {
   -webkit-transform: translate3D(0, 0, 0);
   transform: translate3D(0, 0, 0);
 }
 
-/* line 84, ../sass/nav/_mobile.scss */
+/* line 85, ../sass/nav/_mobile.scss */
 .top-nav__link,
 .top-nav__link--sublink,
 .top-nav__header {
@@ -452,12 +455,12 @@ button {
   text-transform: uppercase;
 }
 
-/* line 102, ../sass/nav/_mobile.scss */
+/* line 103, ../sass/nav/_mobile.scss */
 .top-nav__header {
   border-bottom: none;
 }
 
-/* line 105, ../sass/nav/_mobile.scss */
+/* line 106, ../sass/nav/_mobile.scss */
 .top-nav__link--sublink {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 20px;
@@ -472,7 +475,7 @@ button {
   text-transform: none;
 }
 
-/* line 118, ../sass/nav/_mobile.scss */
+/* line 119, ../sass/nav/_mobile.scss */
 .top-nav__link--sublink:first-of-type {
   padding-top: 0;
 }
@@ -1779,20 +1782,19 @@ button {
   /* line 3, ../sass/nav/_desktop.scss */
   .top-nav {
     background: #372772;
-    border-bottom: 1px solid #59507b;
     height: 100px;
     height: 10rem;
     position: relative;
   }
 
-  /* line 10, ../sass/nav/_desktop.scss */
+  /* line 9, ../sass/nav/_desktop.scss */
   .top-nav__container {
     margin: 0 auto;
     max-width: 1010px;
     max-width: 101rem;
   }
 
-  /* line 15, ../sass/nav/_desktop.scss */
+  /* line 14, ../sass/nav/_desktop.scss */
   .top-nav__banner {
     background: transparent;
     border-bottom: 0;
@@ -1803,7 +1805,7 @@ button {
     width: 8rem;
   }
 
-  /* line 24, ../sass/nav/_desktop.scss */
+  /* line 23, ../sass/nav/_desktop.scss */
   .top-nav__banner--link > svg {
     height: 50px;
     height: 5rem;
@@ -1814,12 +1816,12 @@ button {
     width: 7.8rem;
   }
 
-  /* line 33, ../sass/nav/_desktop.scss */
+  /* line 32, ../sass/nav/_desktop.scss */
   .top-nav__close-btn {
     display: none;
   }
 
-  /* line 36, ../sass/nav/_desktop.scss */
+  /* line 35, ../sass/nav/_desktop.scss */
   .top-nav__links {
     display: inline-block;
     height: auto;
@@ -1833,7 +1835,7 @@ button {
     z-index: 11;
   }
 
-  /* line 48, ../sass/nav/_desktop.scss */
+  /* line 47, ../sass/nav/_desktop.scss */
   .top-nav__link,
   .top-nav__header,
   .top-nav__link-container {
@@ -1848,15 +1850,16 @@ button {
     position: relative;
   }
 
-  /* line 61, ../sass/nav/_desktop.scss */
+  /* line 60, ../sass/nav/_desktop.scss */
   .top-nav__header {
     cursor: pointer;
     margin-left: 0;
     z-index: 3;
   }
 
-  /* line 66, ../sass/nav/_desktop.scss */
+  /* line 65, ../sass/nav/_desktop.scss */
   .top-nav__link:first-of-type {
+    border-top: none;
     padding: 0;
     margin-left: 64px;
     margin-left: 6.4rem;
@@ -1928,8 +1931,8 @@ button {
     bottom: -6px;
     bottom: -.6rem;
     content: '';
-    height: 2px;
-    height: .2rem;
+    height: 1px;
+    height: .1rem;
     left: 0;
     position: absolute;
     width: 95%;
