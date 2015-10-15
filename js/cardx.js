@@ -169,18 +169,6 @@
   }
 
   /**
-   * Displays the required error message for the given field for 3 seconds
-   * @param {Object} el The required element
-   * @type {Function}
-   */
-  function setRequiredField(el) {
-    el.classList.add('is-erroring');
-    _w.setTimeout(function() {
-      el.classList.remove('is-erroring');
-    }, 3000);
-  }
-
-  /**
    * Displays the form success page and resets fields on close
    * @type {Function}
    */
@@ -216,21 +204,21 @@
       var m = _modalInputs[mi];
       if ((m.value.length === 0 || m.value === '') && m.name !== 'email' && m.name !== 'phone') {
         m.setAttribute('data-good', 'false');
-        setRequiredField(m.nextElementSibling);
+        m.nextElementSibling.classList.add('is-erroring');
       } else if (m.type === 'email' && m.value.length > 0
           && !/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(m.value)) {
         m.value = '';
         m.setAttribute('data-good', 'false');
-        setRequiredField(m.nextElementSibling);
+        m.nextElementSibling.classList.add('is-erroring');
       } else if (m.type === 'tel' && m.value.length < 10 && m.value.length > 0) {
         m.value = '';
         m.setAttribute('data-good', 'false');
-        setRequiredField(m.nextElementSibling);
+        m.nextElementSibling.classList.add('is-erroring');
       } else if (p.value.length === 0 && m.type === 'email' && m.value.length === 0) {
         m.setAttribute('data-good', 'false');
         p.setAttribute('data-good', 'false');
-        setRequiredField(m.nextElementSibling);
-        setRequiredField(p.nextElementSibling);
+        m.nextElementSibling.classList.add('is-erroring');
+        p.nextElementSibling.classList.add('is-erroring');
       } else {
         m.setAttribute('data-good', 'true');
       }
@@ -272,10 +260,17 @@
     _modalInputs = _modal.querySelectorAll('input');
     _modalRequirements = _modal.querySelectorAll('.modal__form--required');
     _modalSuccess = _modal.querySelector('.modal__text');
+    var mi = _modalInputs.length - 1;
 
     document.getElementById('modal-close-btn').addEventListener('click', closeOpenModal, false);
     document.getElementById('modal-success-close-btn').addEventListener('click', closeOpenModal, false);
     document.querySelector('.modal__overlay').addEventListener('click', closeOpenModal, false);
+
+    for (; mi >= 0; --mi) {
+      _modalInputs[mi].addEventListener('focus', function() {
+        this.nextElementSibling.classList.remove('is-erroring');
+      }, false);
+    }
 
     document.querySelector('.modal__form--submit-btn').addEventListener('click', function(e) {
       if (e.preventDefault) {
@@ -283,6 +278,12 @@
       }
       validateFormData();
     }, false);
+
+    if (_w.innerWidth < 850) {
+      _tel.placeholder = 'Phone';
+    } else {
+      _tel.placeholder = 'Phone Number';
+    }
   }
 
   /**
@@ -359,10 +360,6 @@
         }
       }, false);
     }
-
-    if (_tel) {
-      _tel.placeholder = 'Phone';
-    }
   }
 
   /**
@@ -400,10 +397,6 @@
         }
       }, false);
     }
-
-    if (_tel) {
-      _tel.placeholder = 'Phone Number';
-    }
   }
 
   /**
@@ -413,6 +406,7 @@
    * @param{Number} threshhold The wait time in milliseconds
    * @param{Object} scope The context of 'this' or null
    * @returns {Function}
+   * @type {Function}
    */
   function throttle(fn, threshhold, scope) {
     threshhold || (threshhold = 250);
@@ -491,7 +485,4 @@
   }
 
   init();
-
-  // TODO FIXME Update so the transition uses translate instead of display none/block.
-
 })();

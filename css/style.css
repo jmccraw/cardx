@@ -1540,6 +1540,7 @@ a.footer__p,
 /* line 33, ../sass/modal/_mobile.scss */
 .modal input {
   background: #d2d1d7;
+  border-radius: 0;
   color: #372772;
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   font-size: 14px;
@@ -1556,7 +1557,7 @@ a.footer__p,
   text-transform: uppercase;
   width: 100%;
 }
-/* line 51, ../sass/modal/_mobile.scss */
+/* line 52, ../sass/modal/_mobile.scss */
 .modal .modal__form--submit-btn {
   background: #372772;
   color: #fff;
@@ -1564,35 +1565,35 @@ a.footer__p,
   font-size: 11px;
   font-size: 1.1rem;
   font-weight: 900;
-  height: 43px;
-  height: 4.3rem;
+  height: 45px;
+  height: 4.5rem;
   line-height: 0;
   margin-top: 20px;
   margin-top: 2rem;
   width: 100%;
 }
-/* line 65, ../sass/modal/_mobile.scss */
+/* line 66, ../sass/modal/_mobile.scss */
 .modal input::-webkit-input-placeholder {
   color: #fff;
 }
-/* line 68, ../sass/modal/_mobile.scss */
+/* line 69, ../sass/modal/_mobile.scss */
 .modal input::-moz-input-placeholder {
   color: #fff;
 }
-/* line 71, ../sass/modal/_mobile.scss */
+/* line 72, ../sass/modal/_mobile.scss */
 .modal input:-moz-input-placeholder {
   color: #fff;
 }
-/* line 74, ../sass/modal/_mobile.scss */
+/* line 75, ../sass/modal/_mobile.scss */
 .modal input::-ms-input-placeholder {
   color: #fff;
 }
-/* line 77, ../sass/modal/_mobile.scss */
+/* line 78, ../sass/modal/_mobile.scss */
 .modal input::input-placeholder {
   color: #fff;
 }
 
-/* line 81, ../sass/modal/_mobile.scss */
+/* line 82, ../sass/modal/_mobile.scss */
 .modal__overlay {
   background: #787583;
   bottom: 0;
@@ -1604,12 +1605,12 @@ a.footer__p,
   top: -7rem;
 }
 
-/* line 91, ../sass/modal/_mobile.scss */
+/* line 92, ../sass/modal/_mobile.scss */
 .modal.is-open {
   display: block;
 }
 
-/* line 94, ../sass/modal/_mobile.scss */
+/* line 95, ../sass/modal/_mobile.scss */
 .modal__container {
   background: #fff;
   height: 200%;
@@ -1619,34 +1620,33 @@ a.footer__p,
   width: 100%;
 }
 
-/* line 102, ../sass/modal/_mobile.scss */
+/* line 103, ../sass/modal/_mobile.scss */
 .modal__header {
   margin-bottom: 43px;
   margin-bottom: 4.3rem;
 }
-/* line 106, ../sass/modal/_mobile.scss */
+/* line 107, ../sass/modal/_mobile.scss */
 .modal__header .standard-button {
   background: #372772;
   border: 1px solid #372772;
   color: #fff;
-  height: 40px;
-  height: 4rem;
+  height: 45px;
+  height: 4.5rem;
   line-height: 0;
   width: 100%;
 }
 
-/* line 116, ../sass/modal/_mobile.scss */
+/* line 117, ../sass/modal/_mobile.scss */
 .modal__header.is-successful {
   padding-top: 60px;
   padding-top: 6rem;
 }
-/* line 120, ../sass/modal/_mobile.scss */
+/* line 121, ../sass/modal/_mobile.scss */
 .modal__header.is-successful .modal__headline {
   padding-left: 20px;
   padding-left: 2rem;
   padding-right: 20px;
   padding-right: 2rem;
-  text-transform: uppercase;
 }
 
 /* line 128, ../sass/modal/_mobile.scss */
