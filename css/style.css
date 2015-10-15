@@ -910,7 +910,9 @@ button {
 }
 
 /* line 30, ../sass/footer/_mobile.scss */
+a.footer__p,
 .footer__p {
+  color: #787583;
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
@@ -920,20 +922,20 @@ button {
   line-height: 2.4rem;
 }
 
-/* line 38, ../sass/footer/_mobile.scss */
+/* line 40, ../sass/footer/_mobile.scss */
 .footer__logo {
   margin-bottom: 41px;
   margin-bottom: 4.1rem;
   position: relative;
 }
-/* line 43, ../sass/footer/_mobile.scss */
+/* line 45, ../sass/footer/_mobile.scss */
 .footer__logo .footer__p {
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 20px;
   line-height: 2rem;
 }
-/* line 49, ../sass/footer/_mobile.scss */
+/* line 51, ../sass/footer/_mobile.scss */
 .footer__logo svg {
   float: left;
   margin-right: 30px;
@@ -944,7 +946,7 @@ button {
   width: 8.5rem;
 }
 
-/* line 69, ../sass/footer/_mobile.scss */
+/* line 71, ../sass/footer/_mobile.scss */
 .index .footer__copyright,
 .about .footer__copyright,
 .intelligence .footer__copyright,
@@ -958,7 +960,7 @@ button {
   line-height: 2.2;
   text-transform: uppercase;
 }
-/* line 76, ../sass/footer/_mobile.scss */
+/* line 78, ../sass/footer/_mobile.scss */
 .index .footer__copyright--patent,
 .about .footer__copyright--patent,
 .intelligence .footer__copyright--patent,
