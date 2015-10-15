@@ -457,7 +457,7 @@
         document.removeEventListener('scroll', testMobileNav, false);
       }
     }, 100);
-    document.addEventListener('resize', testBreakpoints, false);
+    _w.addEventListener('resize', testBreakpoints, false);
 
     // load mobile functions if mobile
     testBreakpoints();
