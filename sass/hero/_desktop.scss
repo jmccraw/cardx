@@ -1,31 +1,5 @@
 // Desktop Hero Section
 
-@-webkit-keyframes hover-jump {
-  0%, 10%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-  }
-  20% {
-    -webkit-transform: translateY(10px);
-    -webkit-transform: translateY(1rem);
-  }
-  100%{
-    -webkit-transform: translateY(0);
-  }
-}
-
-@keyframes hover-jump {
-  0%, 10%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(10px);
-    transform: translateY(1rem);
-  }
-  100%{
-    transform: translateY(0);
-  }
-}
-
 .hero {
   background-size: cover;
   height: 585px;
@@ -103,10 +77,6 @@
 }
 .hero__jump-btn:hover {
   background: transparent;
-}
-.hero__jump-btn:hover .hero__jump-btn--header {
-  -webkit-animation: hover-jump 1s cubic-bezier(0, 0, .58, 1);
-  animation: hover-jump 1s cubic-bezier(0, 0, .58, 1);
 }
 
 // Section-specific styles

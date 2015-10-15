@@ -1991,31 +1991,7 @@ a.footer__p,
     color: #372772;
   }
 
-  @-webkit-keyframes hover-jump {
-    0%, 10%, 50%, 80%, 100% {
-      -webkit-transform: translateY(0);
-    }
-    20% {
-      -webkit-transform: translateY(10px);
-      -webkit-transform: translateY(1rem);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-    }
-  }
-  @keyframes hover-jump {
-    0%, 10%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    20% {
-      transform: translateY(10px);
-      transform: translateY(1rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  /* line 29, ../sass/hero/_desktop.scss */
+  /* line 3, ../sass/hero/_desktop.scss */
   .hero {
     background-size: cover;
     height: 585px;
@@ -2027,7 +2003,7 @@ a.footer__p,
     text-align: left;
   }
 
-  /* line 39, ../sass/hero/_desktop.scss */
+  /* line 13, ../sass/hero/_desktop.scss */
   .hero__container {
     padding-left: 0;
     padding-right: 0;
@@ -2036,13 +2012,13 @@ a.footer__p,
     max-width: 101rem;
   }
 
-  /* line 46, ../sass/hero/_desktop.scss */
+  /* line 20, ../sass/hero/_desktop.scss */
   .hero__header {
     margin: 0 0 28px;
     margin: 0 0 2.8rem;
   }
 
-  /* line 50, ../sass/hero/_desktop.scss */
+  /* line 24, ../sass/hero/_desktop.scss */
   .hero__headline {
     font-size: 60px;
     font-size: 6rem;
@@ -2051,7 +2027,7 @@ a.footer__p,
     line-height: 7.2rem;
   }
 
-  /* line 56, ../sass/hero/_desktop.scss */
+  /* line 30, ../sass/hero/_desktop.scss */
   .hero__p {
     font-size: 18px;
     font-size: 1.8rem;
@@ -2064,14 +2040,14 @@ a.footer__p,
     width: 100%;
   }
 
-  /* line 67, ../sass/hero/_desktop.scss */
+  /* line 41, ../sass/hero/_desktop.scss */
   .hero__p--sup {
     font-size: 12px;
     font-size: 1.2rem;
     line-height: 1.8;
   }
 
-  /* line 72, ../sass/hero/_desktop.scss */
+  /* line 46, ../sass/hero/_desktop.scss */
   .hero__list--item {
     font-size: 18px;
     font-size: 1.8rem;
@@ -2079,7 +2055,7 @@ a.footer__p,
     margin-bottom: .7rem;
   }
 
-  /* line 78, ../sass/hero/_desktop.scss */
+  /* line 52, ../sass/hero/_desktop.scss */
   .hero__jump-btn {
     background: transparent;
     bottom: -19px;
@@ -2097,12 +2073,12 @@ a.footer__p,
     width: 16rem;
   }
 
-  /* line 94, ../sass/hero/_desktop.scss */
+  /* line 68, ../sass/hero/_desktop.scss */
   .hero__jump-btn--header {
     display: block;
   }
 
-  /* line 97, ../sass/hero/_desktop.scss */
+  /* line 71, ../sass/hero/_desktop.scss */
   .hero__jump-btn svg {
     display: block;
     margin: 19px auto 0;
@@ -2111,18 +2087,12 @@ a.footer__p,
     width: 4.1rem;
   }
 
-  /* line 104, ../sass/hero/_desktop.scss */
+  /* line 78, ../sass/hero/_desktop.scss */
   .hero__jump-btn:hover {
     background: transparent;
   }
 
-  /* line 107, ../sass/hero/_desktop.scss */
-  .hero__jump-btn:hover .hero__jump-btn--header {
-    -webkit-animation: hover-jump 1s cubic-bezier(0, 0, 0.58, 1);
-    animation: hover-jump 1s cubic-bezier(0, 0, 0.58, 1);
-  }
-
-  /* line 116, ../sass/hero/_desktop.scss */
+  /* line 86, ../sass/hero/_desktop.scss */
   .intelligence .hero,
   .zero .hero {
     background-position: 50% 50%;
@@ -2131,18 +2101,18 @@ a.footer__p,
     padding-top: 6rem;
     text-align: left;
   }
-  /* line 123, ../sass/hero/_desktop.scss */
+  /* line 93, ../sass/hero/_desktop.scss */
   .intelligence .hero__container,
   .zero .hero__container {
     padding-right: 0;
   }
-  /* line 126, ../sass/hero/_desktop.scss */
+  /* line 96, ../sass/hero/_desktop.scss */
   .intelligence .hero__header,
   .zero .hero__header {
     margin-bottom: 24px;
     margin-bottom: 2.4rem;
   }
-  /* line 130, ../sass/hero/_desktop.scss */
+  /* line 100, ../sass/hero/_desktop.scss */
   .intelligence .hero__headline,
   .zero .hero__headline {
     line-height: 73px;
@@ -2150,20 +2120,20 @@ a.footer__p,
     margin-bottom: 25px;
     margin-bottom: 2.5rem;
   }
-  /* line 136, ../sass/hero/_desktop.scss */
+  /* line 106, ../sass/hero/_desktop.scss */
   .intelligence .hero__headline--sup,
   .zero .hero__headline--sup {
     font-size: 20px;
     font-size: 2rem;
   }
-  /* line 140, ../sass/hero/_desktop.scss */
+  /* line 110, ../sass/hero/_desktop.scss */
   .intelligence .hero__subhead,
   .zero .hero__subhead {
     font-size: 30px;
     font-size: 3rem;
     letter-spacing: 0.3em;
   }
-  /* line 145, ../sass/hero/_desktop.scss */
+  /* line 115, ../sass/hero/_desktop.scss */
   .intelligence .hero__list,
   .zero .hero__list {
     padding-left: 0;
@@ -2365,9 +2335,10 @@ a.footer__p,
   .solutions__list--item {
     margin-bottom: 23px;
     margin-bottom: 2.3rem;
+    width: 90%;
   }
 
-  /* line 98, ../sass/solutions/_desktop.scss */
+  /* line 99, ../sass/solutions/_desktop.scss */
   .intelligence .solutions,
   .zero .solutions {
     margin-bottom: 0;
@@ -2377,19 +2348,19 @@ a.footer__p,
     padding-top: 66px;
     padding-top: 6.6rem;
   }
-  /* line 106, ../sass/solutions/_desktop.scss */
+  /* line 107, ../sass/solutions/_desktop.scss */
   .intelligence .solutions .standard-button,
   .zero .solutions .standard-button {
     margin-left: 0;
   }
-  /* line 110, ../sass/solutions/_desktop.scss */
+  /* line 111, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__container,
   .zero .solutions__container {
     padding: 0;
     max-width: 1010px;
     max-width: 101rem;
   }
-  /* line 115, ../sass/solutions/_desktop.scss */
+  /* line 116, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__headline,
   .intelligence .solutions__type:last-child,
   .zero .solutions__headline,
@@ -2403,20 +2374,20 @@ a.footer__p,
     position: relative;
     width: 100%;
   }
-  /* line 126, ../sass/solutions/_desktop.scss */
+  /* line 127, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__headline,
   .zero .solutions__headline {
     margin-bottom: 34px;
     margin-bottom: 3.4rem;
   }
-  /* line 130, ../sass/solutions/_desktop.scss */
+  /* line 131, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__list,
   .zero .solutions__list {
     margin-top: 15px;
     margin-top: 1.5rem;
   }
 
-  /* line 137, ../sass/solutions/_desktop.scss */
+  /* line 138, ../sass/solutions/_desktop.scss */
   .zero .solutions {
     padding-bottom: 73px;
     padding-bottom: 7.3rem;
