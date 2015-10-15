@@ -3473,6 +3473,11 @@ a.footer__p,
     padding: 4.7rem 4.3rem 0;
   }
 
+  /* line 5, ../sass/splash/_tablet.scss */
+  .contact .splash .splash__p:nth-child(3n) {
+    margin-bottom: 0;
+  }
+
   /* line 3, ../sass/splash/newsroom/_tablet.scss */
   .splash__article--nav {
     display: none;
