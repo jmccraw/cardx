@@ -45,7 +45,8 @@ a.footer__p,
   .footer__p {
     font-size: m-px(38);
     font-size: m-rem(38);
-    @include leading(20);
+    line-height: 20px;
+    line-height: 2rem;
   }
 
   svg {

@@ -932,7 +932,7 @@ a.footer__p,
   line-height: 20px;
   line-height: 2rem;
 }
-/* line 51, ../sass/footer/_mobile.scss */
+/* line 52, ../sass/footer/_mobile.scss */
 .footer__logo svg {
   float: left;
   margin-right: 30px;
@@ -943,7 +943,7 @@ a.footer__p,
   width: 8.5rem;
 }
 
-/* line 71, ../sass/footer/_mobile.scss */
+/* line 72, ../sass/footer/_mobile.scss */
 .index .footer__copyright,
 .about .footer__copyright,
 .intelligence .footer__copyright,
@@ -957,7 +957,7 @@ a.footer__p,
   line-height: 2.2;
   text-transform: uppercase;
 }
-/* line 78, ../sass/footer/_mobile.scss */
+/* line 79, ../sass/footer/_mobile.scss */
 .index .footer__copyright--patent,
 .about .footer__copyright--patent,
 .intelligence .footer__copyright--patent,
@@ -2481,16 +2481,18 @@ a.footer__p,
   }
   /* line 44, ../sass/footer/_desktop.scss */
   .footer__logo .footer__p {
+    line-height: 24px;
+    line-height: 2.4rem;
     margin-left: 146px;
     margin-left: 14.6rem;
   }
-  /* line 49, ../sass/footer/_desktop.scss */
+  /* line 51, ../sass/footer/_desktop.scss */
   .footer__logo svg {
-    margin-top: 10px;
-    margin-top: 1rem;
+    margin-top: 8px;
+    margin-top: .8rem;
   }
 
-  /* line 64, ../sass/footer/_desktop.scss */
+  /* line 66, ../sass/footer/_desktop.scss */
   .index .footer__copyright,
   .about .footer__copyright,
   .intelligence .footer__copyright,
@@ -2504,7 +2506,7 @@ a.footer__p,
     font-size: 1rem;
     margin-left: 0;
   }
-  /* line 71, ../sass/footer/_desktop.scss */
+  /* line 73, ../sass/footer/_desktop.scss */
   .index .footer__copyright--patent,
   .about .footer__copyright--patent,
   .intelligence .footer__copyright--patent,
