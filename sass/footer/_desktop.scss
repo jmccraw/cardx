@@ -6,9 +6,10 @@
 }
 .footer__container {
   margin: 0 auto;
-  max-width: 1010px;
-  max-width: 101rem;
+  max-width: 1300px;
+  max-width: 130rem;
   position: relative;
+  width: 100%;
 }
 .footer__contact {
   float: right;
@@ -18,12 +19,12 @@
 .footer__info {
   display: inline-block;
   margin-right: 175px;
-  margin-right: 17.5rem;
+  margin-right: 18.8%;
   position: relative;
 }
 .footer__info:nth-child(2) {
   margin-right: 120px;
-  margin-right: 12rem;
+  margin-right: 12.9%;
 }
 .footer__info:last-child {
   margin-right: 0;
@@ -36,8 +37,6 @@
 }
 .footer__logo {
   float: left;
-  margin-left: -145px;
-  margin-left: -14.5rem;
   width: 280px;
   width: 28rem;
 
@@ -68,7 +67,8 @@
     font-family: $condensed;
     font-size: 10px;
     font-size: 1rem;
-    margin-left: 0;
+    margin-left: 145px;
+    margin-left: 14.5rem;
   }
   .footer__copyright--patent {
     display: inline;
