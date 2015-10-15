@@ -331,6 +331,12 @@ button {
   fill: #787583;
 }
 
+/* line 53, ../sass/all/_mobile.scss */
+body.is-constrained {
+  height: 120vh;
+  overflow-y: hidden;
+}
+
 /* line 3, ../sass/nav/_mobile.scss */
 .top-nav {
   background: #372772;

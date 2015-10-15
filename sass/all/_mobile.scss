@@ -47,3 +47,10 @@
 .st2 {
   fill: #787583;
 }
+
+// Body Modal Conditions
+
+body.is-constrained {
+  height: 120vh;
+  overflow-y: hidden;
+}

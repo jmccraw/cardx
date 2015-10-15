@@ -240,6 +240,9 @@
     }
     // close the modal
     _modal.classList.remove('is-open');
+    if (_body.classList.contains('is-constrained')) {
+      _body.classList.remove('is-constrained');
+    }
     // reset all the form data
     _modalForm.classList.remove('is-hidden');
     _modalSuccess.parentElement.classList.remove('is-successful');
@@ -473,6 +476,7 @@
           _modal.classList.add('is-open');
           if (_w.innerWidth < 850) {
             _w.scrollTo(0, 0);
+            _body.classList.add('is-constrained');
           }
         }, false);
       }
