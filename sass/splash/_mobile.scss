@@ -37,17 +37,10 @@
   }
   .splash__p--contact {
     color: $purple;
-    display: block;
     font-family: $bold;
     font-size: 16px;
     font-size: 1.6rem;
     line-height: .5;
-  }
-  .splash__p--contact + .splash__p--contact {
-    margin-bottom: 45px;
-    margin-bottom: 4.5rem;
-    margin-top: 16px;
-    margin-top: 1.6rem;
   }
 }
 .splash__container {
@@ -97,6 +90,19 @@
     .splash__p {
       margin-bottom: 11px;
       margin-bottom: 1.1rem;
+    }
+    .splash__p:nth-child(3n) {
+      margin-bottom: 0;
+      margin-top: -6px;
+      margin-top: -.6rem;
+    }
+    .splash__p:nth-child(3n + 1) {
+      margin-bottom: 35px;
+      margin-bottom: 3.5rem;
+    }
+    p a::after,
+    .splash__p a::after {
+      display: none;
     }
   }
 }

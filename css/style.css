@@ -1011,21 +1011,13 @@ a.footer__p,
 /* line 38, ../sass/splash/_mobile.scss */
 .splash .splash__p--contact {
   color: #372772;
-  display: block;
   font-family: "Trade Gothic Com Bold", Arial, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: .5;
 }
-/* line 46, ../sass/splash/_mobile.scss */
-.splash .splash__p--contact + .splash__p--contact {
-  margin-bottom: 45px;
-  margin-bottom: 4.5rem;
-  margin-top: 16px;
-  margin-top: 1.6rem;
-}
 
-/* line 53, ../sass/splash/_mobile.scss */
+/* line 46, ../sass/splash/_mobile.scss */
 .splash__container {
   height: 100%;
   margin: 0 auto;
@@ -1033,7 +1025,7 @@ a.footer__p,
   width: 100%;
 }
 
-/* line 59, ../sass/splash/_mobile.scss */
+/* line 52, ../sass/splash/_mobile.scss */
 .splash__header {
   color: #372772;
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
@@ -1045,14 +1037,14 @@ a.footer__p,
   margin-bottom: 3.6rem;
 }
 
-/* line 69, ../sass/splash/_mobile.scss */
+/* line 62, ../sass/splash/_mobile.scss */
 .splash__headline {
   font-weight: 400;
   margin-bottom: 17px;
   margin-bottom: 1.7rem;
 }
 
-/* line 74, ../sass/splash/_mobile.scss */
+/* line 67, ../sass/splash/_mobile.scss */
 .splash__subhead {
   font-size: 19px;
   font-size: 1.9rem;
@@ -1187,21 +1179,37 @@ a.footer__p,
   float: right;
 }
 
-/* line 87, ../sass/splash/_mobile.scss */
+/* line 80, ../sass/splash/_mobile.scss */
 .news .splash__header {
   margin-bottom: 38px;
   margin-bottom: 3.8rem;
 }
 
-/* line 93, ../sass/splash/_mobile.scss */
+/* line 86, ../sass/splash/_mobile.scss */
 .contact .splash {
   padding-bottom: 6px;
   padding-bottom: .6rem;
 }
-/* line 97, ../sass/splash/_mobile.scss */
+/* line 90, ../sass/splash/_mobile.scss */
 .contact .splash .splash__p {
   margin-bottom: 11px;
   margin-bottom: 1.1rem;
+}
+/* line 94, ../sass/splash/_mobile.scss */
+.contact .splash .splash__p:nth-child(3n) {
+  margin-bottom: 0;
+  margin-top: -6px;
+  margin-top: -.6rem;
+}
+/* line 99, ../sass/splash/_mobile.scss */
+.contact .splash .splash__p:nth-child(3n + 1) {
+  margin-bottom: 35px;
+  margin-bottom: 3.5rem;
+}
+/* line 103, ../sass/splash/_mobile.scss */
+.contact .splash p a::after,
+.contact .splash .splash__p a::after {
+  display: none;
 }
 
 /* line 3, ../sass/content/_mobile.scss */
@@ -2780,15 +2788,23 @@ a.footer__p,
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 1.9;
+    margin-bottom: 17px;
+    margin-bottom: 1.7rem;
     max-width: 500px;
     max-width: 50rem;
   }
-  /* line 101, ../sass/splash/_desktop.scss */
-  .contact .splash .splash__p {
-    margin-bottom: 17px;
-    margin-bottom: 1.7rem;
+  /* line 103, ../sass/splash/_desktop.scss */
+  .contact .splash .splash__p:nth-child(3n) {
+    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    margin-top: -1px;
   }
-  /* line 105, ../sass/splash/_desktop.scss */
+  /* line 108, ../sass/splash/_desktop.scss */
+  .contact .splash .splash__p:nth-child(3n + 1) {
+    margin-bottom: 40px;
+    margin-bottom: 4rem;
+  }
+  /* line 112, ../sass/splash/_desktop.scss */
   .contact .splash .splash__p--contact {
     font-size: 22px;
     font-size: 2.2rem;

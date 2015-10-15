@@ -95,12 +95,19 @@
       font-size: 18px;
       font-size: 1.8rem;
       line-height: 1.9;
+      margin-bottom: 17px;
+      margin-bottom: 1.7rem;
       max-width: 500px;
       max-width: 50rem;
     }
-    .splash__p {
-      margin-bottom: 17px;
-      margin-bottom: 1.7rem;
+    .splash__p:nth-child(3n) {
+      margin-bottom: 10px;
+      margin-bottom: 1rem;
+      margin-top: -1px;
+    }
+    .splash__p:nth-child(3n + 1) {
+      margin-bottom: 40px;
+      margin-bottom: 4rem;
     }
     .splash__p--contact {
       font-size: 22px;
