@@ -1813,10 +1813,12 @@ a.footer__p,
     margin: 0 auto;
     max-width: 1300px;
     max-width: 130rem;
+    padding: 0 30px;
+    padding: 0 3rem;
     width: 100%;
   }
 
-  /* line 15, ../sass/nav/_desktop.scss */
+  /* line 17, ../sass/nav/_desktop.scss */
   .top-nav__banner {
     background: transparent;
     border-bottom: 0;
@@ -1825,7 +1827,7 @@ a.footer__p,
     width: 8rem;
   }
 
-  /* line 22, ../sass/nav/_desktop.scss */
+  /* line 24, ../sass/nav/_desktop.scss */
   .top-nav__banner--link > svg {
     height: 50px;
     height: 5rem;
@@ -1836,12 +1838,12 @@ a.footer__p,
     width: 7.8rem;
   }
 
-  /* line 31, ../sass/nav/_desktop.scss */
+  /* line 33, ../sass/nav/_desktop.scss */
   .top-nav__close-btn {
     display: none;
   }
 
-  /* line 34, ../sass/nav/_desktop.scss */
+  /* line 36, ../sass/nav/_desktop.scss */
   .top-nav__links {
     display: inline-block;
     height: auto;
@@ -1855,7 +1857,7 @@ a.footer__p,
     z-index: 11;
   }
 
-  /* line 46, ../sass/nav/_desktop.scss */
+  /* line 48, ../sass/nav/_desktop.scss */
   .top-nav__link,
   .top-nav__header,
   .top-nav__link-container {
@@ -1870,14 +1872,14 @@ a.footer__p,
     position: relative;
   }
 
-  /* line 59, ../sass/nav/_desktop.scss */
+  /* line 61, ../sass/nav/_desktop.scss */
   .top-nav__header {
     cursor: pointer;
     margin-left: 0;
     z-index: 3;
   }
 
-  /* line 64, ../sass/nav/_desktop.scss */
+  /* line 66, ../sass/nav/_desktop.scss */
   .top-nav__link:first-of-type {
     border-top: none;
     padding: 0;
@@ -1885,7 +1887,7 @@ a.footer__p,
     margin-left: 6.4rem;
   }
 
-  /* line 70, ../sass/nav/_desktop.scss */
+  /* line 72, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink {
     background: #372772;
     border-bottom: none;
@@ -1905,13 +1907,13 @@ a.footer__p,
     z-index: 2;
   }
 
-  /* line 88, ../sass/nav/_desktop.scss */
+  /* line 90, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:first-of-type {
     padding-top: 47px;
     padding-top: 4.7rem;
   }
 
-  /* line 92, ../sass/nav/_desktop.scss */
+  /* line 94, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3) {
     padding-bottom: 36px;
     padding-bottom: 3.6rem;
@@ -1922,7 +1924,7 @@ a.footer__p,
     z-index: 1;
   }
 
-  /* line 101, ../sass/nav/_desktop.scss */
+  /* line 103, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:focus,
   .top-nav__link-container:focus .top-nav__link--sublink,
   .top-nav__link-container:hover .top-nav__link--sublink,
@@ -1931,14 +1933,14 @@ a.footer__p,
     left: -1.4rem;
   }
 
-  /* line 108, ../sass/nav/_desktop.scss */
+  /* line 110, ../sass/nav/_desktop.scss */
   .top-nav__header,
   .top-nav__link,
   .top-nav__link--sublink {
     outline: none;
   }
 
-  /* line 113, ../sass/nav/_desktop.scss */
+  /* line 115, ../sass/nav/_desktop.scss */
   .about .top-nav__link:first-child::after,
   .intelligence .top-nav__header::after,
   .zero .top-nav__header::after,
@@ -1958,7 +1960,7 @@ a.footer__p,
     width: 95%;
   }
 
-  /* line 131, ../sass/nav/_desktop.scss */
+  /* line 133, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:hover::after {
     bottom: 13px;
     bottom: 1.3rem;
@@ -1967,14 +1969,14 @@ a.footer__p,
     width: 53%;
   }
 
-  /* line 138, ../sass/nav/_desktop.scss */
+  /* line 140, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3):hover::after {
     bottom: 29px;
     bottom: 2.9rem;
     width: 56%;
   }
 
-  /* line 143, ../sass/nav/_desktop.scss */
+  /* line 145, ../sass/nav/_desktop.scss */
   .top-nav__login-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -1988,7 +1990,8 @@ a.footer__p,
     padding: 11px 7px 8px 11px;
     padding: 1.1rem .7rem .8rem 1.1rem;
     position: absolute;
-    right: 0;
+    right: 30px;
+    right: 3rem;
     text-transform: uppercase;
     top: 48px;
     top: 4.8rem;
@@ -1996,7 +1999,7 @@ a.footer__p,
     transition: background .1s ease-in, color .1s ease-in;
   }
 
-  /* line 165, ../sass/nav/_desktop.scss */
+  /* line 168, ../sass/nav/_desktop.scss */
   .top-nav__login-btn:hover {
     background: #fff;
     color: #372772;
@@ -3278,27 +3281,12 @@ a.footer__p,
   }
 
   /* line 6, ../sass/nav/_tablet.scss */
-  .top-nav__banner,
-  .top-nav__link,
-  .top-nav__link:first-of-type,
-  .top-nav__link-container {
-    margin-left: 30px;
-    margin-left: 3rem;
-  }
-
-  /* line 13, ../sass/nav/_tablet.scss */
-  .top-nav__login-btn {
-    right: 30px;
-    right: 3rem;
-  }
-
-  /* line 17, ../sass/nav/_tablet.scss */
   .top-nav__login-btn:active {
     background: #fff;
     color: #372772;
   }
 
-  /* line 21, ../sass/nav/_tablet.scss */
+  /* line 10, ../sass/nav/_tablet.scss */
   .top-nav__link:active,
   .top-nav__link--sublink:active {
     background: #fff;
@@ -3497,19 +3485,19 @@ a.footer__p,
 
   /* line 3, ../sass/footer/_tablet.scss */
   .footer__contact {
-    width: 75%;
+    width: 73%;
   }
 
   /* line 6, ../sass/footer/_tablet.scss */
   .footer__info {
-    margin-right: 35px;
-    margin-right: 3.5rem;
+    margin-right: 40px;
+    margin-right: 4rem;
   }
 
   /* line 10, ../sass/footer/_tablet.scss */
   .footer__info:nth-child(2) {
-    margin-right: 30px;
-    margin-right: 3rem;
+    margin-right: 5px;
+    margin-right: 5rem;
   }
 
   /* line 14, ../sass/footer/_tablet.scss */
