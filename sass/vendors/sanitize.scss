@@ -152,6 +152,7 @@ html {
   background-color: $html-background-color;
   color: $html-color;
   font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
 }
 
 // specify the text decoration of anchors
@@ -300,6 +301,7 @@ textarea {
 
 body {
   -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
 }
 
 button {

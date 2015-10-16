@@ -3,11 +3,16 @@
 
 @import "functions";
 @import "vendors/sanitize";
-@import "vendors/temp";
 @import "grids";
 @import "colors";
 @import "fonts";
 @import "mixins";
+
+@import url("//hello.myfonts.net/count/2f71c3");
+@font-face {font-family: 'Trade Gothic Com Bold';src: url('webfonts/2F71C3_0_0.eot');src: url('webfonts/2F71C3_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F71C3_0_0.woff2') format('woff2'),url('webfonts/2F71C3_0_0.woff') format('woff'),url('webfonts/2F71C3_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Trade Gothic Com';src: url('webfonts/2F71C3_1_0.eot');src: url('webfonts/2F71C3_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F71C3_1_0.woff2') format('woff2'),url('webfonts/2F71C3_1_0.woff') format('woff'),url('webfonts/2F71C3_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Trade Gothic Com Condensed No. 18';src: url('webfonts/2F71C3_2_0.eot');src: url('webfonts/2F71C3_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F71C3_2_0.woff2') format('woff2'),url('webfonts/2F71C3_2_0.woff') format('woff'),url('webfonts/2F71C3_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Trade Gothic Com Bold Condensed No. 20';src: url('webfonts/2F71C3_3_0.eot');src: url('webfonts/2F71C3_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F71C3_3_0.woff2') format('woff2'),url('webfonts/2F71C3_3_0.woff') format('woff'),url('webfonts/2F71C3_3_0.ttf') format('truetype');}
 
 // Mobile Styles
 @import "all/mobile";
