@@ -351,8 +351,8 @@ button {
 
 /* line 53, ../sass/all/_mobile.scss */
 body.is-constrained {
-  height: 800px;
-  height: 80rem;
+  height: 680px;
+  height: 68rem;
   overflow-y: hidden;
 }
 
@@ -469,8 +469,8 @@ body.is-constrained {
   height: calc(100vh - 64px);
   height: calc(100vh - 6.4rem);
   position: relative;
-  -webkit-transform: translateY(-150%);
-  transform: translateY(-150%);
+  -webkit-transform: translateY(-165%);
+  transform: translateY(-165%);
   -webkit-transition: -webkit-transform .25s ease-in;
   transition: transform .25s ease-in;
   z-index: 9;
@@ -1668,7 +1668,7 @@ a.footer__p,
 /* line 98, ../sass/modal/_mobile.scss */
 .modal__container {
   background: #fff;
-  height: 125%;
+  height: 150%;
   padding: 0 35px;
   padding: 0 3.5rem;
   position: relative;
