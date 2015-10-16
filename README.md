@@ -39,4 +39,4 @@ A work in progress. Uses BEM Sass and Susy.
 * １０月１４日
  * ５時間
 * １０月１６日
- * ２.５時間
+ * ３時間
