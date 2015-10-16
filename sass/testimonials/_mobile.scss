@@ -51,17 +51,6 @@
   padding-bottom: 1.6rem;
   position: relative;
 }
-.testimonials__quote::after {
-  border-bottom: 2px solid $purple;
-  bottom: 0;
-  content: '';
-  left: 50%;
-  margin-left: -6px;
-  margin-left: -.6rem;
-  position: absolute;
-  width: 13px;
-  width: 1.3rem;
-}
 .testimonials__footer {
   font-family: $condensed;
   font-size: m-px(36);

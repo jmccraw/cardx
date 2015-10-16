@@ -710,19 +710,6 @@ body.is-constrained {
 }
 
 /* line 54, ../sass/testimonials/_mobile.scss */
-.testimonials__quote::after {
-  border-bottom: 2px solid #372772;
-  bottom: 0;
-  content: '';
-  left: 50%;
-  margin-left: -6px;
-  margin-left: -.6rem;
-  position: absolute;
-  width: 13px;
-  width: 1.3rem;
-}
-
-/* line 65, ../sass/testimonials/_mobile.scss */
 .testimonials__footer {
   font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   font-size: 12px;
@@ -735,14 +722,14 @@ body.is-constrained {
   text-transform: uppercase;
 }
 
-/* line 76, ../sass/testimonials/_mobile.scss */
+/* line 65, ../sass/testimonials/_mobile.scss */
 .testimonials__byline {
   display: block;
   font-family: "Trade Gothic Com Bold Condensed No. 20", Arial, sans-serif;
   font-style: normal;
 }
 
-/* line 81, ../sass/testimonials/_mobile.scss */
+/* line 70, ../sass/testimonials/_mobile.scss */
 .testimonials__breadcrumb {
   bottom: 35px;
   bottom: 3.5rem;
@@ -755,7 +742,7 @@ body.is-constrained {
   width: 8.6rem;
 }
 
-/* line 92, ../sass/testimonials/_mobile.scss */
+/* line 81, ../sass/testimonials/_mobile.scss */
 .testimonials__crumb {
   background: #787583;
   border-radius: 50%;
@@ -768,12 +755,12 @@ body.is-constrained {
   width: .5rem;
 }
 
-/* line 103, ../sass/testimonials/_mobile.scss */
+/* line 92, ../sass/testimonials/_mobile.scss */
 .testimonials__crumb:last-child {
   margin-right: 0;
 }
 
-/* line 106, ../sass/testimonials/_mobile.scss */
+/* line 95, ../sass/testimonials/_mobile.scss */
 .testimonials__crumb.is-active {
   background: #372772;
 }
@@ -1947,7 +1934,6 @@ a.footer__p,
   .zero .top-nav__header::after,
   .news .top-nav__link:nth-child(3)::after,
   .contact .top-nav__link:last-child::after,
-  .top-nav__header:hover::after,
   .top-nav__link:hover::after,
   .top-nav__link--sublink:hover::after {
     background: #fff;
@@ -1961,7 +1947,7 @@ a.footer__p,
     width: 95%;
   }
 
-  /* line 133, ../sass/nav/_desktop.scss */
+  /* line 132, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:hover::after {
     bottom: 13px;
     bottom: 1.3rem;
@@ -1970,14 +1956,14 @@ a.footer__p,
     width: 53%;
   }
 
-  /* line 140, ../sass/nav/_desktop.scss */
+  /* line 139, ../sass/nav/_desktop.scss */
   .top-nav__link--sublink:nth-child(3):hover::after {
     bottom: 29px;
     bottom: 2.9rem;
     width: 56%;
   }
 
-  /* line 145, ../sass/nav/_desktop.scss */
+  /* line 144, ../sass/nav/_desktop.scss */
   .top-nav__login-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -2000,7 +1986,7 @@ a.footer__p,
     transition: background .1s ease-in, color .1s ease-in;
   }
 
-  /* line 168, ../sass/nav/_desktop.scss */
+  /* line 167, ../sass/nav/_desktop.scss */
   .top-nav__login-btn:hover {
     background: #fff;
     color: #372772;
@@ -2293,18 +2279,18 @@ a.footer__p,
   }
   /* line 49, ../sass/solutions/_desktop.scss */
   .solutions__type:last-child .solutions__list--item {
-    width: 73%;
+    width: 78%;
   }
 
   /* line 53, ../sass/solutions/_desktop.scss */
   .solutions__type::after {
     background: #e4e4e7;
     content: '';
-    height: 134%;
+    height: 139%;
     position: absolute;
     right: 0;
-    top: -64px;
-    top: -6.4rem;
+    top: -76px;
+    top: -7.6rem;
     width: 1px;
   }
 
@@ -2317,8 +2303,8 @@ a.footer__p,
   .solutions__headline {
     font-size: 48px;
     font-size: 4.8rem;
-    margin-bottom: 27px;
-    margin-bottom: 2.7rem;
+    margin-bottom: 51px;
+    margin-bottom: 5.1rem;
   }
 
   /* line 72, ../sass/solutions/_desktop.scss */
@@ -2331,23 +2317,23 @@ a.footer__p,
     font-size: 18px;
     font-size: 1.8rem;
     letter-spacing: 0.3em;
-    line-height: 2.2;
+    line-height: 1.1;
   }
 
   /* line 81, ../sass/solutions/_desktop.scss */
   .solutions__list {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 26px;
     line-height: 2.6rem;
-    margin-bottom: 40px;
-    margin-bottom: 4rem;
+    margin-bottom: 60px;
+    margin-bottom: 6rem;
   }
 
   /* line 89, ../sass/solutions/_desktop.scss */
   .solutions__type:last-child .solutions__list {
-    margin-bottom: 66px;
-    margin-bottom: 6.6rem;
+    margin-bottom: 86px;
+    margin-bottom: 8.6rem;
   }
 
   /* line 93, ../sass/solutions/_desktop.scss */
@@ -2357,29 +2343,36 @@ a.footer__p,
     width: 90%;
   }
 
-  /* line 103, ../sass/solutions/_desktop.scss */
+  /* line 102, ../sass/solutions/_desktop.scss */
+  .index .solutions__list--item:nth-of-type(2) {
+    width: 80%;
+  }
+
+  /* line 108, ../sass/solutions/_desktop.scss */
   .intelligence .solutions,
   .zero .solutions {
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 17px;
     padding-bottom: 1.7rem;
-    padding-top: 66px;
-    padding-top: 6.6rem;
+    padding-top: 62px;
+    padding-top: 6.2rem;
   }
-  /* line 111, ../sass/solutions/_desktop.scss */
+  /* line 116, ../sass/solutions/_desktop.scss */
   .intelligence .solutions .standard-button,
   .zero .solutions .standard-button {
+    bottom: -44px;
+    bottom: -4.4rem;
     margin-left: 0;
   }
-  /* line 115, ../sass/solutions/_desktop.scss */
+  /* line 122, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__container,
   .zero .solutions__container {
     padding: 0;
     max-width: 1010px;
     max-width: 101rem;
   }
-  /* line 120, ../sass/solutions/_desktop.scss */
+  /* line 127, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__headline,
   .intelligence .solutions__type:last-child,
   .zero .solutions__headline,
@@ -2393,20 +2386,26 @@ a.footer__p,
     position: relative;
     width: 100%;
   }
-  /* line 131, ../sass/solutions/_desktop.scss */
+  /* line 138, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__headline,
   .zero .solutions__headline {
     margin-bottom: 34px;
     margin-bottom: 3.4rem;
   }
-  /* line 135, ../sass/solutions/_desktop.scss */
+  /* line 142, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__list,
   .zero .solutions__list {
-    margin-top: 15px;
-    margin-top: 1.5rem;
+    margin: 15px 0 40px;
+    margin: 1.5rem 0 4rem;
+    width: 105%;
+  }
+  /* line 147, ../sass/solutions/_desktop.scss */
+  .intelligence .solutions__type:last-child .solutions__list--item,
+  .zero .solutions__type:last-child .solutions__list--item {
+    width: 100%;
   }
 
-  /* line 142, ../sass/solutions/_desktop.scss */
+  /* line 152, ../sass/solutions/_desktop.scss */
   .zero .solutions {
     padding-bottom: 73px;
     padding-bottom: 7.3rem;
