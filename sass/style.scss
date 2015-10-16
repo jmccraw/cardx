@@ -25,6 +25,10 @@
 @import "content/mobile";
 @import "modal/mobile";
 
+@media screen and (min-device-height: 400px) and (max-device-height: 500px) {
+  @import "nav/small-mobile";
+}
+
 // Tablet/Desktop Styles
 @media screen and (min-width: 48em) {
   @import "all/desktop";
@@ -53,9 +57,4 @@
 
 @media screen and (min-width: 48em) and (max-width: 64em) {
   @import "ancillary/tablet";
-}
-
-// Desktop-only Styles
-@media screen and (min-width: 71em) {
-
 }
