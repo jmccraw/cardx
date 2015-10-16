@@ -3,7 +3,8 @@
 .contact {
   .splash {
     .splash__p:nth-child(3n) {
-      margin-bottom: 0;
+      margin-bottom: -2px;
+      margin-bottom: -.2rem;
     }
   }
 }

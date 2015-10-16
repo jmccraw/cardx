@@ -96,6 +96,10 @@
     padding-top: .8rem;
     width: 44.5%;
   }
+  th:last-child,
+  td:last-child {
+    font-family: $condensed;
+  }
   td:first-child {
     font-size: 22px;
     font-size: 2.2rem;

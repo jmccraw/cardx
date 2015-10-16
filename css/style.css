@@ -333,7 +333,8 @@ button {
 
 /* line 53, ../sass/all/_mobile.scss */
 body.is-constrained {
-  height: 120vh;
+  height: 800px;
+  height: 80rem;
   overflow-y: hidden;
 }
 
@@ -1363,7 +1364,7 @@ a.footer__p,
 /* line 119, ../sass/content/_mobile.scss */
 .content__table--intelligence th:last-child,
 .content__table--intelligence td:last-child {
-  font-weight: 700;
+  font-family: "Trade Gothic Com Bold", Arial, sans-serif;
 }
 /* line 123, ../sass/content/_mobile.scss */
 .content__table--intelligence th:nth-child(2) {
@@ -1632,7 +1633,7 @@ a.footer__p,
 /* line 95, ../sass/modal/_mobile.scss */
 .modal__container {
   background: #fff;
-  height: 200%;
+  height: 125%;
   padding: 0 35px;
   padding: 0 3.5rem;
   position: relative;
@@ -2290,8 +2291,12 @@ a.footer__p,
     vertical-align: top;
     width: 63%;
   }
-
   /* line 49, ../sass/solutions/_desktop.scss */
+  .solutions__type:last-child .solutions__list--item {
+    width: 73%;
+  }
+
+  /* line 53, ../sass/solutions/_desktop.scss */
   .solutions__type::after {
     background: #e4e4e7;
     content: '';
@@ -2303,12 +2308,12 @@ a.footer__p,
     width: 1px;
   }
 
-  /* line 59, ../sass/solutions/_desktop.scss */
+  /* line 63, ../sass/solutions/_desktop.scss */
   .solutions__type:last-child::after {
     display: none;
   }
 
-  /* line 62, ../sass/solutions/_desktop.scss */
+  /* line 66, ../sass/solutions/_desktop.scss */
   .solutions__headline {
     font-size: 48px;
     font-size: 4.8rem;
@@ -2316,12 +2321,12 @@ a.footer__p,
     margin-bottom: 2.7rem;
   }
 
-  /* line 68, ../sass/solutions/_desktop.scss */
+  /* line 72, ../sass/solutions/_desktop.scss */
   .solutions__headline--sup {
     line-height: 2.3;
   }
 
-  /* line 71, ../sass/solutions/_desktop.scss */
+  /* line 75, ../sass/solutions/_desktop.scss */
   .solutions__headline--subhead {
     font-size: 18px;
     font-size: 1.8rem;
@@ -2329,7 +2334,7 @@ a.footer__p,
     line-height: 2.2;
   }
 
-  /* line 77, ../sass/solutions/_desktop.scss */
+  /* line 81, ../sass/solutions/_desktop.scss */
   .solutions__list {
     font-size: 16px;
     font-size: 1.6rem;
@@ -2339,20 +2344,20 @@ a.footer__p,
     margin-bottom: 4rem;
   }
 
-  /* line 85, ../sass/solutions/_desktop.scss */
+  /* line 89, ../sass/solutions/_desktop.scss */
   .solutions__type:last-child .solutions__list {
     margin-bottom: 66px;
     margin-bottom: 6.6rem;
   }
 
-  /* line 89, ../sass/solutions/_desktop.scss */
+  /* line 93, ../sass/solutions/_desktop.scss */
   .solutions__list--item {
     margin-bottom: 23px;
     margin-bottom: 2.3rem;
     width: 90%;
   }
 
-  /* line 99, ../sass/solutions/_desktop.scss */
+  /* line 103, ../sass/solutions/_desktop.scss */
   .intelligence .solutions,
   .zero .solutions {
     margin-bottom: 0;
@@ -2362,19 +2367,19 @@ a.footer__p,
     padding-top: 66px;
     padding-top: 6.6rem;
   }
-  /* line 107, ../sass/solutions/_desktop.scss */
+  /* line 111, ../sass/solutions/_desktop.scss */
   .intelligence .solutions .standard-button,
   .zero .solutions .standard-button {
     margin-left: 0;
   }
-  /* line 111, ../sass/solutions/_desktop.scss */
+  /* line 115, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__container,
   .zero .solutions__container {
     padding: 0;
     max-width: 1010px;
     max-width: 101rem;
   }
-  /* line 116, ../sass/solutions/_desktop.scss */
+  /* line 120, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__headline,
   .intelligence .solutions__type:last-child,
   .zero .solutions__headline,
@@ -2388,20 +2393,20 @@ a.footer__p,
     position: relative;
     width: 100%;
   }
-  /* line 127, ../sass/solutions/_desktop.scss */
+  /* line 131, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__headline,
   .zero .solutions__headline {
     margin-bottom: 34px;
     margin-bottom: 3.4rem;
   }
-  /* line 131, ../sass/solutions/_desktop.scss */
+  /* line 135, ../sass/solutions/_desktop.scss */
   .intelligence .solutions__list,
   .zero .solutions__list {
     margin-top: 15px;
     margin-top: 1.5rem;
   }
 
-  /* line 138, ../sass/solutions/_desktop.scss */
+  /* line 142, ../sass/solutions/_desktop.scss */
   .zero .solutions {
     padding-bottom: 73px;
     padding-bottom: 7.3rem;
@@ -2426,10 +2431,11 @@ a.footer__p,
   .footer__contact {
     float: right;
     margin-bottom: 0;
-    width: 72%;
+    width: 690px;
+    width: 69rem;
   }
 
-  /* line 19, ../sass/footer/_desktop.scss */
+  /* line 20, ../sass/footer/_desktop.scss */
   .footer__info {
     display: inline-block;
     margin-right: 175px;
@@ -2437,18 +2443,18 @@ a.footer__p,
     position: relative;
   }
 
-  /* line 25, ../sass/footer/_desktop.scss */
+  /* line 26, ../sass/footer/_desktop.scss */
   .footer__info:nth-child(2) {
     margin-right: 120px;
     margin-right: 12.9%;
   }
 
-  /* line 29, ../sass/footer/_desktop.scss */
+  /* line 30, ../sass/footer/_desktop.scss */
   .footer__info:last-child {
     margin-right: 0;
   }
 
-  /* line 32, ../sass/footer/_desktop.scss */
+  /* line 33, ../sass/footer/_desktop.scss */
   .footer__header,
   .footer__p,
   .footer__logo .footer__p {
@@ -2456,26 +2462,26 @@ a.footer__p,
     font-size: 1.4rem;
   }
 
-  /* line 38, ../sass/footer/_desktop.scss */
+  /* line 39, ../sass/footer/_desktop.scss */
   .footer__logo {
     float: left;
     width: 280px;
     width: 28rem;
   }
-  /* line 43, ../sass/footer/_desktop.scss */
+  /* line 44, ../sass/footer/_desktop.scss */
   .footer__logo .footer__p {
     line-height: 24px;
     line-height: 2.4rem;
     margin-left: 146px;
     margin-left: 14.6rem;
   }
-  /* line 50, ../sass/footer/_desktop.scss */
+  /* line 51, ../sass/footer/_desktop.scss */
   .footer__logo svg {
     margin-top: 8px;
     margin-top: .8rem;
   }
 
-  /* line 65, ../sass/footer/_desktop.scss */
+  /* line 66, ../sass/footer/_desktop.scss */
   .index .footer__copyright,
   .about .footer__copyright,
   .intelligence .footer__copyright,
@@ -2490,7 +2496,7 @@ a.footer__p,
     margin-left: 145px;
     margin-left: 14.5rem;
   }
-  /* line 73, ../sass/footer/_desktop.scss */
+  /* line 74, ../sass/footer/_desktop.scss */
   .index .footer__copyright--patent,
   .about .footer__copyright--patent,
   .intelligence .footer__copyright--patent,
@@ -2916,11 +2922,16 @@ a.footer__p,
     width: 44.5%;
   }
   /* line 99, ../sass/content/_desktop.scss */
+  .content__table--intelligence th:last-child,
+  .content__table--intelligence td:last-child {
+    font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
+  }
+  /* line 103, ../sass/content/_desktop.scss */
   .content__table--intelligence td:first-child {
     font-size: 22px;
     font-size: 2.2rem;
   }
-  /* line 103, ../sass/content/_desktop.scss */
+  /* line 107, ../sass/content/_desktop.scss */
   .content__table--intelligence td:nth-child(n + 2) {
     font-size: 36px;
     font-size: 3.6rem;
@@ -2928,12 +2939,12 @@ a.footer__p,
     padding-left: 8.5%;
     text-align: left;
   }
-  /* line 110, ../sass/content/_desktop.scss */
+  /* line 114, ../sass/content/_desktop.scss */
   .content__table--intelligence td:nth-child(2) {
     font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
   }
 
-  /* line 114, ../sass/content/_desktop.scss */
+  /* line 118, ../sass/content/_desktop.scss */
   .content__table--zero {
     color: #372772;
     margin-bottom: 89px;
@@ -2942,12 +2953,12 @@ a.footer__p,
     margin-top: 5.9rem;
     width: 100%;
   }
-  /* line 122, ../sass/content/_desktop.scss */
+  /* line 126, ../sass/content/_desktop.scss */
   .content__table--zero thead {
     border-bottom: 1px solid #372772;
     display: table-header-group;
   }
-  /* line 126, ../sass/content/_desktop.scss */
+  /* line 130, ../sass/content/_desktop.scss */
   .content__table--zero th {
     display: table-cell;
     font-family: "Trade Gothic Com Bold", Arial, sans-serif;
@@ -2958,60 +2969,60 @@ a.footer__p,
     padding-bottom: 1rem;
     text-align: left;
   }
-  /* line 136, ../sass/content/_desktop.scss */
+  /* line 140, ../sass/content/_desktop.scss */
   .content__table--zero tbody {
     display: table-row-group;
   }
-  /* line 139, ../sass/content/_desktop.scss */
+  /* line 143, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr {
     border-bottom: none;
     display: table-row;
   }
-  /* line 143, ../sass/content/_desktop.scss */
+  /* line 147, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr:last-of-type {
     border-bottom: none;
   }
-  /* line 146, ../sass/content/_desktop.scss */
+  /* line 150, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr::after {
     display: none;
   }
-  /* line 149, ../sass/content/_desktop.scss */
+  /* line 153, ../sass/content/_desktop.scss */
   .content__table--zero td {
     display: table-cell;
     padding-top: 37px;
     padding-top: 3.7rem;
     vertical-align: baseline;
   }
-  /* line 155, ../sass/content/_desktop.scss */
+  /* line 159, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr:first-of-type td {
     padding-top: 47px;
     padding-top: 4.7rem;
   }
-  /* line 159, ../sass/content/_desktop.scss */
+  /* line 163, ../sass/content/_desktop.scss */
   .content__table--zero tbody tr:first-of-type td:first-child {
     padding-right: 125px;
     padding-right: 12.5rem;
   }
-  /* line 163, ../sass/content/_desktop.scss */
+  /* line 167, ../sass/content/_desktop.scss */
   .content__table--zero tr td:first-child {
     padding-right: 23px;
     padding-right: 2.3rem;
     width: 490px;
     width: 49rem;
   }
-  /* line 169, ../sass/content/_desktop.scss */
+  /* line 173, ../sass/content/_desktop.scss */
   .content__table--zero th + th,
   .content__table--zero td + td {
     padding-left: 2.3rem;
   }
-  /* line 173, ../sass/content/_desktop.scss */
+  /* line 177, ../sass/content/_desktop.scss */
   .content__table--zero td + td {
     font-family: "Trade Gothic Com Bold", Arial, sans-serif;
     font-size: 18px;
     font-size: 1.8rem;
   }
 
-  /* line 179, ../sass/content/_desktop.scss */
+  /* line 183, ../sass/content/_desktop.scss */
   .content__table--logo {
     display: block;
     float: left;
@@ -3019,7 +3030,7 @@ a.footer__p,
     width: 8.8rem;
   }
 
-  /* line 185, ../sass/content/_desktop.scss */
+  /* line 189, ../sass/content/_desktop.scss */
   .content__table--logo-span {
     display: inline-block;
     letter-spacing: 0.3em;
@@ -3031,7 +3042,7 @@ a.footer__p,
     width: 60%;
   }
 
-  /* line 195, ../sass/content/_desktop.scss */
+  /* line 199, ../sass/content/_desktop.scss */
   .content__table--small-print {
     display: inline;
     font-family: "Trade Gothic Com Condensed No. 18", Arial, sans-serif;
@@ -3041,7 +3052,7 @@ a.footer__p,
     padding-right: 1rem;
   }
 
-  /* line 203, ../sass/content/_desktop.scss */
+  /* line 207, ../sass/content/_desktop.scss */
   .content__footer {
     font-size: 11px;
     font-size: 1.1rem;
@@ -3051,45 +3062,45 @@ a.footer__p,
     max-width: 40rem;
   }
 
-  /* line 215, ../sass/content/_desktop.scss */
+  /* line 219, ../sass/content/_desktop.scss */
   .zero .content__container {
     padding: 47px 0 0;
     padding: 4.7rem 0 0;
   }
-  /* line 219, ../sass/content/_desktop.scss */
+  /* line 223, ../sass/content/_desktop.scss */
   .zero .content__article:first-of-type .content__subhead {
     margin-top: 46px;
     margin-top: 4.6rem;
   }
-  /* line 223, ../sass/content/_desktop.scss */
+  /* line 227, ../sass/content/_desktop.scss */
   .zero .content__subhead,
   .zero .standard--p {
     max-width: 715px;
     max-width: 71.5rem;
   }
-  /* line 228, ../sass/content/_desktop.scss */
+  /* line 232, ../sass/content/_desktop.scss */
   .zero .solutions__type:last-child .solutions__list {
     margin-bottom: 0;
     margin-left: 3px;
     margin-left: .3rem;
     width: 120%;
   }
-  /* line 234, ../sass/content/_desktop.scss */
+  /* line 238, ../sass/content/_desktop.scss */
   .zero .content__list--section {
     width: 49.5%;
   }
-  /* line 237, ../sass/content/_desktop.scss */
+  /* line 241, ../sass/content/_desktop.scss */
   .zero .content__list--section:last-of-type {
     float: left;
     margin-bottom: 98px;
     margin-bottom: 9.8rem;
   }
-  /* line 242, ../sass/content/_desktop.scss */
+  /* line 246, ../sass/content/_desktop.scss */
   .zero .content__list {
     float: left;
     width: 49.5%;
   }
-  /* line 246, ../sass/content/_desktop.scss */
+  /* line 250, ../sass/content/_desktop.scss */
   .zero .content__footer {
     max-width: 470px;
     max-width: 47rem;
@@ -3293,6 +3304,12 @@ a.footer__p,
     color: #372772;
   }
 
+  /* line 15, ../sass/nav/_tablet.scss */
+  .top-nav__link:first-of-type {
+    margin-left: 34px;
+    margin-left: 3.4rem;
+  }
+
   /* line 3, ../sass/hero/_tablet.scss */
   .hero {
     padding: 50px 43px 0;
@@ -3468,7 +3485,8 @@ a.footer__p,
 
   /* line 5, ../sass/splash/_tablet.scss */
   .contact .splash .splash__p:nth-child(3n) {
-    margin-bottom: 0;
+    margin-bottom: -2px;
+    margin-bottom: -.2rem;
   }
 
   /* line 3, ../sass/splash/newsroom/_tablet.scss */
@@ -3485,7 +3503,7 @@ a.footer__p,
 
   /* line 3, ../sass/footer/_tablet.scss */
   .footer__contact {
-    width: 73%;
+    width: 51rem;
   }
 
   /* line 6, ../sass/footer/_tablet.scss */

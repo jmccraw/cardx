@@ -45,6 +45,10 @@
   top: 0;
   vertical-align: top;
   width: 63%;
+
+  .solutions__list--item {
+    width: 73%;
+  }
 }
 .solutions__type::after {
   background: $light-gray;
